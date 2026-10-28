@@ -1,0 +1,45 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.egg
+*.egg-info/
+dist/
+build/
+*.so
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb
+
+# Virtual environments
+venv/
+env/
+.env/
+.venv/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+# Logs
+*.log
+
+# Large binary radar data (store separately / use Git LFS if needed)
+data/
+*.bin
+*.mat
+*.npy
+*.npz
+
+# Generated outputs (figures, CSVs — reproducible from source)
+outputs/
+
+# Large notebooks with embedded outputs
+notebooks/
