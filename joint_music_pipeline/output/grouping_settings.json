@@ -1,0 +1,12 @@
+{
+  "range_radius_bins": 18.0,
+  "angle_radius_deg": 12.0,
+  "valley_db": 4.0,
+  "deep_valley_db": 8.0,
+  "valley_persistence": 2,
+  "motion_range_delta": 4.0,
+  "motion_angle_delta": 4.0,
+  "history_min": 3,
+  "primary_min_range_span": 8.0,
+  "expected_people": 1
+}

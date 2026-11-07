@@ -1,0 +1,46 @@
+{
+  "status": "passed",
+  "input_sha256": "8595966feded293bf80f9ddcf98d779b006c275d925c237afe6994e60686774b",
+  "maps_match_selected_joint_run": true,
+  "grouping_behavior_tests": 9,
+  "end_to_end_cli_smoke_windows": 7,
+  "main_frames": 63,
+  "debug_frames": 63,
+  "max_person_candidates_per_frame": 1,
+  "selected_person_windows": 17,
+  "grouping": {
+    "settings": {
+      "range_radius_bins": 18.0,
+      "angle_radius_deg": 12.0,
+      "valley_db": 4.0,
+      "deep_valley_db": 8.0,
+      "valley_persistence": 2,
+      "motion_range_delta": 4.0,
+      "motion_angle_delta": 4.0,
+      "history_min": 3,
+      "primary_min_range_span": 8.0
+    },
+    "expected_people": 1,
+    "raw_peak_count": 186,
+    "group_count": 133,
+    "multi_peak_groups": 40,
+    "ambiguous_group_count": 4,
+    "displayed_person_windows": 17,
+    "max_displayed_person_candidates": 1,
+    "group_track_segments": 9,
+    "primary_ids": [
+      1,
+      11,
+      12
+    ]
+  },
+  "source_files": {
+    "joint_music.py": "cf8dba2b54c0cdaa1b89d2404dc84d9f82db961d41a343d36dcc15dd1d77304f",
+    "walking_confidence_tracker.py": "6353f7e972d1055747c6bea422c239a94e10254461e40384c57e3db9a49e9937",
+    "adc_io.py": "d0467c4f0da6a0f20dc6675850231cf0478380e18f89452f3f65ea83c952acaf",
+    "run_pipeline.py": "ad331b6ccabe0ba0a784b35d9bf077b86b65d16bb3f30e1d72ab760e1c402ed8",
+    "peak_grouping.py": "bc4e4bedbc2b31b9447f56268078dcd93b18524c6ddb23c7c2f3baf6711e4ca5",
+    "test_peak_grouping.py": "d13ce723a0d2cddba04efe5d2ed79bf1a18e619f991417b19c2da87da82c1e20",
+    "group_output.py": "fd8167effcc3c44b49a96da04cf27094fa114da3dcb85660e8160fb4c38faa53"
+  }
+}

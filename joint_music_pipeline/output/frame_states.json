@@ -1,0 +1,7770 @@
+[
+  {
+    "candidates": [
+      {
+        "range_bin": 70,
+        "angle_deg": 14.0,
+        "score_db": 0.0,
+        "range_excess_db": 20.565609344974106,
+        "strong": true
+      },
+      {
+        "range_bin": 135,
+        "angle_deg": 17.0,
+        "score_db": -5.168178986749905,
+        "range_excess_db": 14.882272329469892,
+        "strong": true
+      },
+      {
+        "range_bin": 64,
+        "angle_deg": 15.0,
+        "score_db": -5.6912090601103325,
+        "range_excess_db": 14.71453795556468,
+        "strong": true
+      },
+      {
+        "range_bin": 126,
+        "angle_deg": 17.0,
+        "score_db": -8.353392398194067,
+        "range_excess_db": 14.456267548438255,
+        "strong": true
+      },
+      {
+        "range_bin": 78,
+        "angle_deg": 33.0,
+        "score_db": -8.43521809706271,
+        "range_excess_db": 11.027869606955619,
+        "strong": true
+      },
+      {
+        "range_bin": 112,
+        "angle_deg": 19.0,
+        "score_db": -12.65526837777875,
+        "range_excess_db": 13.218042969748858,
+        "strong": true
+      }
+    ],
+    "visible": [],
+    "lost": [],
+    "map_contrast_db": 26.85444612179308,
+    "reflection_visible": [
+      {
+        "id": 1,
+        "range_bin": 70.0,
+        "angle_deg": 14.0,
+        "confirmed": false,
+        "support": "strong"
+      },
+      {
+        "id": 2,
+        "range_bin": 135.0,
+        "angle_deg": 17.0,
+        "confirmed": false,
+        "support": "strong"
+      },
+      {
+        "id": 3,
+        "range_bin": 64.0,
+        "angle_deg": 15.0,
+        "confirmed": false,
+        "support": "strong"
+      },
+      {
+        "id": 4,
+        "range_bin": 126.0,
+        "angle_deg": 17.0,
+        "confirmed": false,
+        "support": "strong"
+      },
+      {
+        "id": 5,
+        "range_bin": 78.0,
+        "angle_deg": 33.0,
+        "confirmed": false,
+        "support": "strong"
+      },
+      {
+        "id": 6,
+        "range_bin": 112.0,
+        "angle_deg": 19.0,
+        "confirmed": false,
+        "support": "strong"
+      }
+    ],
+    "reflection_lost": [],
+    "groups": [
+      {
+        "range_bin": 68.76208685808054,
+        "angle_deg": 14.206318856986574,
+        "strong": true,
+        "score_db": 0.0,
+        "member_indices": [
+          0,
+          2
+        ],
+        "member_count": 2,
+        "owner": null,
+        "ambiguous": false,
+        "possible_track_ids": []
+      },
+      {
+        "range_bin": 135.0,
+        "angle_deg": 17.0,
+        "strong": true,
+        "score_db": -5.168178986749905,
+        "member_indices": [
+          1
+        ],
+        "member_count": 1,
+        "owner": null,
+        "ambiguous": false,
+        "possible_track_ids": []
+      },
+      {
+        "range_bin": 126.0,
+        "angle_deg": 17.0,
+        "strong": true,
+        "score_db": -8.353392398194067,
+        "member_indices": [
+          3
+        ],
+        "member_count": 1,
+        "owner": null,
+        "ambiguous": false,
+        "possible_track_ids": []
+      },
+      {
+        "range_bin": 78.0,
+        "angle_deg": 33.0,
+        "strong": true,
+        "score_db": -8.43521809706271,
+        "member_indices": [
+          4
+        ],
+        "member_count": 1,
+        "owner": null,
+        "ambiguous": false,
+        "possible_track_ids": []
+      },
+      {
+        "range_bin": 112.0,
+        "angle_deg": 19.0,
+        "strong": true,
+        "score_db": -12.65526837777875,
+        "member_indices": [
+          5
+        ],
+        "member_count": 1,
+        "owner": null,
+        "ambiguous": false,
+        "possible_track_ids": []
+      }
+    ],
+    "visible_groups": [
+      {
+        "id": 1,
+        "range_bin": 68.76208685808054,
+        "angle_deg": 14.206318856986574,
+        "confirmed": false,
+        "support": "strong",
+        "member_count": 2
+      },
+      {
+        "id": 2,
+        "range_bin": 135.0,
+        "angle_deg": 17.0,
+        "confirmed": false,
+        "support": "strong",
+        "member_count": 1
+      },
+      {
+        "id": 3,
+        "range_bin": 126.0,
+        "angle_deg": 17.0,
+        "confirmed": false,
+        "support": "strong",
+        "member_count": 1
+      },
+      {
+        "id": 4,
+        "range_bin": 78.0,
+        "angle_deg": 33.0,
+        "confirmed": false,
+        "support": "strong",
+        "member_count": 1
+      },
+      {
+        "id": 5,
+        "range_bin": 112.0,
+        "angle_deg": 19.0,
+        "confirmed": false,
+        "support": "strong",
+        "member_count": 1
+      }
+    ],
+    "lost_group_tracks": [],
+    "person_candidates": [],
+    "primary_id": null,
+    "status": "not_yet_acquired",
+    "ambiguous_groups": [],
+    "pair_decisions": [
+      {
+        "peak_ids": [
+          1,
+          3
+        ],
+        "range_separation": 6.0,
+        "angle_separation": 1.0,
+        "valley_db": 6.782571352319539,
+        "history_samples": 1,
+        "merge": true,
+        "reason": "close_connected_comoving_or_history_pending"
+      },
+      {
+        "peak_ids": [
+          2,
+          4
+        ],
+        "range_separation": 9.0,
+        "angle_separation": 0.0,
+        "valley_db": 13.101584143364633,
+        "history_samples": 1,
+        "merge": false,
+        "reason": "resolved_valley"
+      },
+      {
+        "peak_ids": [
+          4,
+          6
+        ],
+        "range_separation": 14.0,
+        "angle_separation": 2.0,
+        "valley_db": 14.082866649960874,
+        "history_samples": 1,
+        "merge": false,
+        "reason": "resolved_valley"
+      }
+    ]
+  },
+  {
+    "candidates": [
+      {
+        "range_bin": 50,
+        "angle_deg": 16.0,
+        "score_db": 0.0,
+        "range_excess_db": 18.494161207711635,
+        "strong": true
+      },
+      {
+        "range_bin": 56,
+        "angle_deg": 16.0,
+        "score_db": -2.3408761321870037,
+        "range_excess_db": 14.180999815707551,
+        "strong": true
+      },
+      {
+        "range_bin": 62,
+        "angle_deg": 17.0,
+        "score_db": -2.3809463532344686,
+        "range_excess_db": 14.843981562520504,
+        "strong": true
+      },
+      {
+        "range_bin": 112,
+        "angle_deg": 20.0,
+        "score_db": -4.274769093102199,
+        "range_excess_db": 27.77513932021038,
+        "strong": true
+      },
+      {
+        "range_bin": 126,
+        "angle_deg": 18.0,
+        "score_db": -4.781634888588869,
+        "range_excess_db": 15.052072981810909,
+        "strong": true
+      },
+      {
+        "range_bin": 68,
+        "angle_deg": 16.0,
+        "score_db": -5.291053233832103,
+        "range_excess_db": 17.48619096744023,
+        "strong": true
+      }
+    ],
+    "visible": [],
+    "lost": [],
+    "map_contrast_db": 24.73326468326038,
+    "reflection_visible": [
+      {
+        "id": 1,
+        "range_bin": 68.0,
+        "angle_deg": 16.0,
+        "confirmed": false,
+        "support": "strong"
+      },
+      {
+        "id": 3,
+        "range_bin": 62.0,
+        "angle_deg": 17.0,
+        "confirmed": false,
+        "support": "strong"
+      },
+      {
+        "id": 4,
+        "range_bin": 126.0,
+        "angle_deg": 18.0,
+        "confirmed": false,
+        "support": "strong"
+      },
+      {
+        "id": 6,
+        "range_bin": 112.0,
+        "angle_deg": 20.0,
+        "confirmed": false,
+        "support": "strong"
+      },
+      {
+        "id": 7,
+        "range_bin": 50.0,
+        "angle_deg": 16.0,
+        "confirmed": false,
+        "support": "strong"
+      },
+      {
+        "id": 8,
+        "range_bin": 56.0,
+        "angle_deg": 16.0,
+        "confirmed": false,
+        "support": "strong"
+      }
+    ],
+    "reflection_lost": [],
+    "groups": [
+      {
+        "range_bin": 58.35220696836136,
+        "angle_deg": 16.166295623701078,
+        "strong": true,
+        "score_db": 0.0,
+        "member_indices": [
+          0,
+          1,
+          2,
+          5
+        ],
+        "member_count": 4,
+        "owner": null,
+        "ambiguous": false,
+        "possible_track_ids": []
+      },
+      {
+        "range_bin": 112.0,
+        "angle_deg": 20.0,
+        "strong": true,
+        "score_db": -4.274769093102199,
+        "member_indices": [
+          3
+        ],
+        "member_count": 1,
+        "owner": null,
+        "ambiguous": false,
+        "possible_track_ids": []
+      },
+      {
+        "range_bin": 126.0,
+        "angle_deg": 18.0,
+        "strong": true,
+        "score_db": -4.781634888588869,
+        "member_indices": [
+          4
+        ],
+        "member_count": 1,
+        "owner": null,
+        "ambiguous": false,
+        "possible_track_ids": []
+      }
+    ],
+    "visible_groups": [
+      {
+        "id": 1,
+        "range_bin": 58.35220696836136,
+        "angle_deg": 16.166295623701078,
+        "confirmed": false,
+        "support": "strong",
+        "member_count": 4
+      },
+      {
+        "id": 3,
+        "range_bin": 126.0,
+        "angle_deg": 18.0,
+        "confirmed": false,
+        "support": "strong",
+        "member_count": 1
+      },
+      {
+        "id": 5,
+        "range_bin": 112.0,
+        "angle_deg": 20.0,
+        "confirmed": false,
+        "support": "strong",
+        "member_count": 1
+      }
+    ],
+    "lost_group_tracks": [],
+    "person_candidates": [],
+    "primary_id": null,
+    "status": "not_yet_acquired",
+    "ambiguous_groups": [],
+    "pair_decisions": [
+      {
+        "peak_ids": [
+          7,
+          8
+        ],
+        "range_separation": 6.0,
+        "angle_separation": 0.0,
+        "valley_db": 3.7244393342117035,
+        "history_samples": 1,
+        "merge": true,
+        "reason": "close_connected_comoving_or_history_pending"
+      },
+      {
+        "peak_ids": [
+          3,
+          7
+        ],
+        "range_separation": 12.0,
+        "angle_separation": 1.0,
+        "valley_db": 3.7479893229732544,
+        "history_samples": 1,
+        "merge": true,
+        "reason": "close_connected_comoving_or_history_pending"
+      },
+      {
+        "peak_ids": [
+          3,
+          8
+        ],
+        "range_separation": 6.0,
+        "angle_separation": 1.0,
+        "valley_db": 2.5379837231826765,
+        "history_samples": 1,
+        "merge": true,
+        "reason": "close_connected_comoving_or_history_pending"
+      },
+      {
+        "peak_ids": [
+          4,
+          6
+        ],
+        "range_separation": 14.0,
+        "angle_separation": 2.0,
+        "valley_db": 19.804158640702504,
+        "history_samples": 2,
+        "merge": false,
+        "reason": "resolved_valley"
+      },
+      {
+        "peak_ids": [
+          1,
+          7
+        ],
+        "range_separation": 18.0,
+        "angle_separation": 0.0,
+        "valley_db": 2.9416306097227567,
+        "history_samples": 1,
+        "merge": true,
+        "reason": "close_connected_comoving_or_history_pending"
+      },
+      {
+        "peak_ids": [
+          1,
+          8
+        ],
+        "range_separation": 12.0,
+        "angle_separation": 0.0,
+        "valley_db": 2.9780545730082606,
+        "history_samples": 1,
+        "merge": true,
+        "reason": "close_connected_comoving_or_history_pending"
+      },
+      {
+        "peak_ids": [
+          1,
+          3
+        ],
+        "range_separation": 6.0,
+        "angle_separation": 1.0,
+        "valley_db": 2.7600401715289253,
+        "history_samples": 2,
+        "merge": true,
+        "reason": "close_connected_comoving_or_history_pending"
+      }
+    ]
+  },
+  {
+    "candidates": [
+      {
+        "range_bin": 42,
+        "angle_deg": 17.0,
+        "score_db": 0.0,
+        "range_excess_db": 21.038410414754544,
+        "strong": true
+      },
+      {
+        "range_bin": 49,
+        "angle_deg": 16.0,
+        "score_db": -1.210191547244621,
+        "range_excess_db": 14.153274061983467,
+        "strong": true
+      },
+      {
+        "range_bin": 112,
+        "angle_deg": 20.0,
+        "score_db": -1.4329693640829353,
+        "range_excess_db": 23.349062901138318,
+        "strong": true
+      },
+      {
+        "range_bin": 57,
+        "angle_deg": 20.0,
+        "score_db": -5.190480805856109,
+        "range_excess_db": 15.031250316842112,
+        "strong": true
+      },
+      {
+        "range_bin": 64,
+        "angle_deg": 23.0,
+        "score_db": -12.290110379364306,
+        "range_excess_db": 14.48812017409368,
+        "strong": true
+      }
+    ],
+    "visible": [
+      {
+        "id": 1,
+        "range_bin": 45.56936361526402,
+        "angle_deg": 17.376087185747885,
+        "confirmed": true,
+        "support": "strong",
+        "member_count": 3
+      }
+    ],
+    "lost": [],
+    "map_contrast_db": 27.374258364882394,
+    "reflection_visible": [
+      {
+        "id": 1,
+        "range_bin": 64.0,
+        "angle_deg": 23.0,
+        "confirmed": true,
+        "support": "strong"
+      },
+      {
+        "id": 3,
+        "range_bin": 57.0,
+        "angle_deg": 20.0,
+        "confirmed": true,
+        "support": "strong"
+      },
+      {
+        "id": 6,
+        "range_bin": 112.0,
+        "angle_deg": 20.0,
+        "confirmed": true,
+        "support": "strong"
+      },
+      {
+        "id": 7,
+        "range_bin": 49.0,
+        "angle_deg": 16.0,
+        "confirmed": false,
+        "support": "strong"
+      },
+      {
+        "id": 8,
+        "range_bin": 42.0,
+        "angle_deg": 17.0,
+        "confirmed": false,
+        "support": "strong"
+      }
+    ],
+    "reflection_lost": [],
+    "groups": [
+      {
+        "range_bin": 45.56936361526402,
+        "angle_deg": 17.376087185747885,
+        "strong": true,
+        "score_db": 0.0,
+        "member_indices": [
+          0,
+          1,
+          3
+        ],
+        "member_count": 3,
+        "owner": null,
+        "ambiguous": false,
+        "possible_track_ids": []
+      },
+      {
+        "range_bin": 112.0,
+        "angle_deg": 20.0,
+        "strong": true,
+        "score_db": -1.4329693640829353,
+        "member_indices": [
+          2
+        ],
+        "member_count": 1,
+        "owner": null,
+        "ambiguous": false,
+        "possible_track_ids": []
+      },
+      {
+        "range_bin": 64.0,
+        "angle_deg": 23.0,
+        "strong": true,
+        "score_db": -12.290110379364306,
+        "member_indices": [
+          4
+        ],
+        "member_count": 1,
+        "owner": null,
+        "ambiguous": false,
+        "possible_track_ids": []
+      }
+    ],
+    "visible_groups": [
+      {
+        "id": 1,
+        "range_bin": 45.56936361526402,
+        "angle_deg": 17.376087185747885,
+        "confirmed": true,
+        "support": "strong",
+        "member_count": 3
+      },
+      {
+        "id": 4,
+        "range_bin": 64.0,
+        "angle_deg": 23.0,
+        "confirmed": false,
+        "support": "strong",
+        "member_count": 1
+      },
+      {
+        "id": 5,
+        "range_bin": 112.0,
+        "angle_deg": 20.0,
+        "confirmed": true,
+        "support": "strong",
+        "member_count": 1
+      }
+    ],
+    "lost_group_tracks": [],
+    "person_candidates": [
+      {
+        "id": 1,
+        "range_bin": 45.56936361526402,
+        "angle_deg": 17.376087185747885,
+        "confirmed": true,
+        "support": "strong",
+        "member_count": 3
+      }
+    ],
+    "primary_id": 1,
+    "status": "observed",
+    "ambiguous_groups": [],
+    "pair_decisions": [
+      {
+        "peak_ids": [
+          7,
+          8
+        ],
+        "range_separation": 7.0,
+        "angle_separation": 1.0,
+        "valley_db": 7.048807040876312,
+        "history_samples": 2,
+        "merge": true,
+        "reason": "close_connected_comoving_or_history_pending"
+      },
+      {
+        "peak_ids": [
+          3,
+          8
+        ],
+        "range_separation": 15.0,
+        "angle_separation": 3.0,
+        "valley_db": 6.067140311927797,
+        "history_samples": 2,
+        "merge": true,
+        "reason": "close_connected_comoving_or_history_pending"
+      },
+      {
+        "peak_ids": [
+          3,
+          7
+        ],
+        "range_separation": 8.0,
+        "angle_separation": 4.0,
+        "valley_db": 5.787918913174468,
+        "history_samples": 2,
+        "merge": true,
+        "reason": "close_connected_comoving_or_history_pending"
+      }
+    ]
+  },
+  {
+    "candidates": [
+      {
+        "range_bin": 29,
+        "angle_deg": 14.0,
+        "score_db": 0.0,
+        "range_excess_db": 26.535077234217667,
+        "strong": true
+      },
+      {
+        "range_bin": 38,
+        "angle_deg": 19.0,
+        "score_db": -2.447369903054286,
+        "range_excess_db": 20.876690088650093,
+        "strong": true
+      }
+    ],
+    "visible": [
+      {
+        "id": 1,
+        "range_bin": 38.0,
+        "angle_deg": 19.0,
+        "confirmed": true,
+        "support": "strong",
+        "member_count": 1
+      }
+    ],
+    "lost": [
+      5
+    ],
+    "map_contrast_db": 29.028705819741496,
+    "reflection_visible": [
+      {
+        "id": 7,
+        "range_bin": 38.0,
+        "angle_deg": 19.0,
+        "confirmed": true,
+        "support": "strong"
+      },
+      {
+        "id": 8,
+        "range_bin": 29.0,
+        "angle_deg": 14.0,
+        "confirmed": true,
+        "support": "strong"
+      }
+    ],
+    "reflection_lost": [
+      1,
+      3,
+      6
+    ],
+    "groups": [
+      {
+        "range_bin": 29.0,
+        "angle_deg": 14.0,
+        "strong": true,
+        "score_db": 0.0,
+        "member_indices": [
+          0
+        ],
+        "member_count": 1,
+        "owner": 1,
+        "ambiguous": false,
+        "possible_track_ids": [
+          1
+        ]
+      },
+      {
+        "range_bin": 38.0,
+        "angle_deg": 19.0,
+        "strong": true,
+        "score_db": -2.447369903054286,
+        "member_indices": [
+          1
+        ],
+        "member_count": 1,
+        "owner": 1,
+        "ambiguous": false,
+        "possible_track_ids": [
+          1
+        ]
+      }
+    ],
+    "visible_groups": [
+      {
+        "id": 1,
+        "range_bin": 38.0,
+        "angle_deg": 19.0,
+        "confirmed": true,
+        "support": "strong",
+        "member_count": 1
+      }
+    ],
+    "lost_group_tracks": [
+      5
+    ],
+    "person_candidates": [
+      {
+        "id": 1,
+        "range_bin": 38.0,
+        "angle_deg": 19.0,
+        "confirmed": true,
+        "support": "strong",
+        "member_count": 1
+      }
+    ],
+    "primary_id": 1,
+    "status": "observed",
+    "ambiguous_groups": [],
+    "pair_decisions": [
+      {
+        "peak_ids": [
+          7,
+          8
+        ],
+        "range_separation": 9.0,
+        "angle_separation": 5.0,
+        "valley_db": 10.918756550360001,
+        "history_samples": 3,
+        "merge": false,
+        "reason": "different_motion"
+      }
+    ]
+  },
+  {
+    "candidates": [
+      {
+        "range_bin": 26,
+        "angle_deg": 15.0,
+        "score_db": 0.0,
+        "range_excess_db": 23.83719428318939,
+        "strong": true
+      },
+      {
+        "range_bin": 112,
+        "angle_deg": 20.0,
+        "score_db": -5.018746669030953,
+        "range_excess_db": 21.860353689328136,
+        "strong": true
+      },
+      {
+        "range_bin": 132,
+        "angle_deg": 3.0,
+        "score_db": -5.713194037687775,
+        "range_excess_db": 24.376447537244147,
+        "strong": true
+      }
+    ],
+    "visible": [
+      {
+        "id": 1,
+        "range_bin": 26.0,
+        "angle_deg": 15.0,
+        "confirmed": true,
+        "support": "strong",
+        "member_count": 1
+      }
+    ],
+    "lost": [],
+    "map_contrast_db": 27.484907355294705,
+    "reflection_visible": [
+      {
+        "id": 6,
+        "range_bin": 112.0,
+        "angle_deg": 20.0,
+        "confirmed": true,
+        "support": "strong"
+      },
+      {
+        "id": 8,
+        "range_bin": 26.0,
+        "angle_deg": 15.0,
+        "confirmed": true,
+        "support": "strong"
+      },
+      {
+        "id": 9,
+        "range_bin": 132.0,
+        "angle_deg": 3.0,
+        "confirmed": false,
+        "support": "strong"
+      }
+    ],
+    "reflection_lost": [
+      1,
+      3,
+      7
+    ],
+    "groups": [
+      {
+        "range_bin": 26.0,
+        "angle_deg": 15.0,
+        "strong": true,
+        "score_db": 0.0,
+        "member_indices": [
+          0
+        ],
+        "member_count": 1,
+        "owner": 1,
+        "ambiguous": false,
+        "possible_track_ids": [
+          1
+        ]
+      },
+      {
+        "range_bin": 112.0,
+        "angle_deg": 20.0,
+        "strong": true,
+        "score_db": -5.018746669030953,
+        "member_indices": [
+          1
+        ],
+        "member_count": 1,
+        "owner": 5,
+        "ambiguous": false,
+        "possible_track_ids": [
+          5
+        ]
+      },
+      {
+        "range_bin": 132.0,
+        "angle_deg": 3.0,
+        "strong": true,
+        "score_db": -5.713194037687775,
+        "member_indices": [
+          2
+        ],
+        "member_count": 1,
+        "owner": null,
+        "ambiguous": false,
+        "possible_track_ids": []
+      }
+    ],
+    "visible_groups": [
+      {
+        "id": 1,
+        "range_bin": 26.0,
+        "angle_deg": 15.0,
+        "confirmed": true,
+        "support": "strong",
+        "member_count": 1
+      },
+      {
+        "id": 3,
+        "range_bin": 132.0,
+        "angle_deg": 3.0,
+        "confirmed": false,
+        "support": "strong",
+        "member_count": 1
+      },
+      {
+        "id": 5,
+        "range_bin": 112.0,
+        "angle_deg": 20.0,
+        "confirmed": true,
+        "support": "strong",
+        "member_count": 1
+      }
+    ],
+    "lost_group_tracks": [],
+    "person_candidates": [
+      {
+        "id": 1,
+        "range_bin": 26.0,
+        "angle_deg": 15.0,
+        "confirmed": true,
+        "support": "strong",
+        "member_count": 1
+      }
+    ],
+    "primary_id": 1,
+    "status": "observed",
+    "ambiguous_groups": [],
+    "pair_decisions": []
+  },
+  {
+    "candidates": [
+      {
+        "range_bin": 26,
+        "angle_deg": -16.0,
+        "score_db": 0.0,
+        "range_excess_db": 21.590501781266596,
+        "strong": true
+      },
+      {
+        "range_bin": 112,
+        "angle_deg": 20.0,
+        "score_db": -3.5271566842483675,
+        "range_excess_db": 20.249066527093646,
+        "strong": true
+      },
+      {
+        "range_bin": 20,
+        "angle_deg": 12.0,
+        "score_db": -3.9041063726670515,
+        "range_excess_db": 24.22068598583857,
+        "strong": true
+      },
+      {
+        "range_bin": 132,
+        "angle_deg": 3.0,
+        "score_db": -4.621587333182898,
+        "range_excess_db": 23.557177843981165,
+        "strong": true
+      }
+    ],
+    "visible": [
+      {
+        "id": 1,
+        "range_bin": 20.0,
+        "angle_deg": 12.0,
+        "confirmed": true,
+        "support": "strong",
+        "member_count": 1
+      }
+    ],
+    "lost": [],
+    "map_contrast_db": 25.821545652500852,
+    "reflection_visible": [
+      {
+        "id": 6,
+        "range_bin": 112.0,
+        "angle_deg": 20.0,
+        "confirmed": true,
+        "support": "strong"
+      },
+      {
+        "id": 8,
+        "range_bin": 20.0,
+        "angle_deg": 12.0,
+        "confirmed": true,
+        "support": "strong"
+      },
+      {
+        "id": 9,
+        "range_bin": 132.0,
+        "angle_deg": 3.0,
+        "confirmed": false,
+        "support": "strong"
+      },
+      {
+        "id": 10,
+        "range_bin": 26.0,
+        "angle_deg": -16.0,
+        "confirmed": false,
+        "support": "strong"
+      }
+    ],
+    "reflection_lost": [
+      1,
+      3,
+      7
+    ],
+    "groups": [
+      {
+        "range_bin": 26.0,
+        "angle_deg": -16.0,
+        "strong": true,
+        "score_db": 0.0,
+        "member_indices": [
+          0
+        ],
+        "member_count": 1,
+        "owner": null,
+        "ambiguous": false,
+        "possible_track_ids": []
+      },
+      {
+        "range_bin": 112.0,
+        "angle_deg": 20.0,
+        "strong": true,
+        "score_db": -3.5271566842483675,
+        "member_indices": [
+          1
+        ],
+        "member_count": 1,
+        "owner": 5,
+        "ambiguous": false,
+        "possible_track_ids": [
+          5
+        ]
+      },
+      {
+        "range_bin": 20.0,
+        "angle_deg": 12.0,
+        "strong": true,
+        "score_db": -3.9041063726670515,
+        "member_indices": [
+          2
+        ],
+        "member_count": 1,
+        "owner": 1,
+        "ambiguous": false,
+        "possible_track_ids": [
+          1
+        ]
+      },
+      {
+        "range_bin": 132.0,
+        "angle_deg": 3.0,
+        "strong": true,
+        "score_db": -4.621587333182898,
+        "member_indices": [
+          3
+        ],
+        "member_count": 1,
+        "owner": null,
+        "ambiguous": false,
+        "possible_track_ids": []
+      }
+    ],
+    "visible_groups": [
+      {
+        "id": 1,
+        "range_bin": 20.0,
+        "angle_deg": 12.0,
+        "confirmed": true,
+        "support": "strong",
+        "member_count": 1
+      },
+      {
+        "id": 3,
+        "range_bin": 132.0,
+        "angle_deg": 3.0,
+        "confirmed": false,
+        "support": "strong",
+        "member_count": 1
+      },
+      {
+        "id": 4,
+        "range_bin": 26.0,
+        "angle_deg": -16.0,
+        "confirmed": false,
+        "support": "strong",
+        "member_count": 1
+      },
+      {
+        "id": 5,
+        "range_bin": 112.0,
+        "angle_deg": 20.0,
+        "confirmed": true,
+        "support": "strong",
+        "member_count": 1
+      }
+    ],
+    "lost_group_tracks": [],
+    "person_candidates": [
+      {
+        "id": 1,
+        "range_bin": 20.0,
+        "angle_deg": 12.0,
+        "confirmed": true,
+        "support": "strong",
+        "member_count": 1
+      }
+    ],
+    "primary_id": 1,
+    "status": "observed",
+    "ambiguous_groups": [],
+    "pair_decisions": []
+  },
+  {
+    "candidates": [
+      {
+        "range_bin": 25,
+        "angle_deg": -15.0,
+        "score_db": 0.0,
+        "range_excess_db": 25.682463447103423,
+        "strong": true
+      },
+      {
+        "range_bin": 37,
+        "angle_deg": -14.0,
+        "score_db": -9.350992417092264,
+        "range_excess_db": 16.389299812828376,
+        "strong": true
+      },
+      {
+        "range_bin": 19,
+        "angle_deg": -11.0,
+        "score_db": -10.70872947355586,
+        "range_excess_db": 14.837254636332098,
+        "strong": true
+      },
+      {
+        "range_bin": 132,
+        "angle_deg": 2.0,
+        "score_db": -12.37975262065995,
+        "range_excess_db": 20.450297465008795,
+        "strong": true
+      },
+      {
+        "range_bin": 80,
+        "angle_deg": -21.0,
+        "score_db": -15.674635475850442,
+        "range_excess_db": 11.485826012742955,
+        "strong": false
+      }
+    ],
+    "visible": [],
+    "lost": [
+      1,
+      5
+    ],
+    "map_contrast_db": 32.86996857222997,
+    "reflection_visible": [
+      {
+        "id": 9,
+        "range_bin": 132.0,
+        "angle_deg": 2.0,
+        "confirmed": true,
+        "support": "strong"
+      },
+      {
+        "id": 10,
+        "range_bin": 25.0,
+        "angle_deg": -15.0,
+        "confirmed": false,
+        "support": "strong"
+      },
+      {
+        "id": 11,
+        "range_bin": 37.0,
+        "angle_deg": -14.0,
+        "confirmed": false,
+        "support": "strong"
+      },
+      {
+        "id": 12,
+        "range_bin": 19.0,
+        "angle_deg": -11.0,
+        "confirmed": false,
+        "support": "strong"
+      }
+    ],
+    "reflection_lost": [
+      6,
+      7,
+      8
+    ],
+    "groups": [
+      {
+        "range_bin": 25.765179783747875,
+        "angle_deg": -14.62755106559927,
+        "strong": true,
+        "score_db": 0.0,
+        "member_indices": [
+          0,
+          1,
+          2
+        ],
+        "member_count": 3,
+        "owner": null,
+        "ambiguous": false,
+        "possible_track_ids": []
+      },
+      {
+        "range_bin": 132.0,
+        "angle_deg": 2.0,
+        "strong": true,
+        "score_db": -12.37975262065995,
+        "member_indices": [
+          3
+        ],
+        "member_count": 1,
+        "owner": null,
+        "ambiguous": false,
+        "possible_track_ids": []
+      },
+      {
+        "range_bin": 80.0,
+        "angle_deg": -21.0,
+        "strong": false,
+        "score_db": -15.674635475850442,
+        "member_indices": [
+          4
+        ],
+        "member_count": 1,
+        "owner": null,
+        "ambiguous": false,
+        "possible_track_ids": []
+      }
+    ],
+    "visible_groups": [
+      {
+        "id": 3,
+        "range_bin": 132.0,
+        "angle_deg": 2.0,
+        "confirmed": true,
+        "support": "strong",
+        "member_count": 1
+      },
+      {
+        "id": 4,
+        "range_bin": 25.765179783747875,
+        "angle_deg": -14.62755106559927,
+        "confirmed": false,
+        "support": "strong",
+        "member_count": 3
+      }
+    ],
+    "lost_group_tracks": [
+      1,
+      5
+    ],
+    "person_candidates": [],
+    "primary_id": 1,
+    "status": "ambiguous_or_lost",
+    "ambiguous_groups": [],
+    "pair_decisions": [
+      {
+        "peak_ids": [
+          10,
+          11
+        ],
+        "range_separation": 12.0,
+        "angle_separation": 1.0,
+        "valley_db": 7.324478057797197,
+        "history_samples": 1,
+        "merge": true,
+        "reason": "close_connected_comoving_or_history_pending"
+      },
+      {
+        "peak_ids": [
+          10,
+          12
+        ],
+        "range_separation": 6.0,
+        "angle_separation": 4.0,
+        "valley_db": 3.2157375429274886,
+        "history_samples": 1,
+        "merge": true,
+        "reason": "close_connected_comoving_or_history_pending"
+      },
+      {
+        "peak_ids": [
+          11,
+          12
+        ],
+        "range_separation": 18.0,
+        "angle_separation": 3.0,
+        "valley_db": 6.569661120699418,
+        "history_samples": 1,
+        "merge": true,
+        "reason": "close_connected_comoving_or_history_pending"
+      }
+    ]
+  },
+  {
+    "candidates": [
+      {
+        "range_bin": 37,
+        "angle_deg": -14.0,
+        "score_db": 0.0,
+        "range_excess_db": 19.42792634649247,
+        "strong": true
+      },
+      {
+        "range_bin": 31,
+        "angle_deg": -16.0,
+        "score_db": -0.4508615536158227,
+        "range_excess_db": 19.771146783589103,
+        "strong": true
+      },
+      {
+        "range_bin": 45,
+        "angle_deg": -13.0,
+        "score_db": -2.207764505212424,
+        "range_excess_db": 18.161913126291182,
+        "strong": true
+      },
+      {
+        "range_bin": 79,
+        "angle_deg": -21.0,
+        "score_db": -12.930662721323243,
+        "range_excess_db": 11.558673737475573,
+        "strong": true
+      },
+      {
+        "range_bin": 68,
+        "angle_deg": -20.0,
+        "score_db": -21.75195488878517,
+        "range_excess_db": 11.063340227569775,
+        "strong": false
+      }
+    ],
+    "visible": [
+      {
+        "id": 1,
+        "range_bin": 40.421073254177514,
+        "angle_deg": -13.57236584322781,
+        "confirmed": true,
+        "support": "strong",
+        "member_count": 2
+      }
+    ],
+    "lost": [
+      3,
+      5
+    ],
+    "map_contrast_db": 28.2097429685505,
+    "reflection_visible": [
+      {
+        "id": 10,
+        "range_bin": 37.0,
+        "angle_deg": -14.0,
+        "confirmed": true,
+        "support": "strong"
+      },
+      {
+        "id": 11,
+        "range_bin": 45.0,
+        "angle_deg": -13.0,
+        "confirmed": false,
+        "support": "strong"
+      },
+      {
+        "id": 12,
+        "range_bin": 31.0,
+        "angle_deg": -16.0,
+        "confirmed": false,
+        "support": "strong"
+      },
+      {
+        "id": 13,
+        "range_bin": 79.0,
+        "angle_deg": -21.0,
+        "confirmed": false,
+        "support": "strong"
+      }
+    ],
+    "reflection_lost": [
+      6,
+      8,
+      9
+    ],
+    "groups": [
+      {
+        "range_bin": 40.421073254177514,
+        "angle_deg": -13.57236584322781,
+        "strong": true,
+        "score_db": 0.0,
+        "member_indices": [
+          0,
+          2
+        ],
+        "member_count": 2,
+        "owner": null,
+        "ambiguous": false,
+        "possible_track_ids": []
+      },
+      {
+        "range_bin": 31.0,
+        "angle_deg": -16.0,
+        "strong": true,
+        "score_db": -0.4508615536158227,
+        "member_indices": [
+          1
+        ],
+        "member_count": 1,
+        "owner": null,
+        "ambiguous": false,
+        "possible_track_ids": []
+      },
+      {
+        "range_bin": 73.81331100964911,
+        "angle_deg": -20.528482819059008,
+        "strong": true,
+        "score_db": -12.930662721323243,
+        "member_indices": [
+          3,
+          4
+        ],
+        "member_count": 2,
+        "owner": null,
+        "ambiguous": false,
+        "possible_track_ids": []
+      }
+    ],
+    "visible_groups": [
+      {
+        "id": 1,
+        "range_bin": 40.421073254177514,
+        "angle_deg": -13.57236584322781,
+        "confirmed": true,
+        "support": "strong",
+        "member_count": 2
+      },
+      {
+        "id": 4,
+        "range_bin": 31.0,
+        "angle_deg": -16.0,
+        "confirmed": true,
+        "support": "strong",
+        "member_count": 1
+      },
+      {
+        "id": 6,
+        "range_bin": 73.81331100964911,
+        "angle_deg": -20.528482819059008,
+        "confirmed": false,
+        "support": "strong",
+        "member_count": 2
+      }
+    ],
+    "lost_group_tracks": [
+      3,
+      5
+    ],
+    "person_candidates": [
+      {
+        "id": 1,
+        "range_bin": 40.421073254177514,
+        "angle_deg": -13.57236584322781,
+        "confirmed": true,
+        "support": "strong",
+        "member_count": 2
+      }
+    ],
+    "primary_id": 1,
+    "status": "observed",
+    "ambiguous_groups": [],
+    "pair_decisions": [
+      {
+        "peak_ids": [
+          10,
+          11
+        ],
+        "range_separation": 6.0,
+        "angle_separation": 2.0,
+        "valley_db": 9.488768243718466,
+        "history_samples": 2,
+        "merge": false,
+        "reason": "resolved_valley"
+      },
+      {
+        "peak_ids": [
+          8,
+          11
+        ],
+        "range_separation": 8.0,
+        "angle_separation": 1.0,
+        "valley_db": 6.492617853588053,
+        "history_samples": 2,
+        "merge": true,
+        "reason": "close_connected_comoving_or_history_pending"
+      },
+      {
+        "peak_ids": [
+          13,
+          14
+        ],
+        "range_separation": 11.0,
+        "angle_separation": 1.0,
+        "valley_db": 4.811532448470505,
+        "history_samples": 1,
+        "merge": true,
+        "reason": "close_connected_comoving_or_history_pending"
+      }
+    ]
+  },
+  {
+    "candidates": [
+      {
+        "range_bin": 48,
+        "angle_deg": -11.0,
+        "score_db": 0.0,
+        "range_excess_db": 20.91559846898459,
+        "strong": true
+      },
+      {
+        "range_bin": 56,
+        "angle_deg": -9.0,
+        "score_db": -4.755228384700868,
+        "range_excess_db": 17.8326068885357,
+        "strong": true
+      },
+      {
+        "range_bin": 62,
+        "angle_deg": -10.0,
+        "score_db": -8.4920187072568,
+        "range_excess_db": 14.840835656083094,
+        "strong": true
+      },
+      {
+        "range_bin": 68,
+        "angle_deg": -17.0,
+        "score_db": -9.573445317329405,
+        "range_excess_db": 14.231748766170213,
+        "strong": true
+      }
+    ],
+    "visible": [
+      {
+        "id": 1,
+        "range_bin": 50.77216840150978,
+        "angle_deg": -10.80198797132073,
+        "confirmed": true,
+        "support": "strong",
+        "member_count": 2
+      }
+    ],
+    "lost": [
+      3,
+      4,
+      5
+    ],
+    "map_contrast_db": 31.17617302308606,
+    "reflection_visible": [
+      {
+        "id": 10,
+        "range_bin": 48.0,
+        "angle_deg": -11.0,
+        "confirmed": true,
+        "support": "strong"
+      },
+      {
+        "id": 11,
+        "range_bin": 56.0,
+        "angle_deg": -9.0,
+        "confirmed": true,
+        "support": "strong"
+      },
+      {
+        "id": 13,
+        "range_bin": 68.0,
+        "angle_deg": -17.0,
+        "confirmed": false,
+        "support": "strong"
+      },
+      {
+        "id": 14,
+        "range_bin": 62.0,
+        "angle_deg": -10.0,
+        "confirmed": false,
+        "support": "strong"
+      }
+    ],
+    "reflection_lost": [
+      6,
+      8,
+      9
+    ],
+    "groups": [
+      {
+        "range_bin": 50.77216840150978,
+        "angle_deg": -10.80198797132073,
+        "strong": true,
+        "score_db": 0.0,
+        "member_indices": [
+          0,
+          2
+        ],
+        "member_count": 2,
+        "owner": 1,
+        "ambiguous": false,
+        "possible_track_ids": [
+          1
+        ]
+      },
+      {
+        "range_bin": 56.0,
+        "angle_deg": -9.0,
+        "strong": true,
+        "score_db": -4.755228384700868,
+        "member_indices": [
+          1
+        ],
+        "member_count": 1,
+        "owner": null,
+        "ambiguous": false,
+        "possible_track_ids": []
+      },
+      {
+        "range_bin": 68.0,
+        "angle_deg": -17.0,
+        "strong": true,
+        "score_db": -9.573445317329405,
+        "member_indices": [
+          3
+        ],
+        "member_count": 1,
+        "owner": null,
+        "ambiguous": false,
+        "possible_track_ids": []
+      }
+    ],
+    "visible_groups": [
+      {
+        "id": 1,
+        "range_bin": 50.77216840150978,
+        "angle_deg": -10.80198797132073,
+        "confirmed": true,
+        "support": "strong",
+        "member_count": 2
+      },
+      {
+        "id": 6,
+        "range_bin": 68.0,
+        "angle_deg": -17.0,
+        "confirmed": false,
+        "support": "strong",
+        "member_count": 1
+      },
+      {
+        "id": 7,
+        "range_bin": 56.0,
+        "angle_deg": -9.0,
+        "confirmed": false,
+        "support": "strong",
+        "member_count": 1
+      }
+    ],
+    "lost_group_tracks": [
+      3,
+      4,
+      5
+    ],
+    "person_candidates": [
+      {
+        "id": 1,
+        "range_bin": 50.77216840150978,
+        "angle_deg": -10.80198797132073,
+        "confirmed": true,
+        "support": "strong",
+        "member_count": 2
+      }
+    ],
+    "primary_id": 1,
+    "status": "observed",
+    "ambiguous_groups": [],
+    "pair_decisions": [
+      {
+        "peak_ids": [
+          8,
+          11
+        ],
+        "range_separation": 8.0,
+        "angle_separation": 2.0,
+        "valley_db": 9.608493683212703,
+        "history_samples": 3,
+        "merge": false,
+        "reason": "resolved_valley"
+      },
+      {
+        "peak_ids": [
+          11,
+          14
+        ],
+        "range_separation": 14.0,
+        "angle_separation": 1.0,
+        "valley_db": 5.605902545441792,
+        "history_samples": 2,
+        "merge": true,
+        "reason": "close_connected_comoving_or_history_pending"
+      },
+      {
+        "peak_ids": [
+          8,
+          13
+        ],
+        "range_separation": 12.0,
+        "angle_separation": 8.0,
+        "valley_db": 5.608177688854294,
+        "history_samples": 3,
+        "merge": false,
+        "reason": "different_motion"
+      }
+    ]
+  },
+  {
+    "candidates": [
+      {
+        "range_bin": 58,
+        "angle_deg": -9.0,
+        "score_db": 0.0,
+        "range_excess_db": 15.930685173730303,
+        "strong": true
+      },
+      {
+        "range_bin": 64,
+        "angle_deg": -10.0,
+        "score_db": -0.25501705882426234,
+        "range_excess_db": 12.87000154875787,
+        "strong": true
+      },
+      {
+        "range_bin": 67,
+        "angle_deg": -23.0,
+        "score_db": -5.076135081825086,
+        "range_excess_db": 16.0070047111083,
+        "strong": true
+      },
+      {
+        "range_bin": 80,
+        "angle_deg": -8.0,
+        "score_db": -5.446969651581574,
+        "range_excess_db": 11.166526878234578,
+        "strong": true
+      },
+      {
+        "range_bin": 71,
+        "angle_deg": -12.0,
+        "score_db": -6.386323994290385,
+        "range_excess_db": 10.649495267300765,
+        "strong": true
+      },
+      {
+        "range_bin": 86,
+        "angle_deg": 51.0,
+        "score_db": -18.67333296969813,
+        "range_excess_db": 10.600073941569164,
+        "strong": false
+      }
+    ],
+    "visible": [
+      {
+        "id": 1,
+        "range_bin": 58.0,
+        "angle_deg": -9.0,
+        "confirmed": true,
+        "support": "strong",
+        "member_count": 1
+      }
+    ],
+    "lost": [
+      3,
+      4
+    ],
+    "map_contrast_db": 24.49648699853038,
+    "reflection_visible": [
+      {
+        "id": 10,
+        "range_bin": 58.0,
+        "angle_deg": -9.0,
+        "confirmed": true,
+        "support": "strong"
+      },
+      {
+        "id": 11,
+        "range_bin": 71.0,
+        "angle_deg": -12.0,
+        "confirmed": true,
+        "support": "strong"
+      },
+      {
+        "id": 13,
+        "range_bin": 67.0,
+        "angle_deg": -23.0,
+        "confirmed": true,
+        "support": "strong"
+      },
+      {
+        "id": 14,
+        "range_bin": 64.0,
+        "angle_deg": -10.0,
+        "confirmed": false,
+        "support": "strong"
+      },
+      {
+        "id": 15,
+        "range_bin": 80.0,
+        "angle_deg": -8.0,
+        "confirmed": false,
+        "support": "strong"
+      }
+    ],
+    "reflection_lost": [
+      9
+    ],
+    "groups": [
+      {
+        "range_bin": 58.0,
+        "angle_deg": -9.0,
+        "strong": true,
+        "score_db": 0.0,
+        "member_indices": [
+          0
+        ],
+        "member_count": 1,
+        "owner": 1,
+        "ambiguous": false,
+        "possible_track_ids": [
+          1
+        ]
+      },
+      {
+        "range_bin": 64.0,
+        "angle_deg": -10.0,
+        "strong": true,
+        "score_db": -0.25501705882426234,
+        "member_indices": [
+          1
+        ],
+        "member_count": 1,
+        "owner": 1,
+        "ambiguous": false,
+        "possible_track_ids": [
+          1
+        ]
+      },
+      {
+        "range_bin": 67.0,
+        "angle_deg": -23.0,
+        "strong": true,
+        "score_db": -5.076135081825086,
+        "member_indices": [
+          2
+        ],
+        "member_count": 1,
+        "owner": 1,
+        "ambiguous": false,
+        "possible_track_ids": [
+          1
+        ]
+      },
+      {
+        "range_bin": 75.7675486625883,
+        "angle_deg": -9.881089483294087,
+        "strong": true,
+        "score_db": -5.446969651581574,
+        "member_indices": [
+          3,
+          4
+        ],
+        "member_count": 2,
+        "owner": 1,
+        "ambiguous": false,
+        "possible_track_ids": [
+          1
+        ]
+      },
+      {
+        "range_bin": 86.0,
+        "angle_deg": 51.0,
+        "strong": false,
+        "score_db": -18.67333296969813,
+        "member_indices": [
+          5
+        ],
+        "member_count": 1,
+        "owner": null,
+        "ambiguous": false,
+        "possible_track_ids": []
+      }
+    ],
+    "visible_groups": [
+      {
+        "id": 1,
+        "range_bin": 58.0,
+        "angle_deg": -9.0,
+        "confirmed": true,
+        "support": "strong",
+        "member_count": 1
+      }
+    ],
+    "lost_group_tracks": [
+      3,
+      4
+    ],
+    "person_candidates": [
+      {
+        "id": 1,
+        "range_bin": 58.0,
+        "angle_deg": -9.0,
+        "confirmed": true,
+        "support": "strong",
+        "member_count": 1
+      }
+    ],
+    "primary_id": 1,
+    "status": "observed",
+    "ambiguous_groups": [],
+    "pair_decisions": [
+      {
+        "peak_ids": [
+          10,
+          11
+        ],
+        "range_separation": 6.0,
+        "angle_separation": 1.0,
+        "valley_db": 9.03457908791632,
+        "history_samples": 4,
+        "merge": false,
+        "reason": "resolved_valley"
+      },
+      {
+        "peak_ids": [
+          11,
+          13
+        ],
+        "range_separation": 16.0,
+        "angle_separation": 2.0,
+        "valley_db": 7.618489321770715,
+        "history_samples": 4,
+        "merge": false,
+        "reason": "different_motion"
+      },
+      {
+        "peak_ids": [
+          10,
+          14
+        ],
+        "range_separation": 13.0,
+        "angle_separation": 3.0,
+        "valley_db": 2.8300680568179386,
+        "history_samples": 3,
+        "merge": false,
+        "reason": "different_motion"
+      },
+      {
+        "peak_ids": [
+          11,
+          14
+        ],
+        "range_separation": 7.0,
+        "angle_separation": 2.0,
+        "valley_db": 2.366652119650298,
+        "history_samples": 3,
+        "merge": false,
+        "reason": "different_motion"
+      },
+      {
+        "peak_ids": [
+          8,
+          14
+        ],
+        "range_separation": 4.0,
+        "angle_separation": 11.0,
+        "valley_db": 1.8257058053022606,
+        "history_samples": 3,
+        "merge": false,
+        "reason": "different_motion"
+      },
+      {
+        "peak_ids": [
+          13,
+          14
+        ],
+        "range_separation": 9.0,
+        "angle_separation": 4.0,
+        "valley_db": 6.415469823402376,
+        "history_samples": 3,
+        "merge": true,
+        "reason": "close_connected_comoving_or_history_pending"
+      }
+    ]
+  },
+  {
+    "candidates": [
+      {
+        "range_bin": 80,
+        "angle_deg": -7.0,
+        "score_db": 0.0,
+        "range_excess_db": 11.62701300618346,
+        "strong": true
+      },
+      {
+        "range_bin": 93,
+        "angle_deg": -7.0,
+        "score_db": -0.8526818174620698,
+        "range_excess_db": 11.580305555997171,
+        "strong": true
+      },
+      {
+        "range_bin": 86,
+        "angle_deg": -9.0,
+        "score_db": -2.626316543430756,
+        "range_excess_db": 9.5211365894395,
+        "strong": true
+      },
+      {
+        "range_bin": 73,
+        "angle_deg": -8.0,
+        "score_db": -2.710732461482837,
+        "range_excess_db": 9.85112681338699,
+        "strong": true
+      },
+      {
+        "range_bin": 93,
+        "angle_deg": 44.0,
+        "score_db": -14.714877012736046,
+        "range_excess_db": 11.580305555997171,
+        "strong": true
+      },
+      {
+        "range_bin": 105,
+        "angle_deg": 49.0,
+        "score_db": -20.990909586391776,
+        "range_excess_db": 5.206361156020989,
+        "strong": false
+      }
+    ],
+    "visible": [
+      {
+        "id": 1,
+        "range_bin": 73.0,
+        "angle_deg": -8.0,
+        "confirmed": true,
+        "support": "strong",
+        "member_count": 1
+      }
+    ],
+    "lost": [
+      4
+    ],
+    "map_contrast_db": 23.37083842318683,
+    "reflection_visible": [
+      {
+        "id": 10,
+        "range_bin": 73.0,
+        "angle_deg": -8.0,
+        "confirmed": true,
+        "support": "strong"
+      },
+      {
+        "id": 11,
+        "range_bin": 86.0,
+        "angle_deg": -9.0,
+        "confirmed": true,
+        "support": "strong"
+      },
+      {
+        "id": 14,
+        "range_bin": 80.0,
+        "angle_deg": -7.0,
+        "confirmed": true,
+        "support": "strong"
+      },
+      {
+        "id": 15,
+        "range_bin": 93.0,
+        "angle_deg": -7.0,
+        "confirmed": false,
+        "support": "strong"
+      },
+      {
+        "id": 16,
+        "range_bin": 93.0,
+        "angle_deg": 44.0,
+        "confirmed": false,
+        "support": "strong"
+      }
+    ],
+    "reflection_lost": [
+      13
+    ],
+    "groups": [
+      {
+        "range_bin": 80.0,
+        "angle_deg": -7.0,
+        "strong": true,
+        "score_db": 0.0,
+        "member_indices": [
+          0
+        ],
+        "member_count": 1,
+        "owner": 1,
+        "ambiguous": false,
+        "possible_track_ids": [
+          1
+        ]
+      },
+      {
+        "range_bin": 90.31454413489215,
+        "angle_deg": -7.767273104316531,
+        "strong": true,
+        "score_db": -0.8526818174620698,
+        "member_indices": [
+          1,
+          2
+        ],
+        "member_count": 2,
+        "owner": null,
+        "ambiguous": false,
+        "possible_track_ids": []
+      },
+      {
+        "range_bin": 73.0,
+        "angle_deg": -8.0,
+        "strong": true,
+        "score_db": -2.710732461482837,
+        "member_indices": [
+          3
+        ],
+        "member_count": 1,
+        "owner": 1,
+        "ambiguous": false,
+        "possible_track_ids": [
+          1
+        ]
+      },
+      {
+        "range_bin": 95.24759176634323,
+        "angle_deg": 44.93649656930968,
+        "strong": true,
+        "score_db": -14.714877012736046,
+        "member_indices": [
+          4,
+          5
+        ],
+        "member_count": 2,
+        "owner": null,
+        "ambiguous": false,
+        "possible_track_ids": []
+      }
+    ],
+    "visible_groups": [
+      {
+        "id": 1,
+        "range_bin": 73.0,
+        "angle_deg": -8.0,
+        "confirmed": true,
+        "support": "strong",
+        "member_count": 1
+      },
+      {
+        "id": 6,
+        "range_bin": 90.31454413489215,
+        "angle_deg": -7.767273104316531,
+        "confirmed": false,
+        "support": "strong",
+        "member_count": 2
+      },
+      {
+        "id": 8,
+        "range_bin": 95.24759176634323,
+        "angle_deg": 44.93649656930968,
+        "confirmed": false,
+        "support": "strong",
+        "member_count": 2
+      }
+    ],
+    "lost_group_tracks": [
+      4
+    ],
+    "person_candidates": [
+      {
+        "id": 1,
+        "range_bin": 73.0,
+        "angle_deg": -8.0,
+        "confirmed": true,
+        "support": "strong",
+        "member_count": 1
+      }
+    ],
+    "primary_id": 1,
+    "status": "observed",
+    "ambiguous_groups": [],
+    "pair_decisions": [
+      {
+        "peak_ids": [
+          11,
+          13
+        ],
+        "range_separation": 13.0,
+        "angle_separation": 0.0,
+        "valley_db": 5.93998673456899,
+        "history_samples": 5,
+        "merge": false,
+        "reason": "different_motion"
+      },
+      {
+        "peak_ids": [
+          11,
+          14
+        ],
+        "range_separation": 6.0,
+        "angle_separation": 2.0,
+        "valley_db": 1.088697981676927,
+        "history_samples": 4,
+        "merge": false,
+        "reason": "different_motion"
+      },
+      {
+        "peak_ids": [
+          13,
+          14
+        ],
+        "range_separation": 7.0,
+        "angle_separation": 2.0,
+        "valley_db": 3.313480594072544,
+        "history_samples": 4,
+        "merge": true,
+        "reason": "close_connected_comoving_or_history_pending"
+      },
+      {
+        "peak_ids": [
+          10,
+          11
+        ],
+        "range_separation": 7.0,
+        "angle_separation": 1.0,
+        "valley_db": 4.709011998926344,
+        "history_samples": 5,
+        "merge": false,
+        "reason": "resolved_valley"
+      },
+      {
+        "peak_ids": [
+          15,
+          16
+        ],
+        "range_separation": 12.0,
+        "angle_separation": 5.0,
+        "valley_db": 1.546508177678696,
+        "history_samples": 1,
+        "merge": true,
+        "reason": "close_connected_comoving_or_history_pending"
+      }
+    ]
+  },
+  {
+    "candidates": [
+      {
+        "range_bin": 102,
+        "angle_deg": -6.0,
+        "score_db": 0.0,
+        "range_excess_db": 9.621836418274,
+        "strong": true
+      },
+      {
+        "range_bin": 94,
+        "angle_deg": -7.0,
+        "score_db": -0.6912465870056865,
+        "range_excess_db": 10.228431578181059,
+        "strong": true
+      },
+      {
+        "range_bin": 109,
+        "angle_deg": -7.0,
+        "score_db": -3.341037796798218,
+        "range_excess_db": 8.704460382404676,
+        "strong": true
+      },
+      {
+        "range_bin": 88,
+        "angle_deg": -6.0,
+        "score_db": -4.0024418956954815,
+        "range_excess_db": 9.114726053297687,
+        "strong": true
+      },
+      {
+        "range_bin": 116,
+        "angle_deg": -10.0,
+        "score_db": -7.509841192621943,
+        "range_excess_db": 6.6707053026627605,
+        "strong": false
+      },
+      {
+        "range_bin": 107,
+        "angle_deg": 40.0,
+        "score_db": -8.970662633356794,
+        "range_excess_db": 9.939180944793726,
+        "strong": true
+      },
+      {
+        "range_bin": 118,
+        "angle_deg": 52.0,
+        "score_db": -21.969663058905113,
+        "range_excess_db": 6.603099807282845,
+        "strong": false
+      }
+    ],
+    "visible": [
+      {
+        "id": 1,
+        "range_bin": 88.0,
+        "angle_deg": -6.0,
+        "confirmed": true,
+        "support": "strong",
+        "member_count": 1
+      }
+    ],
+    "lost": [],
+    "map_contrast_db": 22.914186983907257,
+    "reflection_visible": [
+      {
+        "id": 10,
+        "range_bin": 88.0,
+        "angle_deg": -6.0,
+        "confirmed": true,
+        "support": "strong"
+      },
+      {
+        "id": 11,
+        "range_bin": 102.0,
+        "angle_deg": -6.0,
+        "confirmed": true,
+        "support": "strong"
+      },
+      {
+        "id": 14,
+        "range_bin": 94.0,
+        "angle_deg": -7.0,
+        "confirmed": true,
+        "support": "strong"
+      },
+      {
+        "id": 15,
+        "range_bin": 109.0,
+        "angle_deg": -7.0,
+        "confirmed": true,
+        "support": "strong"
+      },
+      {
+        "id": 16,
+        "range_bin": 107.0,
+        "angle_deg": 40.0,
+        "confirmed": false,
+        "support": "strong"
+      }
+    ],
+    "reflection_lost": [
+      13
+    ],
+    "groups": [
+      {
+        "range_bin": 100.80651673932195,
+        "angle_deg": -6.662103192000123,
+        "strong": true,
+        "score_db": 0.0,
+        "member_indices": [
+          0,
+          1,
+          2
+        ],
+        "member_count": 3,
+        "owner": 1,
+        "ambiguous": false,
+        "possible_track_ids": [
+          1
+        ]
+      },
+      {
+        "range_bin": 88.0,
+        "angle_deg": -6.0,
+        "strong": true,
+        "score_db": -4.0024418956954815,
+        "member_indices": [
+          3
+        ],
+        "member_count": 1,
+        "owner": 1,
+        "ambiguous": false,
+        "possible_track_ids": [
+          1
+        ]
+      },
+      {
+        "range_bin": 116.0,
+        "angle_deg": -10.0,
+        "strong": false,
+        "score_db": -7.509841192621943,
+        "member_indices": [
+          4
+        ],
+        "member_count": 1,
+        "owner": null,
+        "ambiguous": false,
+        "possible_track_ids": []
+      },
+      {
+        "range_bin": 110.48564741816598,
+        "angle_deg": 43.80252445618106,
+        "strong": true,
+        "score_db": -8.970662633356794,
+        "member_indices": [
+          5,
+          6
+        ],
+        "member_count": 2,
+        "owner": null,
+        "ambiguous": false,
+        "possible_track_ids": []
+      }
+    ],
+    "visible_groups": [
+      {
+        "id": 1,
+        "range_bin": 88.0,
+        "angle_deg": -6.0,
+        "confirmed": true,
+        "support": "strong",
+        "member_count": 1
+      },
+      {
+        "id": 8,
+        "range_bin": 110.48564741816598,
+        "angle_deg": 43.80252445618106,
+        "confirmed": false,
+        "support": "strong",
+        "member_count": 2
+      }
+    ],
+    "lost_group_tracks": [],
+    "person_candidates": [
+      {
+        "id": 1,
+        "range_bin": 88.0,
+        "angle_deg": -6.0,
+        "confirmed": true,
+        "support": "strong",
+        "member_count": 1
+      }
+    ],
+    "primary_id": 1,
+    "status": "observed",
+    "ambiguous_groups": [],
+    "pair_decisions": [
+      {
+        "peak_ids": [
+          8,
+          14
+        ],
+        "range_separation": 8.0,
+        "angle_separation": 1.0,
+        "valley_db": 7.91557935659552,
+        "history_samples": 5,
+        "merge": true,
+        "reason": "close_connected_comoving_or_history_pending"
+      },
+      {
+        "peak_ids": [
+          13,
+          14
+        ],
+        "range_separation": 7.0,
+        "angle_separation": 1.0,
+        "valley_db": 2.0814848303973297,
+        "history_samples": 5,
+        "merge": true,
+        "reason": "close_connected_comoving_or_history_pending"
+      },
+      {
+        "peak_ids": [
+          8,
+          13
+        ],
+        "range_separation": 15.0,
+        "angle_separation": 0.0,
+        "valley_db": 5.188553031889363,
+        "history_samples": 6,
+        "merge": true,
+        "reason": "close_connected_comoving_or_history_pending"
+      },
+      {
+        "peak_ids": [
+          11,
+          14
+        ],
+        "range_separation": 14.0,
+        "angle_separation": 0.0,
+        "valley_db": 4.472928202136224,
+        "history_samples": 5,
+        "merge": true,
+        "reason": "close_connected_comoving_or_history_pending"
+      },
+      {
+        "peak_ids": [
+          8,
+          11
+        ],
+        "range_separation": 6.0,
+        "angle_separation": 1.0,
+        "valley_db": 3.402529228805961,
+        "history_samples": 6,
+        "merge": true,
+        "reason": "close_connected_comoving_or_history_pending"
+      },
+      {
+        "peak_ids": [
+          14,
+          17
+        ],
+        "range_separation": 14.0,
+        "angle_separation": 4.0,
+        "valley_db": 2.14083416187451,
+        "history_samples": 1,
+        "merge": true,
+        "reason": "close_connected_comoving_or_history_pending"
+      },
+      {
+        "peak_ids": [
+          15,
+          16
+        ],
+        "range_separation": 11.0,
+        "angle_separation": 12.0,
+        "valley_db": 0.3993789161554666,
+        "history_samples": 2,
+        "merge": true,
+        "reason": "close_connected_comoving_or_history_pending"
+      }
+    ]
+  },
+  {
+    "candidates": [
+      {
+        "range_bin": 119,
+        "angle_deg": -8.0,
+        "score_db": 0.0,
+        "range_excess_db": 9.478348754762031,
+        "strong": true
+      },
+      {
+        "range_bin": 104,
+        "angle_deg": -5.0,
+        "score_db": -0.6037954023911365,
+        "range_excess_db": 8.839656311279981,
+        "strong": true
+      },
+      {
+        "range_bin": 126,
+        "angle_deg": -7.0,
+        "score_db": -1.339977953752514,
+        "range_excess_db": 7.194628449999669,
+        "strong": false
+      },
+      {
+        "range_bin": 111,
+        "angle_deg": -6.0,
+        "score_db": -2.787612312392351,
+        "range_excess_db": 6.508947841757966,
+        "strong": false
+      },
+      {
+        "range_bin": 133,
+        "angle_deg": 40.0,
+        "score_db": -15.626111083192418,
+        "range_excess_db": 5.953687153174542,
+        "strong": false
+      }
+    ],
+    "visible": [
+      {
+        "id": 1,
+        "range_bin": 104.0,
+        "angle_deg": -5.0,
+        "confirmed": true,
+        "support": "strong",
+        "member_count": 1
+      }
+    ],
+    "lost": [],
+    "map_contrast_db": 21.908584309959053,
+    "reflection_visible": [
+      {
+        "id": 11,
+        "range_bin": 111.0,
+        "angle_deg": -6.0,
+        "confirmed": true,
+        "support": "weak"
+      },
+      {
+        "id": 14,
+        "range_bin": 104.0,
+        "angle_deg": -5.0,
+        "confirmed": true,
+        "support": "strong"
+      },
+      {
+        "id": 15,
+        "range_bin": 119.0,
+        "angle_deg": -8.0,
+        "confirmed": true,
+        "support": "strong"
+      }
+    ],
+    "reflection_lost": [
+      10,
+      13
+    ],
+    "groups": [
+      {
+        "range_bin": 119.04749452527045,
+        "angle_deg": -7.236316626713982,
+        "strong": true,
+        "score_db": 0.0,
+        "member_indices": [
+          0,
+          2,
+          3
+        ],
+        "member_count": 3,
+        "owner": 1,
+        "ambiguous": false,
+        "possible_track_ids": [
+          1
+        ]
+      },
+      {
+        "range_bin": 104.0,
+        "angle_deg": -5.0,
+        "strong": true,
+        "score_db": -0.6037954023911365,
+        "member_indices": [
+          1
+        ],
+        "member_count": 1,
+        "owner": 1,
+        "ambiguous": false,
+        "possible_track_ids": [
+          1
+        ]
+      },
+      {
+        "range_bin": 133.0,
+        "angle_deg": 40.0,
+        "strong": false,
+        "score_db": -15.626111083192418,
+        "member_indices": [
+          4
+        ],
+        "member_count": 1,
+        "owner": null,
+        "ambiguous": false,
+        "possible_track_ids": []
+      }
+    ],
+    "visible_groups": [
+      {
+        "id": 1,
+        "range_bin": 104.0,
+        "angle_deg": -5.0,
+        "confirmed": true,
+        "support": "strong",
+        "member_count": 1
+      }
+    ],
+    "lost_group_tracks": [],
+    "person_candidates": [
+      {
+        "id": 1,
+        "range_bin": 104.0,
+        "angle_deg": -5.0,
+        "confirmed": true,
+        "support": "strong",
+        "member_count": 1
+      }
+    ],
+    "primary_id": 1,
+    "status": "observed",
+    "ambiguous_groups": [],
+    "pair_decisions": [
+      {
+        "peak_ids": [
+          8,
+          13
+        ],
+        "range_separation": 15.0,
+        "angle_separation": 3.0,
+        "valley_db": 7.939333649359923,
+        "history_samples": 7,
+        "merge": false,
+        "reason": "resolved_valley"
+      },
+      {
+        "peak_ids": [
+          13,
+          17
+        ],
+        "range_separation": 7.0,
+        "angle_separation": 1.0,
+        "valley_db": 5.8560118124644855,
+        "history_samples": 2,
+        "merge": true,
+        "reason": "close_connected_comoving_or_history_pending"
+      },
+      {
+        "peak_ids": [
+          13,
+          14
+        ],
+        "range_separation": 8.0,
+        "angle_separation": 2.0,
+        "valley_db": 4.373415310090248,
+        "history_samples": 6,
+        "merge": true,
+        "reason": "close_connected_comoving_or_history_pending"
+      },
+      {
+        "peak_ids": [
+          14,
+          17
+        ],
+        "range_separation": 15.0,
+        "angle_separation": 1.0,
+        "valley_db": 4.47676518603023,
+        "history_samples": 2,
+        "merge": true,
+        "reason": "close_connected_comoving_or_history_pending"
+      }
+    ]
+  },
+  {
+    "candidates": [
+      {
+        "range_bin": 127,
+        "angle_deg": -7.0,
+        "score_db": 0.0,
+        "range_excess_db": 8.391672081147846,
+        "strong": true
+      },
+      {
+        "range_bin": 135,
+        "angle_deg": -7.0,
+        "score_db": -1.9471212641282816,
+        "range_excess_db": 8.249409586029408,
+        "strong": true
+      },
+      {
+        "range_bin": 120,
+        "angle_deg": -5.0,
+        "score_db": -3.3022490175227004,
+        "range_excess_db": 7.078746584960776,
+        "strong": false
+      },
+      {
+        "range_bin": 142,
+        "angle_deg": -5.0,
+        "score_db": -3.823777474967776,
+        "range_excess_db": 5.8647159299667635,
+        "strong": false
+      },
+      {
+        "range_bin": 136,
+        "angle_deg": 31.0,
+        "score_db": -8.82399857238613,
+        "range_excess_db": 6.559202408554057,
+        "strong": false
+      },
+      {
+        "range_bin": 150,
+        "angle_deg": 32.0,
+        "score_db": -10.129167706689145,
+        "range_excess_db": 4.895973687138699,
+        "strong": false
+      }
+    ],
+    "visible": [],
+    "lost": [
+      1
+    ],
+    "map_contrast_db": 21.556117122628734,
+    "reflection_visible": [
+      {
+        "id": 10,
+        "range_bin": 120.0,
+        "angle_deg": -5.0,
+        "confirmed": true,
+        "support": "weak"
+      },
+      {
+        "id": 11,
+        "range_bin": 127.0,
+        "angle_deg": -7.0,
+        "confirmed": true,
+        "support": "strong"
+      },
+      {
+        "id": 15,
+        "range_bin": 135.0,
+        "angle_deg": -7.0,
+        "confirmed": true,
+        "support": "strong"
+      }
+    ],
+    "reflection_lost": [
+      14
+    ],
+    "groups": [
+      {
+        "range_bin": 124.02505370614334,
+        "angle_deg": -6.150015344612379,
+        "strong": true,
+        "score_db": 0.0,
+        "member_indices": [
+          0,
+          2
+        ],
+        "member_count": 2,
+        "owner": 1,
+        "ambiguous": false,
+        "possible_track_ids": [
+          1
+        ]
+      },
+      {
+        "range_bin": 135.0,
+        "angle_deg": -7.0,
+        "strong": true,
+        "score_db": -1.9471212641282816,
+        "member_indices": [
+          1
+        ],
+        "member_count": 1,
+        "owner": 1,
+        "ambiguous": false,
+        "possible_track_ids": [
+          1
+        ]
+      },
+      {
+        "range_bin": 142.0,
+        "angle_deg": -5.0,
+        "strong": false,
+        "score_db": -3.823777474967776,
+        "member_indices": [
+          3
+        ],
+        "member_count": 1,
+        "owner": null,
+        "ambiguous": false,
+        "possible_track_ids": []
+      },
+      {
+        "range_bin": 136.0,
+        "angle_deg": 31.0,
+        "strong": false,
+        "score_db": -8.82399857238613,
+        "member_indices": [
+          4
+        ],
+        "member_count": 1,
+        "owner": null,
+        "ambiguous": false,
+        "possible_track_ids": []
+      },
+      {
+        "range_bin": 150.0,
+        "angle_deg": 32.0,
+        "strong": false,
+        "score_db": -10.129167706689145,
+        "member_indices": [
+          5
+        ],
+        "member_count": 1,
+        "owner": null,
+        "ambiguous": false,
+        "possible_track_ids": []
+      }
+    ],
+    "visible_groups": [],
+    "lost_group_tracks": [
+      1
+    ],
+    "person_candidates": [],
+    "primary_id": 1,
+    "status": "ambiguous_or_lost",
+    "ambiguous_groups": [],
+    "pair_decisions": [
+      {
+        "peak_ids": [
+          13,
+          14
+        ],
+        "range_separation": 8.0,
+        "angle_separation": 0.0,
+        "valley_db": 7.307594070646418,
+        "history_samples": 7,
+        "merge": false,
+        "reason": "resolved_valley"
+      },
+      {
+        "peak_ids": [
+          8,
+          14
+        ],
+        "range_separation": 7.0,
+        "angle_separation": 2.0,
+        "valley_db": 4.989026268161129,
+        "history_samples": 7,
+        "merge": true,
+        "reason": "close_connected_comoving_or_history_pending"
+      },
+      {
+        "peak_ids": [
+          14,
+          17
+        ],
+        "range_separation": 15.0,
+        "angle_separation": 2.0,
+        "valley_db": 5.397482429417987,
+        "history_samples": 3,
+        "merge": false,
+        "reason": "resolved_valley"
+      },
+      {
+        "peak_ids": [
+          13,
+          17
+        ],
+        "range_separation": 7.0,
+        "angle_separation": 2.0,
+        "valley_db": 5.325746985524282,
+        "history_samples": 3,
+        "merge": false,
+        "reason": "resolved_valley"
+      },
+      {
+        "peak_ids": [
+          16,
+          18
+        ],
+        "range_separation": 14.0,
+        "angle_separation": 1.0,
+        "valley_db": 11.012913798473953,
+        "history_samples": 1,
+        "merge": false,
+        "reason": "resolved_valley"
+      }
+    ]
+  },
+  {
+    "candidates": [
+      {
+        "range_bin": 142,
+        "angle_deg": -3.0,
+        "score_db": 0.0,
+        "range_excess_db": 4.503867744786454,
+        "strong": false
+      },
+      {
+        "range_bin": 149,
+        "angle_deg": -6.0,
+        "score_db": -1.1039811848781738,
+        "range_excess_db": 4.513179913547738,
+        "strong": false
+      },
+      {
+        "range_bin": 157,
+        "angle_deg": -5.0,
+        "score_db": -3.6224064635348627,
+        "range_excess_db": 4.303949959932602,
+        "strong": false
+      },
+      {
+        "range_bin": 156,
+        "angle_deg": 29.0,
+        "score_db": -3.8850845140759693,
+        "range_excess_db": 4.967614484989781,
+        "strong": false
+      },
+      {
+        "range_bin": 150,
+        "angle_deg": 29.0,
+        "score_db": -4.93207144279297,
+        "range_excess_db": 4.922170257941772,
+        "strong": false
+      }
+    ],
+    "visible": [],
+    "lost": [
+      1
+    ],
+    "map_contrast_db": 19.89454733812999,
+    "reflection_visible": [
+      {
+        "id": 11,
+        "range_bin": 142.0,
+        "angle_deg": -3.0,
+        "confirmed": true,
+        "support": "weak"
+      },
+      {
+        "id": 15,
+        "range_bin": 149.0,
+        "angle_deg": -6.0,
+        "confirmed": true,
+        "support": "weak"
+      }
+    ],
+    "reflection_lost": [
+      10,
+      14
+    ],
+    "groups": [
+      {
+        "range_bin": 142.0,
+        "angle_deg": -3.0,
+        "strong": false,
+        "score_db": 0.0,
+        "member_indices": [
+          0
+        ],
+        "member_count": 1,
+        "owner": 1,
+        "ambiguous": false,
+        "possible_track_ids": [
+          1
+        ]
+      },
+      {
+        "range_bin": 149.0,
+        "angle_deg": -6.0,
+        "strong": false,
+        "score_db": -1.1039811848781738,
+        "member_indices": [
+          1
+        ],
+        "member_count": 1,
+        "owner": 1,
+        "ambiguous": false,
+        "possible_track_ids": [
+          1
+        ]
+      },
+      {
+        "range_bin": 157.0,
+        "angle_deg": -5.0,
+        "strong": false,
+        "score_db": -3.6224064635348627,
+        "member_indices": [
+          2
+        ],
+        "member_count": 1,
+        "owner": null,
+        "ambiguous": false,
+        "possible_track_ids": []
+      },
+      {
+        "range_bin": 153.01569573674954,
+        "angle_deg": 29.0,
+        "strong": false,
+        "score_db": -3.8850845140759693,
+        "member_indices": [
+          3,
+          4
+        ],
+        "member_count": 2,
+        "owner": null,
+        "ambiguous": false,
+        "possible_track_ids": []
+      }
+    ],
+    "visible_groups": [],
+    "lost_group_tracks": [
+      1
+    ],
+    "person_candidates": [],
+    "primary_id": 1,
+    "status": "ambiguous_or_lost",
+    "ambiguous_groups": [],
+    "pair_decisions": [
+      {
+        "peak_ids": [
+          13,
+          14
+        ],
+        "range_separation": 7.0,
+        "angle_separation": 3.0,
+        "valley_db": 4.384351092886719,
+        "history_samples": 8,
+        "merge": false,
+        "reason": "resolved_valley"
+      },
+      {
+        "peak_ids": [
+          14,
+          17
+        ],
+        "range_separation": 15.0,
+        "angle_separation": 2.0,
+        "valley_db": 4.953388483758887,
+        "history_samples": 4,
+        "merge": false,
+        "reason": "resolved_valley"
+      },
+      {
+        "peak_ids": [
+          13,
+          17
+        ],
+        "range_separation": 8.0,
+        "angle_separation": 1.0,
+        "valley_db": 4.839127745318055,
+        "history_samples": 4,
+        "merge": false,
+        "reason": "resolved_valley"
+      },
+      {
+        "peak_ids": [
+          16,
+          18
+        ],
+        "range_separation": 6.0,
+        "angle_separation": 0.0,
+        "valley_db": 3.773036840770284,
+        "history_samples": 2,
+        "merge": true,
+        "reason": "close_connected_comoving_or_history_pending"
+      }
+    ]
+  },
+  {
+    "candidates": [],
+    "visible": [],
+    "lost": [
+      1
+    ],
+    "map_contrast_db": 17.751384324242885,
+    "reflection_visible": [],
+    "reflection_lost": [
+      10,
+      11,
+      14,
+      15
+    ],
+    "groups": [],
+    "visible_groups": [],
+    "lost_group_tracks": [
+      1
+    ],
+    "person_candidates": [],
+    "primary_id": null,
+    "status": "not_yet_acquired",
+    "ambiguous_groups": [],
+    "pair_decisions": []
+  },
+  {
+    "candidates": [
+      {
+        "range_bin": 172,
+        "angle_deg": -1.0,
+        "score_db": -0.11885538160295134,
+        "range_excess_db": 4.951960280682748,
+        "strong": false
+      }
+    ],
+    "visible": [],
+    "lost": [],
+    "map_contrast_db": 19.493897383185306,
+    "reflection_visible": [
+      {
+        "id": 11,
+        "range_bin": 172.0,
+        "angle_deg": -1.0,
+        "confirmed": true,
+        "support": "weak"
+      }
+    ],
+    "reflection_lost": [
+      10,
+      15
+    ],
+    "groups": [
+      {
+        "range_bin": 172.0,
+        "angle_deg": -1.0,
+        "strong": false,
+        "score_db": -0.11885538160295134,
+        "member_indices": [
+          0
+        ],
+        "member_count": 1,
+        "owner": null,
+        "ambiguous": false,
+        "possible_track_ids": []
+      }
+    ],
+    "visible_groups": [],
+    "lost_group_tracks": [],
+    "person_candidates": [],
+    "primary_id": null,
+    "status": "not_yet_acquired",
+    "ambiguous_groups": [],
+    "pair_decisions": []
+  },
+  {
+    "candidates": [
+      {
+        "range_bin": 174,
+        "angle_deg": -2.0,
+        "score_db": 0.0,
+        "range_excess_db": 5.692999275661549,
+        "strong": false
+      },
+      {
+        "range_bin": 163,
+        "angle_deg": 0.0,
+        "score_db": -2.6448117568818628,
+        "range_excess_db": 4.02271023893649,
+        "strong": false
+      }
+    ],
+    "visible": [],
+    "lost": [],
+    "map_contrast_db": 20.416499931768655,
+    "reflection_visible": [
+      {
+        "id": 11,
+        "range_bin": 174.0,
+        "angle_deg": -2.0,
+        "confirmed": true,
+        "support": "weak"
+      }
+    ],
+    "reflection_lost": [
+      15
+    ],
+    "groups": [
+      {
+        "range_bin": 169.54479834531787,
+        "angle_deg": -1.189963335512342,
+        "strong": false,
+        "score_db": 0.0,
+        "member_indices": [
+          0,
+          1
+        ],
+        "member_count": 2,
+        "owner": null,
+        "ambiguous": false,
+        "possible_track_ids": []
+      }
+    ],
+    "visible_groups": [],
+    "lost_group_tracks": [],
+    "person_candidates": [],
+    "primary_id": null,
+    "status": "not_yet_acquired",
+    "ambiguous_groups": [],
+    "pair_decisions": [
+      {
+        "peak_ids": [
+          17,
+          19
+        ],
+        "range_separation": 11.0,
+        "angle_separation": 2.0,
+        "valley_db": 1.174819841018893,
+        "history_samples": 1,
+        "merge": true,
+        "reason": "close_connected_comoving_or_history_pending"
+      }
+    ]
+  },
+  {
+    "candidates": [
+      {
+        "range_bin": 163,
+        "angle_deg": -1.0,
+        "score_db": 0.0,
+        "range_excess_db": 5.394856235430581,
+        "strong": false
+      },
+      {
+        "range_bin": 156,
+        "angle_deg": -1.0,
+        "score_db": -0.07327326495370762,
+        "range_excess_db": 5.597681985890787,
+        "strong": false
+      }
+    ],
+    "visible": [],
+    "lost": [],
+    "map_contrast_db": 20.44065141362428,
+    "reflection_visible": [],
+    "reflection_lost": [
+      11
+    ],
+    "groups": [
+      {
+        "range_bin": 159.41828573061747,
+        "angle_deg": -1.0,
+        "strong": false,
+        "score_db": 0.0,
+        "member_indices": [
+          0,
+          1
+        ],
+        "member_count": 2,
+        "owner": null,
+        "ambiguous": false,
+        "possible_track_ids": []
+      }
+    ],
+    "visible_groups": [],
+    "lost_group_tracks": [],
+    "person_candidates": [],
+    "primary_id": null,
+    "status": "not_yet_acquired",
+    "ambiguous_groups": [],
+    "pair_decisions": [
+      {
+        "peak_ids": [
+          17,
+          19
+        ],
+        "range_separation": 7.0,
+        "angle_separation": 0.0,
+        "valley_db": 3.109104083589142,
+        "history_samples": 2,
+        "merge": true,
+        "reason": "close_connected_comoving_or_history_pending"
+      }
+    ]
+  },
+  {
+    "candidates": [
+      {
+        "range_bin": 147,
+        "angle_deg": -6.0,
+        "score_db": 0.0,
+        "range_excess_db": 6.293443290056807,
+        "strong": false
+      },
+      {
+        "range_bin": 140,
+        "angle_deg": -2.0,
+        "score_db": -0.10087586414233735,
+        "range_excess_db": 4.682786381306919,
+        "strong": false
+      },
+      {
+        "range_bin": 155,
+        "angle_deg": -2.0,
+        "score_db": -1.1492138157095004,
+        "range_excess_db": 5.208011330468636,
+        "strong": false
+      },
+      {
+        "range_bin": 134,
+        "angle_deg": -1.0,
+        "score_db": -1.296493674145067,
+        "range_excess_db": 5.062622174419481,
+        "strong": false
+      },
+      {
+        "range_bin": 162,
+        "angle_deg": -13.0,
+        "score_db": -1.6498148513846873,
+        "range_excess_db": 5.218989830923924,
+        "strong": false
+      },
+      {
+        "range_bin": 150,
+        "angle_deg": 18.0,
+        "score_db": -6.5307324291320965,
+        "range_excess_db": 5.795797690978766,
+        "strong": false
+      },
+      {
+        "range_bin": 162,
+        "angle_deg": 48.0,
+        "score_db": -18.949665856884444,
+        "range_excess_db": 5.218989830923924,
+        "strong": false
+      }
+    ],
+    "visible": [],
+    "lost": [],
+    "map_contrast_db": 19.433857166330043,
+    "reflection_visible": [],
+    "reflection_lost": [
+      11
+    ],
+    "groups": [
+      {
+        "range_bin": 147.56699074416522,
+        "angle_deg": -3.620095174008857,
+        "strong": false,
+        "score_db": 0.0,
+        "member_indices": [
+          0,
+          1,
+          2
+        ],
+        "member_count": 3,
+        "owner": null,
+        "ambiguous": false,
+        "possible_track_ids": []
+      },
+      {
+        "range_bin": 134.0,
+        "angle_deg": -1.0,
+        "strong": false,
+        "score_db": -1.296493674145067,
+        "member_indices": [
+          3
+        ],
+        "member_count": 1,
+        "owner": null,
+        "ambiguous": false,
+        "possible_track_ids": []
+      },
+      {
+        "range_bin": 162.0,
+        "angle_deg": -13.0,
+        "strong": false,
+        "score_db": -1.6498148513846873,
+        "member_indices": [
+          4
+        ],
+        "member_count": 1,
+        "owner": null,
+        "ambiguous": false,
+        "possible_track_ids": []
+      },
+      {
+        "range_bin": 150.0,
+        "angle_deg": 18.0,
+        "strong": false,
+        "score_db": -6.5307324291320965,
+        "member_indices": [
+          5
+        ],
+        "member_count": 1,
+        "owner": null,
+        "ambiguous": false,
+        "possible_track_ids": []
+      },
+      {
+        "range_bin": 162.0,
+        "angle_deg": 48.0,
+        "strong": false,
+        "score_db": -18.949665856884444,
+        "member_indices": [
+          6
+        ],
+        "member_count": 1,
+        "owner": null,
+        "ambiguous": false,
+        "possible_track_ids": []
+      }
+    ],
+    "visible_groups": [],
+    "lost_group_tracks": [],
+    "person_candidates": [],
+    "primary_id": null,
+    "status": "not_yet_acquired",
+    "ambiguous_groups": [],
+    "pair_decisions": [
+      {
+        "peak_ids": [
+          20,
+          21
+        ],
+        "range_separation": 7.0,
+        "angle_separation": 4.0,
+        "valley_db": 3.546104465975711,
+        "history_samples": 1,
+        "merge": true,
+        "reason": "close_connected_comoving_or_history_pending"
+      },
+      {
+        "peak_ids": [
+          19,
+          20
+        ],
+        "range_separation": 8.0,
+        "angle_separation": 4.0,
+        "valley_db": 4.948038399175533,
+        "history_samples": 1,
+        "merge": true,
+        "reason": "close_connected_comoving_or_history_pending"
+      },
+      {
+        "peak_ids": [
+          19,
+          21
+        ],
+        "range_separation": 15.0,
+        "angle_separation": 0.0,
+        "valley_db": 4.694737542742413,
+        "history_samples": 1,
+        "merge": true,
+        "reason": "close_connected_comoving_or_history_pending"
+      },
+      {
+        "peak_ids": [
+          20,
+          22
+        ],
+        "range_separation": 13.0,
+        "angle_separation": 5.0,
+        "valley_db": 2.5056315557014095,
+        "history_samples": 1,
+        "merge": true,
+        "reason": "close_connected_comoving_or_history_pending"
+      },
+      {
+        "peak_ids": [
+          21,
+          22
+        ],
+        "range_separation": 6.0,
+        "angle_separation": 1.0,
+        "valley_db": 2.550881986472678,
+        "history_samples": 1,
+        "merge": true,
+        "reason": "close_connected_comoving_or_history_pending"
+      },
+      {
+        "peak_ids": [
+          17,
+          20
+        ],
+        "range_separation": 15.0,
+        "angle_separation": 7.0,
+        "valley_db": 9.247864534179353,
+        "history_samples": 1,
+        "merge": false,
+        "reason": "resolved_valley"
+      }
+    ]
+  },
+  {
+    "candidates": [
+      {
+        "range_bin": 124,
+        "angle_deg": -1.0,
+        "score_db": 0.0,
+        "range_excess_db": 6.288173852572989,
+        "strong": false
+      },
+      {
+        "range_bin": 117,
+        "angle_deg": -1.0,
+        "score_db": -0.35076302279927973,
+        "range_excess_db": 5.359450571779476,
+        "strong": false
+      },
+      {
+        "range_bin": 132,
+        "angle_deg": -4.0,
+        "score_db": -1.2357841983778095,
+        "range_excess_db": 5.914140701317933,
+        "strong": false
+      },
+      {
+        "range_bin": 139,
+        "angle_deg": -4.0,
+        "score_db": -1.8160702047661754,
+        "range_excess_db": 6.884229443163221,
+        "strong": false
+      }
+    ],
+    "visible": [],
+    "lost": [],
+    "map_contrast_db": 19.565914350361293,
+    "reflection_visible": [],
+    "reflection_lost": [
+      11
+    ],
+    "groups": [
+      {
+        "range_bin": 124.61928958514274,
+        "angle_deg": -2.0100875009057777,
+        "strong": false,
+        "score_db": 0.0,
+        "member_indices": [
+          0,
+          1,
+          2
+        ],
+        "member_count": 3,
+        "owner": null,
+        "ambiguous": false,
+        "possible_track_ids": []
+      },
+      {
+        "range_bin": 139.0,
+        "angle_deg": -4.0,
+        "strong": false,
+        "score_db": -1.8160702047661754,
+        "member_indices": [
+          3
+        ],
+        "member_count": 1,
+        "owner": null,
+        "ambiguous": false,
+        "possible_track_ids": []
+      }
+    ],
+    "visible_groups": [],
+    "lost_group_tracks": [],
+    "person_candidates": [],
+    "primary_id": null,
+    "status": "not_yet_acquired",
+    "ambiguous_groups": [],
+    "pair_decisions": [
+      {
+        "peak_ids": [
+          22,
+          25
+        ],
+        "range_separation": 7.0,
+        "angle_separation": 0.0,
+        "valley_db": 7.230877823623881,
+        "history_samples": 1,
+        "merge": true,
+        "reason": "close_connected_comoving_or_history_pending"
+      },
+      {
+        "peak_ids": [
+          21,
+          22
+        ],
+        "range_separation": 8.0,
+        "angle_separation": 3.0,
+        "valley_db": 4.418603155737779,
+        "history_samples": 2,
+        "merge": true,
+        "reason": "close_connected_comoving_or_history_pending"
+      },
+      {
+        "peak_ids": [
+          21,
+          25
+        ],
+        "range_separation": 15.0,
+        "angle_separation": 3.0,
+        "valley_db": 6.434368375597858,
+        "history_samples": 1,
+        "merge": true,
+        "reason": "close_connected_comoving_or_history_pending"
+      },
+      {
+        "peak_ids": [
+          20,
+          22
+        ],
+        "range_separation": 15.0,
+        "angle_separation": 3.0,
+        "valley_db": 3.7946358925698576,
+        "history_samples": 2,
+        "merge": true,
+        "reason": "close_connected_comoving_or_history_pending"
+      }
+    ]
+  },
+  {
+    "candidates": [
+      {
+        "range_bin": 129,
+        "angle_deg": 1.0,
+        "score_db": 0.0,
+        "range_excess_db": 14.244881396965809,
+        "strong": true
+      },
+      {
+        "range_bin": 116,
+        "angle_deg": -3.0,
+        "score_db": -0.9492549746785955,
+        "range_excess_db": 7.98195317572619,
+        "strong": false
+      },
+      {
+        "range_bin": 109,
+        "angle_deg": -2.0,
+        "score_db": -6.4779011478664685,
+        "range_excess_db": 4.951825890818931,
+        "strong": false
+      },
+      {
+        "range_bin": 117,
+        "angle_deg": 35.0,
+        "score_db": -13.474414214195287,
+        "range_excess_db": 10.304809109150398,
+        "strong": true
+      }
+    ],
+    "visible": [],
+    "lost": [],
+    "map_contrast_db": 23.594369645180336,
+    "reflection_visible": [
+      {
+        "id": 17,
+        "range_bin": 129.0,
+        "angle_deg": 1.0,
+        "confirmed": false,
+        "support": "strong"
+      },
+      {
+        "id": 18,
+        "range_bin": 117.0,
+        "angle_deg": 35.0,
+        "confirmed": false,
+        "support": "strong"
+      }
+    ],
+    "reflection_lost": [],
+    "groups": [
+      {
+        "range_bin": 129.0,
+        "angle_deg": 1.0,
+        "strong": true,
+        "score_db": 0.0,
+        "member_indices": [
+          0
+        ],
+        "member_count": 1,
+        "owner": null,
+        "ambiguous": false,
+        "possible_track_ids": []
+      },
+      {
+        "range_bin": 113.67376300524646,
+        "angle_deg": -2.667680429320922,
+        "strong": false,
+        "score_db": -0.9492549746785955,
+        "member_indices": [
+          1,
+          2
+        ],
+        "member_count": 2,
+        "owner": null,
+        "ambiguous": false,
+        "possible_track_ids": []
+      },
+      {
+        "range_bin": 117.0,
+        "angle_deg": 35.0,
+        "strong": true,
+        "score_db": -13.474414214195287,
+        "member_indices": [
+          3
+        ],
+        "member_count": 1,
+        "owner": null,
+        "ambiguous": false,
+        "possible_track_ids": []
+      }
+    ],
+    "visible_groups": [
+      {
+        "id": 9,
+        "range_bin": 129.0,
+        "angle_deg": 1.0,
+        "confirmed": false,
+        "support": "strong",
+        "member_count": 1
+      },
+      {
+        "id": 10,
+        "range_bin": 117.0,
+        "angle_deg": 35.0,
+        "confirmed": false,
+        "support": "strong",
+        "member_count": 1
+      }
+    ],
+    "lost_group_tracks": [],
+    "person_candidates": [],
+    "primary_id": null,
+    "status": "not_yet_acquired",
+    "ambiguous_groups": [],
+    "pair_decisions": [
+      {
+        "peak_ids": [
+          21,
+          22
+        ],
+        "range_separation": 13.0,
+        "angle_separation": 4.0,
+        "valley_db": 7.010879509328854,
+        "history_samples": 3,
+        "merge": false,
+        "reason": "resolved_valley"
+      },
+      {
+        "peak_ids": [
+          22,
+          25
+        ],
+        "range_separation": 7.0,
+        "angle_separation": 1.0,
+        "valley_db": 1.258530730987201,
+        "history_samples": 2,
+        "merge": true,
+        "reason": "close_connected_comoving_or_history_pending"
+      }
+    ]
+  },
+  {
+    "candidates": [
+      {
+        "range_bin": 129,
+        "angle_deg": 3.0,
+        "score_db": 0.0,
+        "range_excess_db": 21.895814425949553,
+        "strong": true
+      },
+      {
+        "range_bin": 103,
+        "angle_deg": -2.0,
+        "score_db": -12.083657868712995,
+        "range_excess_db": 7.187725262150678,
+        "strong": false
+      },
+      {
+        "range_bin": 96,
+        "angle_deg": -2.0,
+        "score_db": -12.290387640620509,
+        "range_excess_db": 6.811695060571182,
+        "strong": false
+      },
+      {
+        "range_bin": 112,
+        "angle_deg": -6.0,
+        "score_db": -18.06091856412117,
+        "range_excess_db": 6.846800537738389,
+        "strong": false
+      }
+    ],
+    "visible": [],
+    "lost": [],
+    "map_contrast_db": 31.4497396728138,
+    "reflection_visible": [
+      {
+        "id": 17,
+        "range_bin": 129.0,
+        "angle_deg": 3.0,
+        "confirmed": false,
+        "support": "strong"
+      }
+    ],
+    "reflection_lost": [],
+    "groups": [
+      {
+        "range_bin": 129.0,
+        "angle_deg": 3.0,
+        "strong": true,
+        "score_db": 0.0,
+        "member_indices": [
+          0
+        ],
+        "member_count": 1,
+        "owner": null,
+        "ambiguous": false,
+        "possible_track_ids": []
+      },
+      {
+        "range_bin": 103.66903508707139,
+        "angle_deg": -3.301399806841021,
+        "strong": false,
+        "score_db": -12.083657868712995,
+        "member_indices": [
+          1,
+          2,
+          3
+        ],
+        "member_count": 3,
+        "owner": null,
+        "ambiguous": false,
+        "possible_track_ids": []
+      }
+    ],
+    "visible_groups": [
+      {
+        "id": 9,
+        "range_bin": 129.0,
+        "angle_deg": 3.0,
+        "confirmed": false,
+        "support": "strong",
+        "member_count": 1
+      }
+    ],
+    "lost_group_tracks": [],
+    "person_candidates": [],
+    "primary_id": null,
+    "status": "not_yet_acquired",
+    "ambiguous_groups": [],
+    "pair_decisions": [
+      {
+        "peak_ids": [
+          22,
+          25
+        ],
+        "range_separation": 7.0,
+        "angle_separation": 0.0,
+        "valley_db": 5.435446932280325,
+        "history_samples": 3,
+        "merge": true,
+        "reason": "close_connected_comoving_or_history_pending"
+      },
+      {
+        "peak_ids": [
+          20,
+          21
+        ],
+        "range_separation": 17.0,
+        "angle_separation": 9.0,
+        "valley_db": 13.32507411755887,
+        "history_samples": 3,
+        "merge": false,
+        "reason": "different_motion"
+      },
+      {
+        "peak_ids": [
+          20,
+          22
+        ],
+        "range_separation": 9.0,
+        "angle_separation": 4.0,
+        "valley_db": 3.699416820927059,
+        "history_samples": 3,
+        "merge": true,
+        "reason": "close_connected_comoving_or_history_pending"
+      },
+      {
+        "peak_ids": [
+          20,
+          25
+        ],
+        "range_separation": 16.0,
+        "angle_separation": 4.0,
+        "valley_db": 3.8483243664744933,
+        "history_samples": 3,
+        "merge": true,
+        "reason": "close_connected_comoving_or_history_pending"
+      }
+    ]
+  },
+  {
+    "candidates": [
+      {
+        "range_bin": 129,
+        "angle_deg": 4.0,
+        "score_db": 0.0,
+        "range_excess_db": 21.663155907198245,
+        "strong": true
+      },
+      {
+        "range_bin": 81,
+        "angle_deg": -1.0,
+        "score_db": -6.833026352584996,
+        "range_excess_db": 12.501993360833872,
+        "strong": true
+      },
+      {
+        "range_bin": 95,
+        "angle_deg": -5.0,
+        "score_db": -8.229138167219178,
+        "range_excess_db": 10.23322171706549,
+        "strong": true
+      },
+      {
+        "range_bin": 89,
+        "angle_deg": -4.0,
+        "score_db": -10.319014783217341,
+        "range_excess_db": 7.707986305141077,
+        "strong": false
+      },
+      {
+        "range_bin": 74,
+        "angle_deg": 1.0,
+        "score_db": -10.553595952030243,
+        "range_excess_db": 9.246778191808133,
+        "strong": true
+      }
+    ],
+    "visible": [],
+    "lost": [],
+    "map_contrast_db": 28.007778428468292,
+    "reflection_visible": [
+      {
+        "id": 17,
+        "range_bin": 129.0,
+        "angle_deg": 4.0,
+        "confirmed": true,
+        "support": "strong"
+      },
+      {
+        "id": 19,
+        "range_bin": 81.0,
+        "angle_deg": -1.0,
+        "confirmed": false,
+        "support": "strong"
+      },
+      {
+        "id": 20,
+        "range_bin": 95.0,
+        "angle_deg": -5.0,
+        "confirmed": false,
+        "support": "strong"
+      },
+      {
+        "id": 21,
+        "range_bin": 74.0,
+        "angle_deg": 1.0,
+        "confirmed": false,
+        "support": "strong"
+      }
+    ],
+    "reflection_lost": [],
+    "groups": [
+      {
+        "range_bin": 129.0,
+        "angle_deg": 4.0,
+        "strong": true,
+        "score_db": 0.0,
+        "member_indices": [
+          0
+        ],
+        "member_count": 1,
+        "owner": null,
+        "ambiguous": false,
+        "possible_track_ids": []
+      },
+      {
+        "range_bin": 86.69237566403316,
+        "angle_deg": -2.749451769827096,
+        "strong": true,
+        "score_db": -6.833026352584996,
+        "member_indices": [
+          1,
+          2,
+          3
+        ],
+        "member_count": 3,
+        "owner": null,
+        "ambiguous": false,
+        "possible_track_ids": []
+      },
+      {
+        "range_bin": 74.0,
+        "angle_deg": 1.0,
+        "strong": true,
+        "score_db": -10.553595952030243,
+        "member_indices": [
+          4
+        ],
+        "member_count": 1,
+        "owner": null,
+        "ambiguous": false,
+        "possible_track_ids": []
+      }
+    ],
+    "visible_groups": [
+      {
+        "id": 9,
+        "range_bin": 129.0,
+        "angle_deg": 4.0,
+        "confirmed": true,
+        "support": "strong",
+        "member_count": 1
+      },
+      {
+        "id": 11,
+        "range_bin": 86.69237566403316,
+        "angle_deg": -2.749451769827096,
+        "confirmed": false,
+        "support": "strong",
+        "member_count": 3
+      },
+      {
+        "id": 12,
+        "range_bin": 74.0,
+        "angle_deg": 1.0,
+        "confirmed": false,
+        "support": "strong",
+        "member_count": 1
+      }
+    ],
+    "lost_group_tracks": [],
+    "person_candidates": [],
+    "primary_id": null,
+    "status": "not_yet_acquired",
+    "ambiguous_groups": [],
+    "pair_decisions": [
+      {
+        "peak_ids": [
+          22,
+          27
+        ],
+        "range_separation": 14.0,
+        "angle_separation": 4.0,
+        "valley_db": 5.441319345104809,
+        "history_samples": 1,
+        "merge": true,
+        "reason": "close_connected_comoving_or_history_pending"
+      },
+      {
+        "peak_ids": [
+          25,
+          27
+        ],
+        "range_separation": 8.0,
+        "angle_separation": 3.0,
+        "valley_db": 3.3584977575142787,
+        "history_samples": 1,
+        "merge": true,
+        "reason": "close_connected_comoving_or_history_pending"
+      },
+      {
+        "peak_ids": [
+          22,
+          25
+        ],
+        "range_separation": 6.0,
+        "angle_separation": 1.0,
+        "valley_db": 3.0045494647915305,
+        "history_samples": 4,
+        "merge": true,
+        "reason": "close_connected_comoving_or_history_pending"
+      },
+      {
+        "peak_ids": [
+          27,
+          28
+        ],
+        "range_separation": 7.0,
+        "angle_separation": 2.0,
+        "valley_db": 2.870438988706974,
+        "history_samples": 1,
+        "merge": true,
+        "reason": "close_connected_comoving_or_history_pending"
+      }
+    ]
+  },
+  {
+    "candidates": [
+      {
+        "range_bin": 60,
+        "angle_deg": 1.0,
+        "score_db": 0.0,
+        "range_excess_db": 14.728906708950248,
+        "strong": true
+      },
+      {
+        "range_bin": 67,
+        "angle_deg": 1.0,
+        "score_db": -1.4427312826618734,
+        "range_excess_db": 13.978734983685527,
+        "strong": true
+      },
+      {
+        "range_bin": 132,
+        "angle_deg": 2.0,
+        "score_db": -2.3989145524217816,
+        "range_excess_db": 23.22639829342154,
+        "strong": true
+      },
+      {
+        "range_bin": 81,
+        "angle_deg": -2.0,
+        "score_db": -2.6226795225110604,
+        "range_excess_db": 13.314519993293814,
+        "strong": true
+      },
+      {
+        "range_bin": 73,
+        "angle_deg": 0.0,
+        "score_db": -3.929963230189281,
+        "range_excess_db": 10.38763068979847,
+        "strong": true
+      },
+      {
+        "range_bin": 90,
+        "angle_deg": -14.0,
+        "score_db": -17.539742421503462,
+        "range_excess_db": 7.744802270214308,
+        "strong": false
+      }
+    ],
+    "visible": [],
+    "lost": [],
+    "map_contrast_db": 24.226492500073782,
+    "reflection_visible": [
+      {
+        "id": 17,
+        "range_bin": 132.0,
+        "angle_deg": 2.0,
+        "confirmed": true,
+        "support": "strong"
+      },
+      {
+        "id": 19,
+        "range_bin": 73.0,
+        "angle_deg": 0.0,
+        "confirmed": false,
+        "support": "strong"
+      },
+      {
+        "id": 20,
+        "range_bin": 81.0,
+        "angle_deg": -2.0,
+        "confirmed": false,
+        "support": "strong"
+      },
+      {
+        "id": 21,
+        "range_bin": 67.0,
+        "angle_deg": 1.0,
+        "confirmed": false,
+        "support": "strong"
+      },
+      {
+        "id": 22,
+        "range_bin": 60.0,
+        "angle_deg": 1.0,
+        "confirmed": false,
+        "support": "strong"
+      }
+    ],
+    "reflection_lost": [],
+    "groups": [
+      {
+        "range_bin": 64.83112494228651,
+        "angle_deg": 0.833428211463537,
+        "strong": true,
+        "score_db": 0.0,
+        "member_indices": [
+          0,
+          1,
+          4
+        ],
+        "member_count": 3,
+        "owner": null,
+        "ambiguous": false,
+        "possible_track_ids": []
+      },
+      {
+        "range_bin": 132.0,
+        "angle_deg": 2.0,
+        "strong": true,
+        "score_db": -2.3989145524217816,
+        "member_indices": [
+          2
+        ],
+        "member_count": 1,
+        "owner": 9,
+        "ambiguous": false,
+        "possible_track_ids": [
+          9
+        ]
+      },
+      {
+        "range_bin": 82.95416311788149,
+        "angle_deg": -4.6055508238419804,
+        "strong": true,
+        "score_db": -2.6226795225110604,
+        "member_indices": [
+          3,
+          5
+        ],
+        "member_count": 2,
+        "owner": null,
+        "ambiguous": false,
+        "possible_track_ids": []
+      }
+    ],
+    "visible_groups": [
+      {
+        "id": 9,
+        "range_bin": 132.0,
+        "angle_deg": 2.0,
+        "confirmed": true,
+        "support": "strong",
+        "member_count": 1
+      },
+      {
+        "id": 11,
+        "range_bin": 82.95416311788149,
+        "angle_deg": -4.6055508238419804,
+        "confirmed": false,
+        "support": "strong",
+        "member_count": 2
+      },
+      {
+        "id": 12,
+        "range_bin": 64.83112494228651,
+        "angle_deg": 0.833428211463537,
+        "confirmed": false,
+        "support": "strong",
+        "member_count": 3
+      }
+    ],
+    "lost_group_tracks": [],
+    "person_candidates": [],
+    "primary_id": null,
+    "status": "not_yet_acquired",
+    "ambiguous_groups": [],
+    "pair_decisions": [
+      {
+        "peak_ids": [
+          27,
+          28
+        ],
+        "range_separation": 7.0,
+        "angle_separation": 0.0,
+        "valley_db": 7.5568213933969455,
+        "history_samples": 2,
+        "merge": true,
+        "reason": "close_connected_comoving_or_history_pending"
+      },
+      {
+        "peak_ids": [
+          25,
+          28
+        ],
+        "range_separation": 13.0,
+        "angle_separation": 1.0,
+        "valley_db": 5.129906188907124,
+        "history_samples": 2,
+        "merge": true,
+        "reason": "close_connected_comoving_or_history_pending"
+      },
+      {
+        "peak_ids": [
+          25,
+          27
+        ],
+        "range_separation": 6.0,
+        "angle_separation": 1.0,
+        "valley_db": 4.032959237031363,
+        "history_samples": 2,
+        "merge": true,
+        "reason": "close_connected_comoving_or_history_pending"
+      },
+      {
+        "peak_ids": [
+          20,
+          22
+        ],
+        "range_separation": 9.0,
+        "angle_separation": 12.0,
+        "valley_db": 1.3530422708949104,
+        "history_samples": 4,
+        "merge": true,
+        "reason": "close_connected_comoving_or_history_pending"
+      }
+    ]
+  },
+  {
+    "candidates": [
+      {
+        "range_bin": 46,
+        "angle_deg": 5.0,
+        "score_db": 0.0,
+        "range_excess_db": 20.781197324592597,
+        "strong": true
+      },
+      {
+        "range_bin": 59,
+        "angle_deg": 2.0,
+        "score_db": -4.632386479240626,
+        "range_excess_db": 12.193503372674634,
+        "strong": true
+      },
+      {
+        "range_bin": 133,
+        "angle_deg": 3.0,
+        "score_db": -8.265755702912932,
+        "range_excess_db": 29.662475556438935,
+        "strong": true
+      },
+      {
+        "range_bin": 67,
+        "angle_deg": 0.0,
+        "score_db": -10.9308634771692,
+        "range_excess_db": 14.01845345443963,
+        "strong": true
+      }
+    ],
+    "visible": [
+      {
+        "id": 11,
+        "range_bin": 67.0,
+        "angle_deg": 0.0,
+        "confirmed": true,
+        "support": "strong",
+        "member_count": 1
+      }
+    ],
+    "lost": [],
+    "map_contrast_db": 27.42556902321237,
+    "reflection_visible": [
+      {
+        "id": 17,
+        "range_bin": 133.0,
+        "angle_deg": 3.0,
+        "confirmed": true,
+        "support": "strong"
+      },
+      {
+        "id": 19,
+        "range_bin": 67.0,
+        "angle_deg": 0.0,
+        "confirmed": true,
+        "support": "strong"
+      },
+      {
+        "id": 21,
+        "range_bin": 59.0,
+        "angle_deg": 2.0,
+        "confirmed": true,
+        "support": "strong"
+      },
+      {
+        "id": 22,
+        "range_bin": 46.0,
+        "angle_deg": 5.0,
+        "confirmed": false,
+        "support": "strong"
+      }
+    ],
+    "reflection_lost": [],
+    "groups": [
+      {
+        "range_bin": 46.0,
+        "angle_deg": 5.0,
+        "strong": true,
+        "score_db": 0.0,
+        "member_indices": [
+          0
+        ],
+        "member_count": 1,
+        "owner": null,
+        "ambiguous": false,
+        "possible_track_ids": []
+      },
+      {
+        "range_bin": 59.0,
+        "angle_deg": 2.0,
+        "strong": true,
+        "score_db": -4.632386479240626,
+        "member_indices": [
+          1
+        ],
+        "member_count": 1,
+        "owner": null,
+        "ambiguous": false,
+        "possible_track_ids": []
+      },
+      {
+        "range_bin": 133.0,
+        "angle_deg": 3.0,
+        "strong": true,
+        "score_db": -8.265755702912932,
+        "member_indices": [
+          2
+        ],
+        "member_count": 1,
+        "owner": 9,
+        "ambiguous": false,
+        "possible_track_ids": [
+          9
+        ]
+      },
+      {
+        "range_bin": 67.0,
+        "angle_deg": 0.0,
+        "strong": true,
+        "score_db": -10.9308634771692,
+        "member_indices": [
+          3
+        ],
+        "member_count": 1,
+        "owner": null,
+        "ambiguous": false,
+        "possible_track_ids": []
+      }
+    ],
+    "visible_groups": [
+      {
+        "id": 9,
+        "range_bin": 133.0,
+        "angle_deg": 3.0,
+        "confirmed": true,
+        "support": "strong",
+        "member_count": 1
+      },
+      {
+        "id": 11,
+        "range_bin": 67.0,
+        "angle_deg": 0.0,
+        "confirmed": true,
+        "support": "strong",
+        "member_count": 1
+      },
+      {
+        "id": 12,
+        "range_bin": 59.0,
+        "angle_deg": 2.0,
+        "confirmed": true,
+        "support": "strong",
+        "member_count": 1
+      },
+      {
+        "id": 13,
+        "range_bin": 46.0,
+        "angle_deg": 5.0,
+        "confirmed": false,
+        "support": "strong",
+        "member_count": 1
+      }
+    ],
+    "lost_group_tracks": [],
+    "person_candidates": [
+      {
+        "id": 11,
+        "range_bin": 67.0,
+        "angle_deg": 0.0,
+        "confirmed": true,
+        "support": "strong",
+        "member_count": 1
+      }
+    ],
+    "primary_id": 11,
+    "status": "observed",
+    "ambiguous_groups": [],
+    "pair_decisions": [
+      {
+        "peak_ids": [
+          27,
+          28
+        ],
+        "range_separation": 13.0,
+        "angle_separation": 3.0,
+        "valley_db": 7.338848648457439,
+        "history_samples": 3,
+        "merge": false,
+        "reason": "resolved_valley"
+      },
+      {
+        "peak_ids": [
+          25,
+          27
+        ],
+        "range_separation": 8.0,
+        "angle_separation": 2.0,
+        "valley_db": 5.064971308380386,
+        "history_samples": 3,
+        "merge": false,
+        "reason": "resolved_valley"
+      }
+    ]
+  },
+  {
+    "candidates": [
+      {
+        "range_bin": 47,
+        "angle_deg": 4.0,
+        "score_db": 0.0,
+        "range_excess_db": 16.246861004923858,
+        "strong": true
+      },
+      {
+        "range_bin": 33,
+        "angle_deg": 7.0,
+        "score_db": -0.033456054213190804,
+        "range_excess_db": 21.94954634091421,
+        "strong": true
+      },
+      {
+        "range_bin": 40,
+        "angle_deg": 5.0,
+        "score_db": -1.0360118821298063,
+        "range_excess_db": 18.55985314060294,
+        "strong": true
+      },
+      {
+        "range_bin": 133,
+        "angle_deg": 5.0,
+        "score_db": -4.064673974853818,
+        "range_excess_db": 16.230357556314885,
+        "strong": true
+      },
+      {
+        "range_bin": 53,
+        "angle_deg": 3.0,
+        "score_db": -4.775145421431391,
+        "range_excess_db": 14.733725472209386,
+        "strong": true
+      },
+      {
+        "range_bin": 58,
+        "angle_deg": -54.0,
+        "score_db": -8.228838622180447,
+        "range_excess_db": 17.32312386819548,
+        "strong": true
+      }
+    ],
+    "visible": [],
+    "lost": [
+      11
+    ],
+    "map_contrast_db": 26.416728748974407,
+    "reflection_visible": [
+      {
+        "id": 17,
+        "range_bin": 133.0,
+        "angle_deg": 5.0,
+        "confirmed": true,
+        "support": "strong"
+      },
+      {
+        "id": 19,
+        "range_bin": 53.0,
+        "angle_deg": 3.0,
+        "confirmed": true,
+        "support": "strong"
+      },
+      {
+        "id": 21,
+        "range_bin": 47.0,
+        "angle_deg": 4.0,
+        "confirmed": true,
+        "support": "strong"
+      },
+      {
+        "id": 22,
+        "range_bin": 40.0,
+        "angle_deg": 5.0,
+        "confirmed": true,
+        "support": "strong"
+      },
+      {
+        "id": 23,
+        "range_bin": 33.0,
+        "angle_deg": 7.0,
+        "confirmed": false,
+        "support": "strong"
+      },
+      {
+        "id": 24,
+        "range_bin": 58.0,
+        "angle_deg": -54.0,
+        "confirmed": false,
+        "support": "strong"
+      }
+    ],
+    "reflection_lost": [],
+    "groups": [
+      {
+        "range_bin": 49.482604875664464,
+        "angle_deg": 3.586232520722588,
+        "strong": true,
+        "score_db": 0.0,
+        "member_indices": [
+          0,
+          4
+        ],
+        "member_count": 2,
+        "owner": 12,
+        "ambiguous": false,
+        "possible_track_ids": [
+          12
+        ]
+      },
+      {
+        "range_bin": 33.0,
+        "angle_deg": 7.0,
+        "strong": true,
+        "score_db": -0.033456054213190804,
+        "member_indices": [
+          1
+        ],
+        "member_count": 1,
+        "owner": null,
+        "ambiguous": false,
+        "possible_track_ids": []
+      },
+      {
+        "range_bin": 40.0,
+        "angle_deg": 5.0,
+        "strong": true,
+        "score_db": -1.0360118821298063,
+        "member_indices": [
+          2
+        ],
+        "member_count": 1,
+        "owner": 12,
+        "ambiguous": false,
+        "possible_track_ids": [
+          12
+        ]
+      },
+      {
+        "range_bin": 133.0,
+        "angle_deg": 5.0,
+        "strong": true,
+        "score_db": -4.064673974853818,
+        "member_indices": [
+          3
+        ],
+        "member_count": 1,
+        "owner": 9,
+        "ambiguous": false,
+        "possible_track_ids": [
+          9
+        ]
+      },
+      {
+        "range_bin": 58.0,
+        "angle_deg": -54.0,
+        "strong": true,
+        "score_db": -8.228838622180447,
+        "member_indices": [
+          5
+        ],
+        "member_count": 1,
+        "owner": null,
+        "ambiguous": false,
+        "possible_track_ids": []
+      }
+    ],
+    "visible_groups": [
+      {
+        "id": 9,
+        "range_bin": 133.0,
+        "angle_deg": 5.0,
+        "confirmed": true,
+        "support": "strong",
+        "member_count": 1
+      },
+      {
+        "id": 12,
+        "range_bin": 49.482604875664464,
+        "angle_deg": 3.586232520722588,
+        "confirmed": true,
+        "support": "strong",
+        "member_count": 2
+      },
+      {
+        "id": 13,
+        "range_bin": 33.0,
+        "angle_deg": 7.0,
+        "confirmed": false,
+        "support": "strong",
+        "member_count": 1
+      },
+      {
+        "id": 14,
+        "range_bin": 58.0,
+        "angle_deg": -54.0,
+        "confirmed": false,
+        "support": "strong",
+        "member_count": 1
+      }
+    ],
+    "lost_group_tracks": [
+      11
+    ],
+    "person_candidates": [],
+    "primary_id": 11,
+    "status": "ambiguous_or_lost",
+    "ambiguous_groups": [],
+    "pair_decisions": [
+      {
+        "peak_ids": [
+          27,
+          29
+        ],
+        "range_separation": 14.0,
+        "angle_separation": 3.0,
+        "valley_db": 10.157230995781683,
+        "history_samples": 1,
+        "merge": false,
+        "reason": "resolved_valley"
+      },
+      {
+        "peak_ids": [
+          27,
+          28
+        ],
+        "range_separation": 7.0,
+        "angle_separation": 1.0,
+        "valley_db": 7.6262154132096995,
+        "history_samples": 4,
+        "merge": false,
+        "reason": "resolved_valley"
+      },
+      {
+        "peak_ids": [
+          28,
+          29
+        ],
+        "range_separation": 7.0,
+        "angle_separation": 2.0,
+        "valley_db": 9.259904608909988,
+        "history_samples": 1,
+        "merge": false,
+        "reason": "resolved_valley"
+      },
+      {
+        "peak_ids": [
+          22,
+          27
+        ],
+        "range_separation": 6.0,
+        "angle_separation": 1.0,
+        "valley_db": 5.353866429802652,
+        "history_samples": 4,
+        "merge": true,
+        "reason": "close_connected_comoving_or_history_pending"
+      }
+    ]
+  },
+  {
+    "candidates": [
+      {
+        "range_bin": 22,
+        "angle_deg": 10.0,
+        "score_db": 0.0,
+        "range_excess_db": 20.86476058644812,
+        "strong": true
+      },
+      {
+        "range_bin": 33,
+        "angle_deg": 7.0,
+        "score_db": -4.068021081545523,
+        "range_excess_db": 20.777877861192145,
+        "strong": true
+      },
+      {
+        "range_bin": 41,
+        "angle_deg": 4.0,
+        "score_db": -9.357391773569718,
+        "range_excess_db": 17.482712134470297,
+        "strong": true
+      },
+      {
+        "range_bin": 112,
+        "angle_deg": 19.0,
+        "score_db": -11.596852835631049,
+        "range_excess_db": 23.756752157906483,
+        "strong": true
+      },
+      {
+        "range_bin": 57,
+        "angle_deg": -52.0,
+        "score_db": -18.496564850600198,
+        "range_excess_db": 16.243693200877964,
+        "strong": false
+      }
+    ],
+    "visible": [],
+    "lost": [
+      9,
+      11,
+      12
+    ],
+    "map_contrast_db": 32.8531518919534,
+    "reflection_visible": [
+      {
+        "id": 19,
+        "range_bin": 41.0,
+        "angle_deg": 4.0,
+        "confirmed": true,
+        "support": "strong"
+      },
+      {
+        "id": 22,
+        "range_bin": 33.0,
+        "angle_deg": 7.0,
+        "confirmed": true,
+        "support": "strong"
+      },
+      {
+        "id": 23,
+        "range_bin": 22.0,
+        "angle_deg": 10.0,
+        "confirmed": false,
+        "support": "strong"
+      },
+      {
+        "id": 25,
+        "range_bin": 112.0,
+        "angle_deg": 19.0,
+        "confirmed": false,
+        "support": "strong"
+      }
+    ],
+    "reflection_lost": [
+      17,
+      21
+    ],
+    "groups": [
+      {
+        "range_bin": 22.0,
+        "angle_deg": 10.0,
+        "strong": true,
+        "score_db": 0.0,
+        "member_indices": [
+          0
+        ],
+        "member_count": 1,
+        "owner": null,
+        "ambiguous": false,
+        "possible_track_ids": []
+      },
+      {
+        "range_bin": 33.0,
+        "angle_deg": 7.0,
+        "strong": true,
+        "score_db": -4.068021081545523,
+        "member_indices": [
+          1
+        ],
+        "member_count": 1,
+        "owner": 12,
+        "ambiguous": true,
+        "possible_track_ids": [
+          12,
+          11
+        ]
+      },
+      {
+        "range_bin": 41.0,
+        "angle_deg": 4.0,
+        "strong": true,
+        "score_db": -9.357391773569718,
+        "member_indices": [
+          2
+        ],
+        "member_count": 1,
+        "owner": 12,
+        "ambiguous": true,
+        "possible_track_ids": [
+          12,
+          11
+        ]
+      },
+      {
+        "range_bin": 112.0,
+        "angle_deg": 19.0,
+        "strong": true,
+        "score_db": -11.596852835631049,
+        "member_indices": [
+          3
+        ],
+        "member_count": 1,
+        "owner": null,
+        "ambiguous": false,
+        "possible_track_ids": []
+      },
+      {
+        "range_bin": 57.0,
+        "angle_deg": -52.0,
+        "strong": false,
+        "score_db": -18.496564850600198,
+        "member_indices": [
+          4
+        ],
+        "member_count": 1,
+        "owner": null,
+        "ambiguous": false,
+        "possible_track_ids": []
+      }
+    ],
+    "visible_groups": [
+      {
+        "id": 13,
+        "range_bin": 22.0,
+        "angle_deg": 10.0,
+        "confirmed": true,
+        "support": "strong",
+        "member_count": 1
+      },
+      {
+        "id": 15,
+        "range_bin": 112.0,
+        "angle_deg": 19.0,
+        "confirmed": false,
+        "support": "strong",
+        "member_count": 1
+      }
+    ],
+    "lost_group_tracks": [
+      9,
+      11,
+      12
+    ],
+    "person_candidates": [],
+    "primary_id": 11,
+    "status": "ambiguous_or_lost",
+    "ambiguous_groups": [
+      {
+        "range_bin": 33.0,
+        "angle_deg": 7.0,
+        "strong": true,
+        "score_db": -4.068021081545523,
+        "member_indices": [
+          1
+        ],
+        "member_count": 1,
+        "owner": 12,
+        "ambiguous": true,
+        "possible_track_ids": [
+          12,
+          11
+        ]
+      },
+      {
+        "range_bin": 41.0,
+        "angle_deg": 4.0,
+        "strong": true,
+        "score_db": -9.357391773569718,
+        "member_indices": [
+          2
+        ],
+        "member_count": 1,
+        "owner": 12,
+        "ambiguous": true,
+        "possible_track_ids": [
+          12,
+          11
+        ]
+      }
+    ],
+    "pair_decisions": [
+      {
+        "peak_ids": [
+          28,
+          29
+        ],
+        "range_separation": 11.0,
+        "angle_separation": 3.0,
+        "valley_db": 8.16821135232809,
+        "history_samples": 2,
+        "merge": false,
+        "reason": "resolved_valley"
+      },
+      {
+        "peak_ids": [
+          27,
+          28
+        ],
+        "range_separation": 8.0,
+        "angle_separation": 3.0,
+        "valley_db": 8.249520265352961,
+        "history_samples": 5,
+        "merge": false,
+        "reason": "resolved_valley"
+      }
+    ]
+  },
+  {
+    "candidates": [
+      {
+        "range_bin": 22,
+        "angle_deg": 10.0,
+        "score_db": 0.0,
+        "range_excess_db": 24.093274524508942,
+        "strong": true
+      },
+      {
+        "range_bin": 28,
+        "angle_deg": 9.0,
+        "score_db": -1.2759478392125363,
+        "range_excess_db": 24.408097311808064,
+        "strong": true
+      },
+      {
+        "range_bin": 112,
+        "angle_deg": 20.0,
+        "score_db": -6.852659168655331,
+        "range_excess_db": 24.119499262392935,
+        "strong": true
+      },
+      {
+        "range_bin": 53,
+        "angle_deg": -54.0,
+        "score_db": -18.64593116549591,
+        "range_excess_db": 12.679889683532153,
+        "strong": false
+      }
+    ],
+    "visible": [],
+    "lost": [
+      9,
+      11,
+      12,
+      13
+    ],
+    "map_contrast_db": 27.91713930202215,
+    "reflection_visible": [
+      {
+        "id": 21,
+        "range_bin": 28.0,
+        "angle_deg": 9.0,
+        "confirmed": true,
+        "support": "strong"
+      },
+      {
+        "id": 22,
+        "range_bin": 22.0,
+        "angle_deg": 10.0,
+        "confirmed": true,
+        "support": "strong"
+      },
+      {
+        "id": 25,
+        "range_bin": 112.0,
+        "angle_deg": 20.0,
+        "confirmed": false,
+        "support": "strong"
+      }
+    ],
+    "reflection_lost": [
+      17,
+      19
+    ],
+    "groups": [
+      {
+        "range_bin": 22.0,
+        "angle_deg": 10.0,
+        "strong": true,
+        "score_db": 0.0,
+        "member_indices": [
+          0
+        ],
+        "member_count": 1,
+        "owner": 13,
+        "ambiguous": true,
+        "possible_track_ids": [
+          13,
+          12
+        ]
+      },
+      {
+        "range_bin": 28.0,
+        "angle_deg": 9.0,
+        "strong": true,
+        "score_db": -1.2759478392125363,
+        "member_indices": [
+          1
+        ],
+        "member_count": 1,
+        "owner": 12,
+        "ambiguous": true,
+        "possible_track_ids": [
+          12,
+          11,
+          13
+        ]
+      },
+      {
+        "range_bin": 112.0,
+        "angle_deg": 20.0,
+        "strong": true,
+        "score_db": -6.852659168655331,
+        "member_indices": [
+          2
+        ],
+        "member_count": 1,
+        "owner": null,
+        "ambiguous": false,
+        "possible_track_ids": []
+      },
+      {
+        "range_bin": 53.0,
+        "angle_deg": -54.0,
+        "strong": false,
+        "score_db": -18.64593116549591,
+        "member_indices": [
+          3
+        ],
+        "member_count": 1,
+        "owner": null,
+        "ambiguous": false,
+        "possible_track_ids": []
+      }
+    ],
+    "visible_groups": [
+      {
+        "id": 15,
+        "range_bin": 112.0,
+        "angle_deg": 20.0,
+        "confirmed": false,
+        "support": "strong",
+        "member_count": 1
+      }
+    ],
+    "lost_group_tracks": [
+      9,
+      11,
+      12,
+      13
+    ],
+    "person_candidates": [],
+    "primary_id": null,
+    "status": "not_yet_acquired",
+    "ambiguous_groups": [
+      {
+        "range_bin": 22.0,
+        "angle_deg": 10.0,
+        "strong": true,
+        "score_db": 0.0,
+        "member_indices": [
+          0
+        ],
+        "member_count": 1,
+        "owner": 13,
+        "ambiguous": true,
+        "possible_track_ids": [
+          13,
+          12
+        ]
+      },
+      {
+        "range_bin": 28.0,
+        "angle_deg": 9.0,
+        "strong": true,
+        "score_db": -1.2759478392125363,
+        "member_indices": [
+          1
+        ],
+        "member_count": 1,
+        "owner": 12,
+        "ambiguous": true,
+        "possible_track_ids": [
+          12,
+          11,
+          13
+        ]
+      }
+    ],
+    "pair_decisions": [
+      {
+        "peak_ids": [
+          28,
+          29
+        ],
+        "range_separation": 6.0,
+        "angle_separation": 1.0,
+        "valley_db": 7.248477219024572,
+        "history_samples": 3,
+        "merge": false,
+        "reason": "different_established_tracks"
+      }
+    ]
+  },
+  {
+    "candidates": [
+      {
+        "range_bin": 24,
+        "angle_deg": -2.0,
+        "score_db": 0.0,
+        "range_excess_db": 25.40836366249046,
+        "strong": true
+      },
+      {
+        "range_bin": 16,
+        "angle_deg": -2.0,
+        "score_db": -2.289714496764152,
+        "range_excess_db": 26.599849541476814,
+        "strong": true
+      },
+      {
+        "range_bin": 132,
+        "angle_deg": 3.0,
+        "score_db": -8.760601043208638,
+        "range_excess_db": 19.782008539231313,
+        "strong": true
+      },
+      {
+        "range_bin": 112,
+        "angle_deg": 20.0,
+        "score_db": -9.292415291330121,
+        "range_excess_db": 22.004867433547602,
+        "strong": true
+      }
+    ],
+    "visible": [
+      {
+        "id": 12,
+        "range_bin": 24.0,
+        "angle_deg": -2.0,
+        "confirmed": true,
+        "support": "strong",
+        "member_count": 1
+      }
+    ],
+    "lost": [
+      13
+    ],
+    "map_contrast_db": 29.52166208540205,
+    "reflection_visible": [
+      {
+        "id": 17,
+        "range_bin": 132.0,
+        "angle_deg": 3.0,
+        "confirmed": true,
+        "support": "strong"
+      },
+      {
+        "id": 19,
+        "range_bin": 24.0,
+        "angle_deg": -2.0,
+        "confirmed": true,
+        "support": "strong"
+      },
+      {
+        "id": 21,
+        "range_bin": 16.0,
+        "angle_deg": -2.0,
+        "confirmed": true,
+        "support": "strong"
+      },
+      {
+        "id": 25,
+        "range_bin": 112.0,
+        "angle_deg": 20.0,
+        "confirmed": true,
+        "support": "strong"
+      }
+    ],
+    "reflection_lost": [
+      22
+    ],
+    "groups": [
+      {
+        "range_bin": 24.0,
+        "angle_deg": -2.0,
+        "strong": true,
+        "score_db": 0.0,
+        "member_indices": [
+          0
+        ],
+        "member_count": 1,
+        "owner": 12,
+        "ambiguous": false,
+        "possible_track_ids": [
+          12
+        ]
+      },
+      {
+        "range_bin": 16.0,
+        "angle_deg": -2.0,
+        "strong": true,
+        "score_db": -2.289714496764152,
+        "member_indices": [
+          1
+        ],
+        "member_count": 1,
+        "owner": 12,
+        "ambiguous": false,
+        "possible_track_ids": [
+          12
+        ]
+      },
+      {
+        "range_bin": 132.0,
+        "angle_deg": 3.0,
+        "strong": true,
+        "score_db": -8.760601043208638,
+        "member_indices": [
+          2
+        ],
+        "member_count": 1,
+        "owner": 9,
+        "ambiguous": false,
+        "possible_track_ids": [
+          9
+        ]
+      },
+      {
+        "range_bin": 112.0,
+        "angle_deg": 20.0,
+        "strong": true,
+        "score_db": -9.292415291330121,
+        "member_indices": [
+          3
+        ],
+        "member_count": 1,
+        "owner": null,
+        "ambiguous": false,
+        "possible_track_ids": []
+      }
+    ],
+    "visible_groups": [
+      {
+        "id": 9,
+        "range_bin": 132.0,
+        "angle_deg": 3.0,
+        "confirmed": true,
+        "support": "strong",
+        "member_count": 1
+      },
+      {
+        "id": 12,
+        "range_bin": 24.0,
+        "angle_deg": -2.0,
+        "confirmed": true,
+        "support": "strong",
+        "member_count": 1
+      },
+      {
+        "id": 15,
+        "range_bin": 112.0,
+        "angle_deg": 20.0,
+        "confirmed": true,
+        "support": "strong",
+        "member_count": 1
+      }
+    ],
+    "lost_group_tracks": [
+      13
+    ],
+    "person_candidates": [
+      {
+        "id": 12,
+        "range_bin": 24.0,
+        "angle_deg": -2.0,
+        "confirmed": true,
+        "support": "strong",
+        "member_count": 1
+      }
+    ],
+    "primary_id": 12,
+    "status": "observed",
+    "ambiguous_groups": [],
+    "pair_decisions": [
+      {
+        "peak_ids": [
+          27,
+          29
+        ],
+        "range_separation": 8.0,
+        "angle_separation": 0.0,
+        "valley_db": 7.912373334860632,
+        "history_samples": 4,
+        "merge": false,
+        "reason": "different_motion"
+      }
+    ]
+  },
+  {
+    "candidates": [
+      {
+        "range_bin": 27,
+        "angle_deg": -11.0,
+        "score_db": 0.0,
+        "range_excess_db": 23.18075284622786,
+        "strong": true
+      },
+      {
+        "range_bin": 16,
+        "angle_deg": -5.0,
+        "score_db": -3.309377721997113,
+        "range_excess_db": 25.118606302932292,
+        "strong": true
+      },
+      {
+        "range_bin": 132,
+        "angle_deg": 2.0,
+        "score_db": -8.408614721759806,
+        "range_excess_db": 24.14188910751477,
+        "strong": true
+      }
+    ],
+    "visible": [
+      {
+        "id": 12,
+        "range_bin": 16.0,
+        "angle_deg": -5.0,
+        "confirmed": true,
+        "support": "strong",
+        "member_count": 1
+      }
+    ],
+    "lost": [
+      13,
+      15
+    ],
+    "map_contrast_db": 30.578544034621217,
+    "reflection_visible": [
+      {
+        "id": 17,
+        "range_bin": 132.0,
+        "angle_deg": 2.0,
+        "confirmed": true,
+        "support": "strong"
+      },
+      {
+        "id": 19,
+        "range_bin": 27.0,
+        "angle_deg": -11.0,
+        "confirmed": true,
+        "support": "strong"
+      },
+      {
+        "id": 21,
+        "range_bin": 16.0,
+        "angle_deg": -5.0,
+        "confirmed": true,
+        "support": "strong"
+      }
+    ],
+    "reflection_lost": [
+      22,
+      25
+    ],
+    "groups": [
+      {
+        "range_bin": 27.0,
+        "angle_deg": -11.0,
+        "strong": true,
+        "score_db": 0.0,
+        "member_indices": [
+          0
+        ],
+        "member_count": 1,
+        "owner": 12,
+        "ambiguous": false,
+        "possible_track_ids": [
+          12
+        ]
+      },
+      {
+        "range_bin": 16.0,
+        "angle_deg": -5.0,
+        "strong": true,
+        "score_db": -3.309377721997113,
+        "member_indices": [
+          1
+        ],
+        "member_count": 1,
+        "owner": 12,
+        "ambiguous": false,
+        "possible_track_ids": [
+          12
+        ]
+      },
+      {
+        "range_bin": 132.0,
+        "angle_deg": 2.0,
+        "strong": true,
+        "score_db": -8.408614721759806,
+        "member_indices": [
+          2
+        ],
+        "member_count": 1,
+        "owner": 9,
+        "ambiguous": false,
+        "possible_track_ids": [
+          9
+        ]
+      }
+    ],
+    "visible_groups": [
+      {
+        "id": 9,
+        "range_bin": 132.0,
+        "angle_deg": 2.0,
+        "confirmed": true,
+        "support": "strong",
+        "member_count": 1
+      },
+      {
+        "id": 12,
+        "range_bin": 16.0,
+        "angle_deg": -5.0,
+        "confirmed": true,
+        "support": "strong",
+        "member_count": 1
+      }
+    ],
+    "lost_group_tracks": [
+      13,
+      15
+    ],
+    "person_candidates": [
+      {
+        "id": 12,
+        "range_bin": 16.0,
+        "angle_deg": -5.0,
+        "confirmed": true,
+        "support": "strong",
+        "member_count": 1
+      }
+    ],
+    "primary_id": 12,
+    "status": "observed",
+    "ambiguous_groups": [],
+    "pair_decisions": [
+      {
+        "peak_ids": [
+          27,
+          29
+        ],
+        "range_separation": 11.0,
+        "angle_separation": 6.0,
+        "valley_db": 7.538671906526019,
+        "history_samples": 5,
+        "merge": false,
+        "reason": "resolved_valley"
+      }
+    ]
+  },
+  {
+    "candidates": [
+      {
+        "range_bin": 30,
+        "angle_deg": -12.0,
+        "score_db": 0.0,
+        "range_excess_db": 27.127077666213516,
+        "strong": true
+      },
+      {
+        "range_bin": 36,
+        "angle_deg": -11.0,
+        "score_db": -3.7000131827836142,
+        "range_excess_db": 21.744436065863418,
+        "strong": true
+      },
+      {
+        "range_bin": 42,
+        "angle_deg": -10.0,
+        "score_db": -9.198063483097412,
+        "range_excess_db": 17.43996511394257,
+        "strong": true
+      },
+      {
+        "range_bin": 51,
+        "angle_deg": -35.0,
+        "score_db": -19.63263338547658,
+        "range_excess_db": 11.602762008565811,
+        "strong": false
+      }
+    ],
+    "visible": [
+      {
+        "id": 12,
+        "range_bin": 31.16449566219772,
+        "angle_deg": -11.805917389633713,
+        "confirmed": true,
+        "support": "strong",
+        "member_count": 2
+      }
+    ],
+    "lost": [
+      9,
+      15
+    ],
+    "map_contrast_db": 32.021876559265074,
+    "reflection_visible": [
+      {
+        "id": 19,
+        "range_bin": 30.0,
+        "angle_deg": -12.0,
+        "confirmed": true,
+        "support": "strong"
+      },
+      {
+        "id": 26,
+        "range_bin": 36.0,
+        "angle_deg": -11.0,
+        "confirmed": false,
+        "support": "strong"
+      },
+      {
+        "id": 27,
+        "range_bin": 42.0,
+        "angle_deg": -10.0,
+        "confirmed": false,
+        "support": "strong"
+      }
+    ],
+    "reflection_lost": [
+      17,
+      21,
+      22,
+      25
+    ],
+    "groups": [
+      {
+        "range_bin": 31.16449566219772,
+        "angle_deg": -11.805917389633713,
+        "strong": true,
+        "score_db": 0.0,
+        "member_indices": [
+          0,
+          2
+        ],
+        "member_count": 2,
+        "owner": null,
+        "ambiguous": false,
+        "possible_track_ids": []
+      },
+      {
+        "range_bin": 36.0,
+        "angle_deg": -11.0,
+        "strong": true,
+        "score_db": -3.7000131827836142,
+        "member_indices": [
+          1
+        ],
+        "member_count": 1,
+        "owner": null,
+        "ambiguous": false,
+        "possible_track_ids": []
+      },
+      {
+        "range_bin": 51.0,
+        "angle_deg": -35.0,
+        "strong": false,
+        "score_db": -19.63263338547658,
+        "member_indices": [
+          3
+        ],
+        "member_count": 1,
+        "owner": null,
+        "ambiguous": false,
+        "possible_track_ids": []
+      }
+    ],
+    "visible_groups": [
+      {
+        "id": 12,
+        "range_bin": 31.16449566219772,
+        "angle_deg": -11.805917389633713,
+        "confirmed": true,
+        "support": "strong",
+        "member_count": 2
+      },
+      {
+        "id": 16,
+        "range_bin": 36.0,
+        "angle_deg": -11.0,
+        "confirmed": false,
+        "support": "strong",
+        "member_count": 1
+      }
+    ],
+    "lost_group_tracks": [
+      9,
+      15
+    ],
+    "person_candidates": [
+      {
+        "id": 12,
+        "range_bin": 31.16449566219772,
+        "angle_deg": -11.805917389633713,
+        "confirmed": true,
+        "support": "strong",
+        "member_count": 2
+      }
+    ],
+    "primary_id": 12,
+    "status": "observed",
+    "ambiguous_groups": [],
+    "pair_decisions": [
+      {
+        "peak_ids": [
+          27,
+          29
+        ],
+        "range_separation": 6.0,
+        "angle_separation": 1.0,
+        "valley_db": 7.357167390801923,
+        "history_samples": 6,
+        "merge": false,
+        "reason": "resolved_valley"
+      },
+      {
+        "peak_ids": [
+          29,
+          33
+        ],
+        "range_separation": 12.0,
+        "angle_separation": 2.0,
+        "valley_db": 4.4087327554673745,
+        "history_samples": 1,
+        "merge": true,
+        "reason": "close_connected_comoving_or_history_pending"
+      }
+    ]
+  },
+  {
+    "candidates": [
+      {
+        "range_bin": 37,
+        "angle_deg": -10.0,
+        "score_db": 0.0,
+        "range_excess_db": 23.156670864397086,
+        "strong": true
+      },
+      {
+        "range_bin": 49,
+        "angle_deg": -8.0,
+        "score_db": -3.4194049429579207,
+        "range_excess_db": 19.683058458515433,
+        "strong": true
+      },
+      {
+        "range_bin": 57,
+        "angle_deg": -8.0,
+        "score_db": -5.3038176551967355,
+        "range_excess_db": 19.049668199159,
+        "strong": true
+      },
+      {
+        "range_bin": 53,
+        "angle_deg": -40.0,
+        "score_db": -14.947811177578314,
+        "range_excess_db": 15.448342659214916,
+        "strong": true
+      }
+    ],
+    "visible": [
+      {
+        "id": 12,
+        "range_bin": 37.0,
+        "angle_deg": -10.0,
+        "confirmed": true,
+        "support": "strong",
+        "member_count": 1
+      }
+    ],
+    "lost": [
+      9,
+      15
+    ],
+    "map_contrast_db": 30.536209393526033,
+    "reflection_visible": [
+      {
+        "id": 19,
+        "range_bin": 37.0,
+        "angle_deg": -10.0,
+        "confirmed": true,
+        "support": "strong"
+      },
+      {
+        "id": 26,
+        "range_bin": 49.0,
+        "angle_deg": -8.0,
+        "confirmed": false,
+        "support": "strong"
+      },
+      {
+        "id": 27,
+        "range_bin": 57.0,
+        "angle_deg": -8.0,
+        "confirmed": false,
+        "support": "strong"
+      },
+      {
+        "id": 28,
+        "range_bin": 53.0,
+        "angle_deg": -40.0,
+        "confirmed": false,
+        "support": "strong"
+      }
+    ],
+    "reflection_lost": [
+      17,
+      21,
+      25
+    ],
+    "groups": [
+      {
+        "range_bin": 37.0,
+        "angle_deg": -10.0,
+        "strong": true,
+        "score_db": 0.0,
+        "member_indices": [
+          0
+        ],
+        "member_count": 1,
+        "owner": 12,
+        "ambiguous": false,
+        "possible_track_ids": [
+          12
+        ]
+      },
+      {
+        "range_bin": 52.70882893189949,
+        "angle_deg": -8.0,
+        "strong": true,
+        "score_db": -3.4194049429579207,
+        "member_indices": [
+          1,
+          2
+        ],
+        "member_count": 2,
+        "owner": 12,
+        "ambiguous": false,
+        "possible_track_ids": [
+          12
+        ]
+      },
+      {
+        "range_bin": 53.0,
+        "angle_deg": -40.0,
+        "strong": true,
+        "score_db": -14.947811177578314,
+        "member_indices": [
+          3
+        ],
+        "member_count": 1,
+        "owner": null,
+        "ambiguous": false,
+        "possible_track_ids": []
+      }
+    ],
+    "visible_groups": [
+      {
+        "id": 12,
+        "range_bin": 37.0,
+        "angle_deg": -10.0,
+        "confirmed": true,
+        "support": "strong",
+        "member_count": 1
+      },
+      {
+        "id": 17,
+        "range_bin": 53.0,
+        "angle_deg": -40.0,
+        "confirmed": false,
+        "support": "strong",
+        "member_count": 1
+      }
+    ],
+    "lost_group_tracks": [
+      9,
+      15
+    ],
+    "person_candidates": [
+      {
+        "id": 12,
+        "range_bin": 37.0,
+        "angle_deg": -10.0,
+        "confirmed": true,
+        "support": "strong",
+        "member_count": 1
+      }
+    ],
+    "primary_id": 12,
+    "status": "observed",
+    "ambiguous_groups": [],
+    "pair_decisions": [
+      {
+        "peak_ids": [
+          27,
+          29
+        ],
+        "range_separation": 12.0,
+        "angle_separation": 2.0,
+        "valley_db": 7.772952942137317,
+        "history_samples": 7,
+        "merge": false,
+        "reason": "resolved_valley"
+      },
+      {
+        "peak_ids": [
+          27,
+          33
+        ],
+        "range_separation": 8.0,
+        "angle_separation": 0.0,
+        "valley_db": 7.583421150803313,
+        "history_samples": 2,
+        "merge": true,
+        "reason": "close_connected_comoving_or_history_pending"
+      }
+    ]
+  },
+  {
+    "candidates": [
+      {
+        "range_bin": 59,
+        "angle_deg": -7.0,
+        "score_db": 0.0,
+        "range_excess_db": 17.19743063274636,
+        "strong": true
+      },
+      {
+        "range_bin": 49,
+        "angle_deg": -8.0,
+        "score_db": -2.337512211822025,
+        "range_excess_db": 19.098680725079916,
+        "strong": true
+      },
+      {
+        "range_bin": 67,
+        "angle_deg": -9.0,
+        "score_db": -6.455913002216268,
+        "range_excess_db": 15.151548171046706,
+        "strong": true
+      },
+      {
+        "range_bin": 113,
+        "angle_deg": -12.0,
+        "score_db": -20.748055805074337,
+        "range_excess_db": 11.94484466161255,
+        "strong": false
+      }
+    ],
+    "visible": [],
+    "lost": [
+      9,
+      12
+    ],
+    "map_contrast_db": 26.51968309763911,
+    "reflection_visible": [
+      {
+        "id": 19,
+        "range_bin": 49.0,
+        "angle_deg": -8.0,
+        "confirmed": true,
+        "support": "strong"
+      },
+      {
+        "id": 26,
+        "range_bin": 59.0,
+        "angle_deg": -7.0,
+        "confirmed": true,
+        "support": "strong"
+      },
+      {
+        "id": 27,
+        "range_bin": 67.0,
+        "angle_deg": -9.0,
+        "confirmed": true,
+        "support": "strong"
+      }
+    ],
+    "reflection_lost": [
+      17,
+      21
+    ],
+    "groups": [
+      {
+        "range_bin": 55.69206905509089,
+        "angle_deg": -7.881625023064389,
+        "strong": true,
+        "score_db": 0.0,
+        "member_indices": [
+          0,
+          1,
+          2
+        ],
+        "member_count": 3,
+        "owner": 12,
+        "ambiguous": false,
+        "possible_track_ids": [
+          12
+        ]
+      },
+      {
+        "range_bin": 113.0,
+        "angle_deg": -12.0,
+        "strong": false,
+        "score_db": -20.748055805074337,
+        "member_indices": [
+          3
+        ],
+        "member_count": 1,
+        "owner": null,
+        "ambiguous": false,
+        "possible_track_ids": []
+      }
+    ],
+    "visible_groups": [],
+    "lost_group_tracks": [
+      9,
+      12
+    ],
+    "person_candidates": [],
+    "primary_id": 12,
+    "status": "ambiguous_or_lost",
+    "ambiguous_groups": [],
+    "pair_decisions": [
+      {
+        "peak_ids": [
+          27,
+          29
+        ],
+        "range_separation": 10.0,
+        "angle_separation": 1.0,
+        "valley_db": 2.271643404772,
+        "history_samples": 8,
+        "merge": true,
+        "reason": "close_connected_comoving_or_history_pending"
+      },
+      {
+        "peak_ids": [
+          27,
+          33
+        ],
+        "range_separation": 8.0,
+        "angle_separation": 2.0,
+        "valley_db": 0.8626200798561667,
+        "history_samples": 3,
+        "merge": true,
+        "reason": "close_connected_comoving_or_history_pending"
+      },
+      {
+        "peak_ids": [
+          29,
+          33
+        ],
+        "range_separation": 18.0,
+        "angle_separation": 1.0,
+        "valley_db": 0.5724626911200286,
+        "history_samples": 3,
+        "merge": true,
+        "reason": "close_connected_comoving_or_history_pending"
+      }
+    ]
+  },
+  {
+    "candidates": [
+      {
+        "range_bin": 61,
+        "angle_deg": -7.0,
+        "score_db": 0.0,
+        "range_excess_db": 14.326252956995162,
+        "strong": true
+      },
+      {
+        "range_bin": 67,
+        "angle_deg": -7.0,
+        "score_db": -2.6561160610741363,
+        "range_excess_db": 13.97061153386585,
+        "strong": true
+      },
+      {
+        "range_bin": 80,
+        "angle_deg": -7.0,
+        "score_db": -6.926378366182422,
+        "range_excess_db": 13.119735636893807,
+        "strong": true
+      },
+      {
+        "range_bin": 81,
+        "angle_deg": 53.0,
+        "score_db": -10.708267289835353,
+        "range_excess_db": 13.37019110452242,
+        "strong": true
+      }
+    ],
+    "visible": [
+      {
+        "id": 12,
+        "range_bin": 63.87723440075679,
+        "angle_deg": -7.000000000000001,
+        "confirmed": true,
+        "support": "strong",
+        "member_count": 2
+      }
+    ],
+    "lost": [],
+    "map_contrast_db": 28.096014914226863,
+    "reflection_visible": [
+      {
+        "id": 19,
+        "range_bin": 61.0,
+        "angle_deg": -7.0,
+        "confirmed": true,
+        "support": "strong"
+      },
+      {
+        "id": 26,
+        "range_bin": 67.0,
+        "angle_deg": -7.0,
+        "confirmed": true,
+        "support": "strong"
+      },
+      {
+        "id": 27,
+        "range_bin": 80.0,
+        "angle_deg": -7.0,
+        "confirmed": true,
+        "support": "strong"
+      },
+      {
+        "id": 29,
+        "range_bin": 81.0,
+        "angle_deg": 53.0,
+        "confirmed": false,
+        "support": "strong"
+      }
+    ],
+    "reflection_lost": [],
+    "groups": [
+      {
+        "range_bin": 63.87723440075679,
+        "angle_deg": -7.000000000000001,
+        "strong": true,
+        "score_db": 0.0,
+        "member_indices": [
+          0,
+          1
+        ],
+        "member_count": 2,
+        "owner": 12,
+        "ambiguous": false,
+        "possible_track_ids": [
+          12
+        ]
+      },
+      {
+        "range_bin": 80.0,
+        "angle_deg": -7.0,
+        "strong": true,
+        "score_db": -6.926378366182422,
+        "member_indices": [
+          2
+        ],
+        "member_count": 1,
+        "owner": null,
+        "ambiguous": false,
+        "possible_track_ids": []
+      },
+      {
+        "range_bin": 81.0,
+        "angle_deg": 53.0,
+        "strong": true,
+        "score_db": -10.708267289835353,
+        "member_indices": [
+          3
+        ],
+        "member_count": 1,
+        "owner": null,
+        "ambiguous": false,
+        "possible_track_ids": []
+      }
+    ],
+    "visible_groups": [
+      {
+        "id": 12,
+        "range_bin": 63.87723440075679,
+        "angle_deg": -7.000000000000001,
+        "confirmed": true,
+        "support": "strong",
+        "member_count": 2
+      },
+      {
+        "id": 16,
+        "range_bin": 80.0,
+        "angle_deg": -7.0,
+        "confirmed": false,
+        "support": "strong",
+        "member_count": 1
+      },
+      {
+        "id": 18,
+        "range_bin": 81.0,
+        "angle_deg": 53.0,
+        "confirmed": false,
+        "support": "strong",
+        "member_count": 1
+      }
+    ],
+    "lost_group_tracks": [],
+    "person_candidates": [
+      {
+        "id": 12,
+        "range_bin": 63.87723440075679,
+        "angle_deg": -7.000000000000001,
+        "confirmed": true,
+        "support": "strong",
+        "member_count": 2
+      }
+    ],
+    "primary_id": 12,
+    "status": "observed",
+    "ambiguous_groups": [],
+    "pair_decisions": [
+      {
+        "peak_ids": [
+          27,
+          29
+        ],
+        "range_separation": 6.0,
+        "angle_separation": 0.0,
+        "valley_db": 5.585752628161957,
+        "history_samples": 9,
+        "merge": true,
+        "reason": "close_connected_comoving_or_history_pending"
+      }
+    ]
+  },
+  {
+    "candidates": [
+      {
+        "range_bin": 76,
+        "angle_deg": -6.0,
+        "score_db": 0.0,
+        "range_excess_db": 12.668135843300831,
+        "strong": true
+      },
+      {
+        "range_bin": 95,
+        "angle_deg": -6.0,
+        "score_db": -0.36672480866766693,
+        "range_excess_db": 11.898916507246057,
+        "strong": true
+      },
+      {
+        "range_bin": 88,
+        "angle_deg": -8.0,
+        "score_db": -4.457731988890642,
+        "range_excess_db": 8.32126202410943,
+        "strong": true
+      },
+      {
+        "range_bin": 97,
+        "angle_deg": 36.0,
+        "score_db": -10.239978731129028,
+        "range_excess_db": 8.544011234358855,
+        "strong": true
+      }
+    ],
+    "visible": [
+      {
+        "id": 12,
+        "range_bin": 79.22516303857104,
+        "angle_deg": -6.537527173095173,
+        "confirmed": true,
+        "support": "strong",
+        "member_count": 2
+      }
+    ],
+    "lost": [],
+    "map_contrast_db": 24.136863294200282,
+    "reflection_visible": [
+      {
+        "id": 26,
+        "range_bin": 76.0,
+        "angle_deg": -6.0,
+        "confirmed": true,
+        "support": "strong"
+      },
+      {
+        "id": 27,
+        "range_bin": 88.0,
+        "angle_deg": -8.0,
+        "confirmed": true,
+        "support": "strong"
+      },
+      {
+        "id": 30,
+        "range_bin": 95.0,
+        "angle_deg": -6.0,
+        "confirmed": false,
+        "support": "strong"
+      },
+      {
+        "id": 31,
+        "range_bin": 97.0,
+        "angle_deg": 36.0,
+        "confirmed": false,
+        "support": "strong"
+      }
+    ],
+    "reflection_lost": [
+      19
+    ],
+    "groups": [
+      {
+        "range_bin": 79.22516303857104,
+        "angle_deg": -6.537527173095173,
+        "strong": true,
+        "score_db": 0.0,
+        "member_indices": [
+          0,
+          2
+        ],
+        "member_count": 2,
+        "owner": 12,
+        "ambiguous": false,
+        "possible_track_ids": [
+          12
+        ]
+      },
+      {
+        "range_bin": 95.0,
+        "angle_deg": -6.0,
+        "strong": true,
+        "score_db": -0.36672480866766693,
+        "member_indices": [
+          1
+        ],
+        "member_count": 1,
+        "owner": null,
+        "ambiguous": false,
+        "possible_track_ids": []
+      },
+      {
+        "range_bin": 97.0,
+        "angle_deg": 36.0,
+        "strong": true,
+        "score_db": -10.239978731129028,
+        "member_indices": [
+          3
+        ],
+        "member_count": 1,
+        "owner": null,
+        "ambiguous": false,
+        "possible_track_ids": []
+      }
+    ],
+    "visible_groups": [
+      {
+        "id": 12,
+        "range_bin": 79.22516303857104,
+        "angle_deg": -6.537527173095173,
+        "confirmed": true,
+        "support": "strong",
+        "member_count": 2
+      },
+      {
+        "id": 16,
+        "range_bin": 95.0,
+        "angle_deg": -6.0,
+        "confirmed": false,
+        "support": "strong",
+        "member_count": 1
+      },
+      {
+        "id": 19,
+        "range_bin": 97.0,
+        "angle_deg": 36.0,
+        "confirmed": false,
+        "support": "strong",
+        "member_count": 1
+      }
+    ],
+    "lost_group_tracks": [],
+    "person_candidates": [
+      {
+        "id": 12,
+        "range_bin": 79.22516303857104,
+        "angle_deg": -6.537527173095173,
+        "confirmed": true,
+        "support": "strong",
+        "member_count": 2
+      }
+    ],
+    "primary_id": 12,
+    "status": "observed",
+    "ambiguous_groups": [],
+    "pair_decisions": [
+      {
+        "peak_ids": [
+          27,
+          33
+        ],
+        "range_separation": 12.0,
+        "angle_separation": 2.0,
+        "valley_db": 1.2045289660232585,
+        "history_samples": 5,
+        "merge": true,
+        "reason": "close_connected_comoving_or_history_pending"
+      }
+    ]
+  },
+  {
+    "candidates": [
+      {
+        "range_bin": 93,
+        "angle_deg": -4.0,
+        "score_db": 0.0,
+        "range_excess_db": 12.771702863019812,
+        "strong": true
+      },
+      {
+        "range_bin": 107,
+        "angle_deg": -5.0,
+        "score_db": -0.25501412680878266,
+        "range_excess_db": 10.515562388349949,
+        "strong": true
+      },
+      {
+        "range_bin": 99,
+        "angle_deg": -6.0,
+        "score_db": -3.2801464690466005,
+        "range_excess_db": 10.560094036896672,
+        "strong": true
+      },
+      {
+        "range_bin": 238,
+        "angle_deg": -5.0,
+        "score_db": -20.53236172969897,
+        "range_excess_db": 8.16771617550448,
+        "strong": false
+      },
+      {
+        "range_bin": 121,
+        "angle_deg": 47.0,
+        "score_db": -20.736069127270696,
+        "range_excess_db": 8.415919250053484,
+        "strong": false
+      }
+    ],
+    "visible": [],
+    "lost": [
+      12
+    ],
+    "map_contrast_db": 23.133377218665895,
+    "reflection_visible": [
+      {
+        "id": 19,
+        "range_bin": 93.0,
+        "angle_deg": -4.0,
+        "confirmed": true,
+        "support": "strong"
+      },
+      {
+        "id": 27,
+        "range_bin": 99.0,
+        "angle_deg": -6.0,
+        "confirmed": true,
+        "support": "strong"
+      },
+      {
+        "id": 30,
+        "range_bin": 107.0,
+        "angle_deg": -5.0,
+        "confirmed": false,
+        "support": "strong"
+      }
+    ],
+    "reflection_lost": [
+      26
+    ],
+    "groups": [
+      {
+        "range_bin": 95.25222776103058,
+        "angle_deg": -4.7507425870101985,
+        "strong": true,
+        "score_db": 0.0,
+        "member_indices": [
+          0,
+          2
+        ],
+        "member_count": 2,
+        "owner": 12,
+        "ambiguous": false,
+        "possible_track_ids": [
+          12
+        ]
+      },
+      {
+        "range_bin": 107.0,
+        "angle_deg": -5.0,
+        "strong": true,
+        "score_db": -0.25501412680878266,
+        "member_indices": [
+          1
+        ],
+        "member_count": 1,
+        "owner": 12,
+        "ambiguous": false,
+        "possible_track_ids": [
+          12
+        ]
+      },
+      {
+        "range_bin": 238.0,
+        "angle_deg": -5.0,
+        "strong": false,
+        "score_db": -20.53236172969897,
+        "member_indices": [
+          3
+        ],
+        "member_count": 1,
+        "owner": null,
+        "ambiguous": false,
+        "possible_track_ids": []
+      },
+      {
+        "range_bin": 121.0,
+        "angle_deg": 47.0,
+        "strong": false,
+        "score_db": -20.736069127270696,
+        "member_indices": [
+          4
+        ],
+        "member_count": 1,
+        "owner": null,
+        "ambiguous": false,
+        "possible_track_ids": []
+      }
+    ],
+    "visible_groups": [],
+    "lost_group_tracks": [
+      12
+    ],
+    "person_candidates": [],
+    "primary_id": 12,
+    "status": "ambiguous_or_lost",
+    "ambiguous_groups": [],
+    "pair_decisions": [
+      {
+        "peak_ids": [
+          29,
+          35
+        ],
+        "range_separation": 14.0,
+        "angle_separation": 1.0,
+        "valley_db": 7.279232309652347,
+        "history_samples": 3,
+        "merge": false,
+        "reason": "different_motion"
+      },
+      {
+        "peak_ids": [
+          29,
+          33
+        ],
+        "range_separation": 6.0,
+        "angle_separation": 2.0,
+        "valley_db": 2.655906525582671,
+        "history_samples": 6,
+        "merge": true,
+        "reason": "close_connected_comoving_or_history_pending"
+      }
+    ]
+  },
+  {
+    "candidates": [
+      {
+        "range_bin": 106,
+        "angle_deg": -4.0,
+        "score_db": 0.0,
+        "range_excess_db": 10.039412285633006,
+        "strong": true
+      },
+      {
+        "range_bin": 119,
+        "angle_deg": -8.0,
+        "score_db": -1.0561785861493083,
+        "range_excess_db": 8.877158356251293,
+        "strong": true
+      },
+      {
+        "range_bin": 131,
+        "angle_deg": -7.0,
+        "score_db": -4.6844644221706835,
+        "range_excess_db": 7.670854781351991,
+        "strong": false
+      },
+      {
+        "range_bin": 132,
+        "angle_deg": 30.0,
+        "score_db": -16.080269553866998,
+        "range_excess_db": 9.29397417058663,
+        "strong": false
+      }
+    ],
+    "visible": [],
+    "lost": [
+      12
+    ],
+    "map_contrast_db": 23.46329733455515,
+    "reflection_visible": [
+      {
+        "id": 19,
+        "range_bin": 106.0,
+        "angle_deg": -4.0,
+        "confirmed": true,
+        "support": "strong"
+      },
+      {
+        "id": 30,
+        "range_bin": 119.0,
+        "angle_deg": -8.0,
+        "confirmed": true,
+        "support": "strong"
+      }
+    ],
+    "reflection_lost": [
+      26,
+      27
+    ],
+    "groups": [
+      {
+        "range_bin": 111.63539281820567,
+        "angle_deg": -5.733967020986364,
+        "strong": true,
+        "score_db": 0.0,
+        "member_indices": [
+          0,
+          1
+        ],
+        "member_count": 2,
+        "owner": 12,
+        "ambiguous": false,
+        "possible_track_ids": [
+          12
+        ]
+      },
+      {
+        "range_bin": 131.0,
+        "angle_deg": -7.0,
+        "strong": false,
+        "score_db": -4.6844644221706835,
+        "member_indices": [
+          2
+        ],
+        "member_count": 1,
+        "owner": null,
+        "ambiguous": false,
+        "possible_track_ids": []
+      },
+      {
+        "range_bin": 132.0,
+        "angle_deg": 30.0,
+        "strong": false,
+        "score_db": -16.080269553866998,
+        "member_indices": [
+          3
+        ],
+        "member_count": 1,
+        "owner": null,
+        "ambiguous": false,
+        "possible_track_ids": []
+      }
+    ],
+    "visible_groups": [],
+    "lost_group_tracks": [
+      12
+    ],
+    "person_candidates": [],
+    "primary_id": 12,
+    "status": "ambiguous_or_lost",
+    "ambiguous_groups": [],
+    "pair_decisions": [
+      {
+        "peak_ids": [
+          33,
+          35
+        ],
+        "range_separation": 13.0,
+        "angle_separation": 4.0,
+        "valley_db": 5.844540201268076,
+        "history_samples": 4,
+        "merge": true,
+        "reason": "close_connected_comoving_or_history_pending"
+      }
+    ]
+  },
+  {
+    "candidates": [
+      {
+        "range_bin": 141,
+        "angle_deg": -4.0,
+        "score_db": 0.0,
+        "range_excess_db": 6.795895215801018,
+        "strong": false
+      },
+      {
+        "range_bin": 129,
+        "angle_deg": -6.0,
+        "score_db": -0.24263569282606312,
+        "range_excess_db": 6.885456132564578,
+        "strong": false
+      },
+      {
+        "range_bin": 148,
+        "angle_deg": -6.0,
+        "score_db": -2.9323529811259945,
+        "range_excess_db": 5.6427124549435845,
+        "strong": false
+      },
+      {
+        "range_bin": 152,
+        "angle_deg": 31.0,
+        "score_db": -7.5231046593479425,
+        "range_excess_db": 4.899164383260221,
+        "strong": false
+      },
+      {
+        "range_bin": 162,
+        "angle_deg": -11.0,
+        "score_db": -20.31405147028206,
+        "range_excess_db": 4.440673948678501,
+        "strong": false
+      }
+    ],
+    "visible": [],
+    "lost": [
+      12
+    ],
+    "map_contrast_db": 21.064409161612865,
+    "reflection_visible": [
+      {
+        "id": 30,
+        "range_bin": 129.0,
+        "angle_deg": -6.0,
+        "confirmed": true,
+        "support": "weak"
+      }
+    ],
+    "reflection_lost": [
+      19,
+      26,
+      27
+    ],
+    "groups": [
+      {
+        "range_bin": 134.9381357028658,
+        "angle_deg": -5.010310716189029,
+        "strong": false,
+        "score_db": 0.0,
+        "member_indices": [
+          0,
+          1
+        ],
+        "member_count": 2,
+        "owner": 12,
+        "ambiguous": false,
+        "possible_track_ids": [
+          12
+        ]
+      },
+      {
+        "range_bin": 154.03740868556548,
+        "angle_deg": -8.156217387701957,
+        "strong": false,
+        "score_db": -2.9323529811259945,
+        "member_indices": [
+          2,
+          4
+        ],
+        "member_count": 2,
+        "owner": null,
+        "ambiguous": false,
+        "possible_track_ids": []
+      },
+      {
+        "range_bin": 152.0,
+        "angle_deg": 31.0,
+        "strong": false,
+        "score_db": -7.5231046593479425,
+        "member_indices": [
+          3
+        ],
+        "member_count": 1,
+        "owner": null,
+        "ambiguous": false,
+        "possible_track_ids": []
+      }
+    ],
+    "visible_groups": [],
+    "lost_group_tracks": [
+      12
+    ],
+    "person_candidates": [],
+    "primary_id": null,
+    "status": "not_yet_acquired",
+    "ambiguous_groups": [],
+    "pair_decisions": [
+      {
+        "peak_ids": [
+          35,
+          40
+        ],
+        "range_separation": 12.0,
+        "angle_separation": 2.0,
+        "valley_db": 3.54428985532661,
+        "history_samples": 2,
+        "merge": true,
+        "reason": "close_connected_comoving_or_history_pending"
+      },
+      {
+        "peak_ids": [
+          40,
+          42
+        ],
+        "range_separation": 7.0,
+        "angle_separation": 2.0,
+        "valley_db": 2.9675540126963638,
+        "history_samples": 1,
+        "merge": true,
+        "reason": "close_connected_comoving_or_history_pending"
+      },
+      {
+        "peak_ids": [
+          42,
+          43
+        ],
+        "range_separation": 14.0,
+        "angle_separation": 5.0,
+        "valley_db": 0.6134647299053313,
+        "history_samples": 1,
+        "merge": true,
+        "reason": "close_connected_comoving_or_history_pending"
+      }
+    ]
+  },
+  {
+    "candidates": [
+      {
+        "range_bin": 153,
+        "angle_deg": -5.0,
+        "score_db": 0.0,
+        "range_excess_db": 6.973406252619974,
+        "strong": false
+      },
+      {
+        "range_bin": 139,
+        "angle_deg": -3.0,
+        "score_db": -1.318979335937709,
+        "range_excess_db": 5.905821781008505,
+        "strong": false
+      },
+      {
+        "range_bin": 146,
+        "angle_deg": -4.0,
+        "score_db": -2.569764080252961,
+        "range_excess_db": 4.626913076807767,
+        "strong": false
+      },
+      {
+        "range_bin": 153,
+        "angle_deg": 28.0,
+        "score_db": -5.388373055797688,
+        "range_excess_db": 6.973406252619974,
+        "strong": false
+      },
+      {
+        "range_bin": 161,
+        "angle_deg": 28.0,
+        "score_db": -9.175657762390658,
+        "range_excess_db": 4.246202303818464,
+        "strong": false
+      }
+    ],
+    "visible": [],
+    "lost": [],
+    "map_contrast_db": 20.727565662621085,
+    "reflection_visible": [
+      {
+        "id": 30,
+        "range_bin": 139.0,
+        "angle_deg": -3.0,
+        "confirmed": true,
+        "support": "weak"
+      }
+    ],
+    "reflection_lost": [
+      19,
+      27
+    ],
+    "groups": [
+      {
+        "range_bin": 146.64515692290945,
+        "angle_deg": -4.092165274701354,
+        "strong": false,
+        "score_db": 0.0,
+        "member_indices": [
+          0,
+          1,
+          2
+        ],
+        "member_count": 3,
+        "owner": null,
+        "ambiguous": false,
+        "possible_track_ids": []
+      },
+      {
+        "range_bin": 155.78378248574762,
+        "angle_deg": 28.000000000000004,
+        "strong": false,
+        "score_db": -5.388373055797688,
+        "member_indices": [
+          3,
+          4
+        ],
+        "member_count": 2,
+        "owner": null,
+        "ambiguous": false,
+        "possible_track_ids": []
+      }
+    ],
+    "visible_groups": [],
+    "lost_group_tracks": [],
+    "person_candidates": [],
+    "primary_id": null,
+    "status": "not_yet_acquired",
+    "ambiguous_groups": [],
+    "pair_decisions": [
+      {
+        "peak_ids": [
+          40,
+          43
+        ],
+        "range_separation": 14.0,
+        "angle_separation": 2.0,
+        "valley_db": 4.8127867218829055,
+        "history_samples": 2,
+        "merge": true,
+        "reason": "close_connected_comoving_or_history_pending"
+      },
+      {
+        "peak_ids": [
+          42,
+          43
+        ],
+        "range_separation": 7.0,
+        "angle_separation": 1.0,
+        "valley_db": 3.156399055799622,
+        "history_samples": 2,
+        "merge": true,
+        "reason": "close_connected_comoving_or_history_pending"
+      },
+      {
+        "peak_ids": [
+          40,
+          42
+        ],
+        "range_separation": 7.0,
+        "angle_separation": 1.0,
+        "valley_db": 3.5972978986606625,
+        "history_samples": 2,
+        "merge": true,
+        "reason": "close_connected_comoving_or_history_pending"
+      },
+      {
+        "peak_ids": [
+          39,
+          41
+        ],
+        "range_separation": 8.0,
+        "angle_separation": 0.0,
+        "valley_db": 3.0228507990188724,
+        "history_samples": 2,
+        "merge": true,
+        "reason": "close_connected_comoving_or_history_pending"
+      }
+    ]
+  },
+  {
+    "candidates": [
+      {
+        "range_bin": 153,
+        "angle_deg": -4.0,
+        "score_db": 0.0,
+        "range_excess_db": 5.660110478547033,
+        "strong": false
+      },
+      {
+        "range_bin": 170,
+        "angle_deg": -4.0,
+        "score_db": -0.39683408005638626,
+        "range_excess_db": 6.602407698930229,
+        "strong": false
+      }
+    ],
+    "visible": [],
+    "lost": [],
+    "map_contrast_db": 19.99577141463478,
+    "reflection_visible": [
+      {
+        "id": 30,
+        "range_bin": 153.0,
+        "angle_deg": -4.0,
+        "confirmed": true,
+        "support": "weak"
+      }
+    ],
+    "reflection_lost": [
+      19
+    ],
+    "groups": [
+      {
+        "range_bin": 162.4185301683391,
+        "angle_deg": -3.9999999999999996,
+        "strong": false,
+        "score_db": 0.0,
+        "member_indices": [
+          0,
+          1
+        ],
+        "member_count": 2,
+        "owner": null,
+        "ambiguous": false,
+        "possible_track_ids": []
+      }
+    ],
+    "visible_groups": [],
+    "lost_group_tracks": [],
+    "person_candidates": [],
+    "primary_id": null,
+    "status": "not_yet_acquired",
+    "ambiguous_groups": [],
+    "pair_decisions": [
+      {
+        "peak_ids": [
+          43,
+          44
+        ],
+        "range_separation": 17.0,
+        "angle_separation": 0.0,
+        "valley_db": 4.461893998937398,
+        "history_samples": 1,
+        "merge": true,
+        "reason": "close_connected_comoving_or_history_pending"
+      }
+    ]
+  },
+  {
+    "candidates": [
+      {
+        "range_bin": 180,
+        "angle_deg": -5.0,
+        "score_db": -0.8313802552610594,
+        "range_excess_db": 4.555545606215247,
+        "strong": false
+      },
+      {
+        "range_bin": 171,
+        "angle_deg": -4.0,
+        "score_db": -2.153975171641834,
+        "range_excess_db": 4.186174602007291,
+        "strong": false
+      }
+    ],
+    "visible": [],
+    "lost": [],
+    "map_contrast_db": 21.561195862059986,
+    "reflection_visible": [],
+    "reflection_lost": [
+      30
+    ],
+    "groups": [
+      {
+        "range_bin": 175.69124906611557,
+        "angle_deg": -4.521249896235062,
+        "strong": false,
+        "score_db": -0.8313802552610594,
+        "member_indices": [
+          0,
+          1
+        ],
+        "member_count": 2,
+        "owner": null,
+        "ambiguous": false,
+        "possible_track_ids": []
+      }
+    ],
+    "visible_groups": [],
+    "lost_group_tracks": [],
+    "person_candidates": [],
+    "primary_id": null,
+    "status": "not_yet_acquired",
+    "ambiguous_groups": [],
+    "pair_decisions": [
+      {
+        "peak_ids": [
+          42,
+          44
+        ],
+        "range_separation": 9.0,
+        "angle_separation": 1.0,
+        "valley_db": 3.912377837190819,
+        "history_samples": 2,
+        "merge": true,
+        "reason": "close_connected_comoving_or_history_pending"
+      }
+    ]
+  },
+  {
+    "candidates": [
+      {
+        "range_bin": 200,
+        "angle_deg": -5.0,
+        "score_db": -0.7769162619508364,
+        "range_excess_db": 5.268316683850671,
+        "strong": false
+      },
+      {
+        "range_bin": 193,
+        "angle_deg": -6.0,
+        "score_db": -1.153101225285559,
+        "range_excess_db": 5.03821028611101,
+        "strong": false
+      }
+    ],
+    "visible": [],
+    "lost": [],
+    "map_contrast_db": 21.489780479315698,
+    "reflection_visible": [],
+    "reflection_lost": [
+      30
+    ],
+    "groups": [
+      {
+        "range_bin": 196.59270023778618,
+        "angle_deg": -5.486757108887694,
+        "strong": false,
+        "score_db": -0.7769162619508364,
+        "member_indices": [
+          0,
+          1
+        ],
+        "member_count": 2,
+        "owner": null,
+        "ambiguous": false,
+        "possible_track_ids": []
+      }
+    ],
+    "visible_groups": [],
+    "lost_group_tracks": [],
+    "person_candidates": [],
+    "primary_id": null,
+    "status": "not_yet_acquired",
+    "ambiguous_groups": [],
+    "pair_decisions": [
+      {
+        "peak_ids": [
+          44,
+          45
+        ],
+        "range_separation": 7.0,
+        "angle_separation": 1.0,
+        "valley_db": 1.9573740345657509,
+        "history_samples": 1,
+        "merge": true,
+        "reason": "close_connected_comoving_or_history_pending"
+      }
+    ]
+  },
+  {
+    "candidates": [
+      {
+        "range_bin": 199,
+        "angle_deg": -5.0,
+        "score_db": 0.0,
+        "range_excess_db": 5.319944617589954,
+        "strong": false
+      },
+      {
+        "range_bin": 206,
+        "angle_deg": -6.0,
+        "score_db": -0.09513133087882344,
+        "range_excess_db": 6.462859627798096,
+        "strong": false
+      }
+    ],
+    "visible": [],
+    "lost": [],
+    "map_contrast_db": 22.576442964125636,
+    "reflection_visible": [
+      {
+        "id": 30,
+        "range_bin": 199.0,
+        "angle_deg": -5.0,
+        "confirmed": true,
+        "support": "weak"
+      }
+    ],
+    "reflection_lost": [],
+    "groups": [
+      {
+        "range_bin": 202.9579006731185,
+        "angle_deg": -5.565414381874071,
+        "strong": false,
+        "score_db": 0.0,
+        "member_indices": [
+          0,
+          1
+        ],
+        "member_count": 2,
+        "owner": null,
+        "ambiguous": false,
+        "possible_track_ids": []
+      }
+    ],
+    "visible_groups": [],
+    "lost_group_tracks": [],
+    "person_candidates": [],
+    "primary_id": null,
+    "status": "not_yet_acquired",
+    "ambiguous_groups": [],
+    "pair_decisions": [
+      {
+        "peak_ids": [
+          44,
+          45
+        ],
+        "range_separation": 7.0,
+        "angle_separation": 1.0,
+        "valley_db": 2.4740160358752026,
+        "history_samples": 2,
+        "merge": true,
+        "reason": "close_connected_comoving_or_history_pending"
+      }
+    ]
+  },
+  {
+    "candidates": [],
+    "visible": [],
+    "lost": [],
+    "map_contrast_db": 19.772292627268136,
+    "reflection_visible": [],
+    "reflection_lost": [
+      30
+    ],
+    "groups": [],
+    "visible_groups": [],
+    "lost_group_tracks": [],
+    "person_candidates": [],
+    "primary_id": null,
+    "status": "not_yet_acquired",
+    "ambiguous_groups": [],
+    "pair_decisions": []
+  },
+  {
+    "candidates": [],
+    "visible": [],
+    "lost": [],
+    "map_contrast_db": 19.35295363900189,
+    "reflection_visible": [],
+    "reflection_lost": [
+      30
+    ],
+    "groups": [],
+    "visible_groups": [],
+    "lost_group_tracks": [],
+    "person_candidates": [],
+    "primary_id": null,
+    "status": "not_yet_acquired",
+    "ambiguous_groups": [],
+    "pair_decisions": []
+  },
+  {
+    "candidates": [
+      {
+        "range_bin": 254,
+        "angle_deg": -4.0,
+        "score_db": 0.0,
+        "range_excess_db": 4.019721695434754,
+        "strong": false
+      }
+    ],
+    "visible": [],
+    "lost": [],
+    "map_contrast_db": 22.77511907314148,
+    "reflection_visible": [],
+    "reflection_lost": [
+      30
+    ],
+    "groups": [
+      {
+        "range_bin": 254.0,
+        "angle_deg": -4.0,
+        "strong": false,
+        "score_db": 0.0,
+        "member_indices": [
+          0
+        ],
+        "member_count": 1,
+        "owner": null,
+        "ambiguous": false,
+        "possible_track_ids": []
+      }
+    ],
+    "visible_groups": [],
+    "lost_group_tracks": [],
+    "person_candidates": [],
+    "primary_id": null,
+    "status": "not_yet_acquired",
+    "ambiguous_groups": [],
+    "pair_decisions": []
+  },
+  {
+    "candidates": [],
+    "visible": [],
+    "lost": [],
+    "map_contrast_db": 22.087870837287877,
+    "reflection_visible": [],
+    "reflection_lost": [],
+    "groups": [],
+    "visible_groups": [],
+    "lost_group_tracks": [],
+    "person_candidates": [],
+    "primary_id": null,
+    "status": "not_yet_acquired",
+    "ambiguous_groups": [],
+    "pair_decisions": []
+  },
+  {
+    "candidates": [],
+    "visible": [],
+    "lost": [],
+    "map_contrast_db": 1.720607930247196,
+    "reflection_visible": [],
+    "reflection_lost": [],
+    "groups": [],
+    "visible_groups": [],
+    "lost_group_tracks": [],
+    "person_candidates": [],
+    "primary_id": null,
+    "status": "not_yet_acquired",
+    "ambiguous_groups": [],
+    "pair_decisions": []
+  },
+  {
+    "candidates": [],
+    "visible": [],
+    "lost": [],
+    "map_contrast_db": 0.1316015310964837,
+    "reflection_visible": [],
+    "reflection_lost": [],
+    "groups": [],
+    "visible_groups": [],
+    "lost_group_tracks": [],
+    "person_candidates": [],
+    "primary_id": null,
+    "status": "not_yet_acquired",
+    "ambiguous_groups": [],
+    "pair_decisions": []
+  },
+  {
+    "candidates": [],
+    "visible": [],
+    "lost": [],
+    "map_contrast_db": 0.22525368916397515,
+    "reflection_visible": [],
+    "reflection_lost": [],
+    "groups": [],
+    "visible_groups": [],
+    "lost_group_tracks": [],
+    "person_candidates": [],
+    "primary_id": null,
+    "status": "not_yet_acquired",
+    "ambiguous_groups": [],
+    "pair_decisions": []
+  },
+  {
+    "candidates": [],
+    "visible": [],
+    "lost": [],
+    "map_contrast_db": 0.23130512482335452,
+    "reflection_visible": [],
+    "reflection_lost": [],
+    "groups": [],
+    "visible_groups": [],
+    "lost_group_tracks": [],
+    "person_candidates": [],
+    "primary_id": null,
+    "status": "not_yet_acquired",
+    "ambiguous_groups": [],
+    "pair_decisions": []
+  },
+  {
+    "candidates": [],
+    "visible": [],
+    "lost": [],
+    "map_contrast_db": 6.058502609519319,
+    "reflection_visible": [],
+    "reflection_lost": [],
+    "groups": [],
+    "visible_groups": [],
+    "lost_group_tracks": [],
+    "person_candidates": [],
+    "primary_id": null,
+    "status": "not_yet_acquired",
+    "ambiguous_groups": [],
+    "pair_decisions": []
+  },
+  {
+    "candidates": [],
+    "visible": [],
+    "lost": [],
+    "map_contrast_db": 4.534350403282959,
+    "reflection_visible": [],
+    "reflection_lost": [],
+    "groups": [],
+    "visible_groups": [],
+    "lost_group_tracks": [],
+    "person_candidates": [],
+    "primary_id": null,
+    "status": "not_yet_acquired",
+    "ambiguous_groups": [],
+    "pair_decisions": []
+  },
+  {
+    "candidates": [],
+    "visible": [],
+    "lost": [],
+    "map_contrast_db": 3.462047417300358,
+    "reflection_visible": [],
+    "reflection_lost": [],
+    "groups": [],
+    "visible_groups": [],
+    "lost_group_tracks": [],
+    "person_candidates": [],
+    "primary_id": null,
+    "status": "not_yet_acquired",
+    "ambiguous_groups": [],
+    "pair_decisions": []
+  },
+  {
+    "candidates": [],
+    "visible": [],
+    "lost": [],
+    "map_contrast_db": 3.0204312342441213,
+    "reflection_visible": [],
+    "reflection_lost": [],
+    "groups": [],
+    "visible_groups": [],
+    "lost_group_tracks": [],
+    "person_candidates": [],
+    "primary_id": null,
+    "status": "not_yet_acquired",
+    "ambiguous_groups": [],
+    "pair_decisions": []
+  },
+  {
+    "candidates": [],
+    "visible": [],
+    "lost": [],
+    "map_contrast_db": 1.967850631536748,
+    "reflection_visible": [],
+    "reflection_lost": [],
+    "groups": [],
+    "visible_groups": [],
+    "lost_group_tracks": [],
+    "person_candidates": [],
+    "primary_id": null,
+    "status": "not_yet_acquired",
+    "ambiguous_groups": [],
+    "pair_decisions": []
+  },
+  {
+    "candidates": [],
+    "visible": [],
+    "lost": [],
+    "map_contrast_db": 4.7301360382417945,
+    "reflection_visible": [],
+    "reflection_lost": [],
+    "groups": [],
+    "visible_groups": [],
+    "lost_group_tracks": [],
+    "person_candidates": [],
+    "primary_id": null,
+    "status": "not_yet_acquired",
+    "ambiguous_groups": [],
+    "pair_decisions": []
+  },
+  {
+    "candidates": [],
+    "visible": [],
+    "lost": [],
+    "map_contrast_db": 8.804964835971479,
+    "reflection_visible": [],
+    "reflection_lost": [],
+    "groups": [],
+    "visible_groups": [],
+    "lost_group_tracks": [],
+    "person_candidates": [],
+    "primary_id": null,
+    "status": "not_yet_acquired",
+    "ambiguous_groups": [],
+    "pair_decisions": []
+  },
+  {
+    "candidates": [
+      {
+        "range_bin": 112,
+        "angle_deg": 19.0,
+        "score_db": 0.0,
+        "range_excess_db": 4.16811774787368,
+        "strong": false
+      },
+      {
+        "range_bin": 112,
+        "angle_deg": -42.0,
+        "score_db": -13.988342195822042,
+        "range_excess_db": 4.16811774787368,
+        "strong": false
+      }
+    ],
+    "visible": [],
+    "lost": [],
+    "map_contrast_db": 14.515929839095435,
+    "reflection_visible": [],
+    "reflection_lost": [],
+    "groups": [
+      {
+        "range_bin": 112.0,
+        "angle_deg": 19.0,
+        "strong": false,
+        "score_db": 0.0,
+        "member_indices": [
+          0
+        ],
+        "member_count": 1,
+        "owner": null,
+        "ambiguous": false,
+        "possible_track_ids": []
+      },
+      {
+        "range_bin": 112.0,
+        "angle_deg": -42.0,
+        "strong": false,
+        "score_db": -13.988342195822042,
+        "member_indices": [
+          1
+        ],
+        "member_count": 1,
+        "owner": null,
+        "ambiguous": false,
+        "possible_track_ids": []
+      }
+    ],
+    "visible_groups": [],
+    "lost_group_tracks": [],
+    "person_candidates": [],
+    "primary_id": null,
+    "status": "not_yet_acquired",
+    "ambiguous_groups": [],
+    "pair_decisions": []
+  },
+  {
+    "candidates": [],
+    "visible": [],
+    "lost": [],
+    "map_contrast_db": 10.754884485837849,
+    "reflection_visible": [],
+    "reflection_lost": [],
+    "groups": [],
+    "visible_groups": [],
+    "lost_group_tracks": [],
+    "person_candidates": [],
+    "primary_id": null,
+    "status": "not_yet_acquired",
+    "ambiguous_groups": [],
+    "pair_decisions": []
+  },
+  {
+    "candidates": [],
+    "visible": [],
+    "lost": [],
+    "map_contrast_db": 4.7122526394555475,
+    "reflection_visible": [],
+    "reflection_lost": [],
+    "groups": [],
+    "visible_groups": [],
+    "lost_group_tracks": [],
+    "person_candidates": [],
+    "primary_id": null,
+    "status": "not_yet_acquired",
+    "ambiguous_groups": [],
+    "pair_decisions": []
+  },
+  {
+    "candidates": [],
+    "visible": [],
+    "lost": [],
+    "map_contrast_db": 9.53938184883662,
+    "reflection_visible": [],
+    "reflection_lost": [],
+    "groups": [],
+    "visible_groups": [],
+    "lost_group_tracks": [],
+    "person_candidates": [],
+    "primary_id": null,
+    "status": "not_yet_acquired",
+    "ambiguous_groups": [],
+    "pair_decisions": []
+  }
+]

@@ -1,0 +1,17 @@
+{
+  "sample_rate_hz": 9499000.0,
+  "slope_hz_s": 100000000000000.0,
+  "carrier_hz": 77000000000.0,
+  "antenna_spacing_m": 0.001948051948051948,
+  "n_samples": 304,
+  "num_rx": 4,
+  "nfft": 512,
+  "angular_sign": -1,
+  "min_range_m": 0.4,
+  "max_range_m": 6.9,
+  "angle_min_deg": -60,
+  "angle_max_deg": 60,
+  "angle_step_deg": 2.5,
+  "slow_fs_hz": 20,
+  "min_vital_duration_s": 20.0
+}

@@ -1,0 +1,1 @@
+PASS: 9 grouping tests; end-to-end seven-window CLI smoke matches full-run states; full joint spectra unchanged; all displayed positions supported by nonambiguous groups; complete-link bounds checked; 63 main and 63 debugging PNG/GIF/HTML frames; representative main/debug and lost frames visually inspected. Real multi-person accuracy is not validated.

@@ -1,0 +1,16 @@
+{
+  "status": "passed",
+  "input_sha256": "8595966feded293bf80f9ddcf98d779b006c275d925c237afe6994e60686774b",
+  "maps_match_selected_joint_run": true,
+  "track_states_match_selected_joint_run": true,
+  "output_contains_only_joint_method": true,
+  "png_frames": 63,
+  "gif_frames": 63,
+  "replay_frames": 63,
+  "source_files": {
+    "joint_music.py": "cf8dba2b54c0cdaa1b89d2404dc84d9f82db961d41a343d36dcc15dd1d77304f",
+    "walking_confidence_tracker.py": "bfdbdb8e4906e8874aebb5abdc616f5a46594ee6aefb7a09ad0ec3da18c6193f",
+    "adc_io.py": "d0467c4f0da6a0f20dc6675850231cf0478380e18f89452f3f65ea83c952acaf",
+    "run_pipeline.py": "b6dce4319eb17fc8598d155c3c8458fc4c55b8bba28a76ac12b8994aecde07cd"
+  }
+}

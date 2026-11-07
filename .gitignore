@@ -43,3 +43,4 @@ outputs/
 
 # Large notebooks with embedded outputs
 notebooks/
+indoor_sample_50.h5
