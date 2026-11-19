@@ -39,7 +39,7 @@ flowchart TD
 | **Noise estimation** | Gaussian Process | Frame sequence | SNR-aware noise floor |
 
 > [!TIP]
-> Train a **denoising autoencoder** on PhysDrive's `mmwave.mat` with synthetic noise injection — ground truth is the original clean signal.
+> Train a **denoising autoencoder** on radar IQ data with synthetic noise injection — ground truth is the original clean signal.
 
 ---
 
@@ -83,8 +83,8 @@ flowchart LR
 
 | Model | Architecture | Notes |
 |---|---|---|
-| **mmFormer** | Transformer on IQ tensors | Already in PhysDrive baselines |
-| **VitaNet** | CNN-RNN hybrid | In PhysDrive baselines |
+| **mmFormer** | Transformer on IQ tensors | State-of-the-art radar baseline |
+| **VitaNet** | CNN-RNN hybrid | Standard radar baseline |
 | **IQ-MVED** | Variational Encoder-Decoder | Handles uncertainty |
 | **Custom 1D-CNN** | Lightweight | Good starting baseline |
 
@@ -92,7 +92,7 @@ flowchart LR
 
 ```mermaid
 flowchart TD
-    A["Radar IQ Tensor\n(mmwave.mat)"] --> B["Shared Encoder\nCNN / Transformer"]
+    A["Radar IQ Tensor\n(Radar IQ frames)"] --> B["Shared Encoder\nCNN / Transformer"]
     B --> C1["HR Head\nHeart Rate bpm"]
     B --> C2["BR Head\nBreath Rate brpm"]
     B --> C3["ECG Waveform Head\nReconstructed ECG"]
@@ -106,7 +106,7 @@ Joint training of HR + BR + ECG waveform reconstruction gives the model richer p
 ---
 
 ### 5️⃣ Multimodal Fusion — Radar + Camera 🌟
-**PhysDrive gives you synchronized radar + RGB + IR — this is the main research angle of the dataset!**
+**Multimodal setups combine synchronized mmWave radar + RGB / IR camera streams.**
 
 ```mermaid
 flowchart LR
@@ -125,23 +125,23 @@ flowchart LR
 | **Confidence-weighted** | Weight by modality certainty | Robustness in darkness |
 
 > [!IMPORTANT]
-> In low light or midnight driving (`W` sessions in PhysDrive), radar should dominate. In bright daylight (`Z` sessions), camera rPPG is reliable too. A smart fusion model learns this automatically.
+> In low light or midnight driving (e.g., night time or occlusion), radar should dominate. In bright daylight (e.g., well-lit environments), camera rPPG is reliable too. A smart fusion model learns this automatically.
 
 ---
 
 ### 6️⃣ Domain Generalization
 **Problem:** Model trained on flat daytime roads fails on bumpy midnight driving.
 
-| Approach | Technique | PhysDrive Domain Split |
+| Approach | Technique | Domain Split Example |
 |---|---|---|
-| **Adversarial DA** | DANN — domain-invariant features | Train on `AZ`, test on `CW` |
+| **Adversarial DA** | DANN — domain-invariant features | Train on clean conditions, test on noisy conditions |
 | **Meta-learning** | MAML — fast adaptation to new subjects | Leave-one-subject-out |
 | **Contrastive** | Learn HR/BR-invariant to road/light condition | All conditions |
 | **Test-time adapt** | Adapt at inference with self-supervision | New unseen domain |
 
-PhysDrive's naming encodes domain:
-- Road: `A` = Flat clear, `B` = Flat congested, `C` = Bumpy congested
-- Light: `Z` = Noon, `H` = Dusk/Dawn, `W` = Midnight, `Y` = Rainy
+Typical domain variables:
+- Motion/Vibration: Stationary vs. Moving vs. Rough conditions
+- Ambient Lighting: Bright daylight vs. Low-light vs. Total darkness
 
 ---
 
@@ -179,5 +179,4 @@ Once HR/BR is reliably estimated, build higher-level applications:
 | 5 | Anomaly / arrhythmia detection on top | Medium | Medium |
 
 > [!NOTE]
-> PhysDrive baselines already implement **mmFormer**, **VitaNet**, and **IQ-MVED** in the cloned repo.  
-> Start by running those on your 3 downloaded sessions to get baseline numbers, then innovate from there.
+> Architectures like **mmFormer**, **VitaNet**, and **IQ-MVED** serve as strong benchmarks for end-to-end vital signs regression from radar tensors.
