@@ -38,9 +38,18 @@
     "joint_music.py": "cf8dba2b54c0cdaa1b89d2404dc84d9f82db961d41a343d36dcc15dd1d77304f",
     "walking_confidence_tracker.py": "6353f7e972d1055747c6bea422c239a94e10254461e40384c57e3db9a49e9937",
     "adc_io.py": "d0467c4f0da6a0f20dc6675850231cf0478380e18f89452f3f65ea83c952acaf",
-    "run_pipeline.py": "ad331b6ccabe0ba0a784b35d9bf077b86b65d16bb3f30e1d72ab760e1c402ed8",
+    "run_pipeline.py": "f4a0c6a8458e482383e6684c1ac0178c39907e52e3ebced137d07a8aabad66c9",
     "peak_grouping.py": "bc4e4bedbc2b31b9447f56268078dcd93b18524c6ddb23c7c2f3baf6711e4ca5",
     "test_peak_grouping.py": "d13ce723a0d2cddba04efe5d2ed79bf1a18e619f991417b19c2da87da82c1e20",
-    "group_output.py": "fd8167effcc3c44b49a96da04cf27094fa114da3dcb85660e8160fb4c38faa53"
-  }
+    "group_output.py": "8e5c0c0ae9b9285ef791361d87e13f95e11e1cb59a0bfccee20e6cc8a09cdc81"
+  },
+  "candidate_locations_all_frames": 63,
+  "confidence_counts": {
+    "high": 23,
+    "medium": 18,
+    "low": 20,
+    "ambiguous": 2
+  },
+  "fallback_frames": 18,
+  "grouped_output_refreshed": true
 }

@@ -1,26 +1,50 @@
-# Joint MUSIC with grouped candidate-person display
+# Joint MUSIC and contrast-gated candidate presence
 
-The underlying joint MUSIC maps are unchanged from the selected RaDICaL-style method. Grouping changes detections, association, and display only.
+The selected joint MUSIC spectrum is unchanged. There are 63 overlapping windows. Candidate markers now appear only when the per-frame MUSIC map has enough peak-to-background contrast. Empty/flat frames are left without a candidate rather than assigning their strongest pixel as a person location.
+
+## Frame-wise selection
+
+1. Prefer the known single-person candidate group when the group tracker supports it.
+2. If the frame has unresolved competing group identities, report its best group as AMBIGUOUS.
+3. If there is no supported group, inspect the strongest MUSIC maximum inside the configured in-range, interior-angle scan.
+4. Suppress any candidate whose map peak-to-median contrast is below the configurable 15 dB cutoff.
+
+Frames below the cutoff have no candidate circle. The gate is a visual presence heuristic; it does **not** classify a high-contrast return as a human.
+
+For selected locations, the output reports map peak-to-median contrast, selected MUSIC level, local prominence above its neighboring ring, range-energy excess over that frame's median, and whether its range bin is near a scan edge. HIGH, MEDIUM, LOW, and AMBIGUOUS are support labels, not calibrated probabilities. The presence cutoff is the map maximum minus the median background; the map maximum itself is always normalized to 0 dB.
 
 ## Result
 
-- 186 raw reflection peaks across 63 windows.
-- 133 groups, including 40 groups formed from multiple peaks.
-- Four group instances flagged ambiguous due to competing established identities.
-- Nine confirmed group-track segments.
-- Selected candidate shown in **17/63 windows**, with **at most one circle** in the main view.
-- Three primary IDs across acquisition/reacquisition; these do not mean three people.
+- 63 frame rows; candidate markers in **48/63** and no candidate in **15/63**.
+- Frames 0–47 have 17.75–32.87 dB contrast; the final 15, visually empty frames, have 0.13–14.52 dB. The clip-calibrated 15 dB cutoff separates these sections in this recording.
+- 13/63 frames have a confirmed grouped candidate; this is not proof that a human is present.
+- 186 raw peaks became 133 groups; 41 groups combine multiple peaks, six group instances are ambiguous, and ten group-track segments were formed.
 
-The single-person display uses the known scene count and a confirmed moving-group association. It is not achieved by merging all peaks in the scene or selecting a fresh global maximum each frame. It remains uncertain/lost when no qualified association exists. This conservative grouping does not solve full-recording person localization.
+The cutoff is specific to this recording and should be recalibrated on labeled occupied and empty-scene data before reuse. MUSIC contrast alone cannot distinguish a person from a strong static wall or other reflector; an empty-room reference, clutter model, and persistence/micro-motion checks would improve presence decisions.
 
-## Views
+## Files
 
-Open `replay.html` or `joint_music.gif` for the selected candidate-person view. Open `debug_replay.html` or `debug_groups.gif` to inspect all raw reflections and associated groups. The joint spectrum is visible in both views without hard masking. Bright flat maps do not establish a reliable location.
+- `replay.html`: candidate marker and confidence when the presence gate passes; no marker otherwise.
+- `debug_replay.html`: raw reflections/groups plus a frame candidate when the gate passes.
+- `candidate_locations.csv`: 63 frame-indexed rows, with coordinates blank when no candidate passes the gate.
+- `frame_states.json`: selected candidate and complete group decisions per frame.
+- `reflection_states.json`: reflection-level detections before grouping.
+- `maps.npz`: unchanged joint MUSIC maps and supporting arrays.
+- `joint_music.gif`, `debug_groups.gif`, and the `frames/` / `debug_frames/` directories: rendered output.
 
-## Four grouping checks
+The thresholds and grouping distances remain provisional because physical timing/range calibration is unresolved. Candidate circles are not verified identities. No quality-gated BR/HR is produced.
 
-Close separation (18 bins / 12 degrees), persistent spectral dips (4 dB twice, or 8 dB immediately), historical motion disagreement, and separate established track identities determine grouping. Complete-link grouping prevents chains of peaks spanning an overly large region. Group centers use measured range-energy weights. Unresolved shared peaks produce ambiguity rather than forced merging. Strong-turn handling permits changes of direction within the displacement bound. Thresholds are provisional and not calibrated body dimensions or false-alarm probabilities.
 
-The nine behavior tests include connected grouping, weighted centers, chain prevention, persistent valleys, different motion, protected identities, unresolved shared peaks, turn handling, distant-jump rejection, and a single-person view with no fabricated lost position. They validate implementation behavior on constructed cases, not real multi-person accuracy.
+## BR/HR integration and result
 
-See the package README for full pipeline details, reproduction commands, configuration, and limits. Physical range/time calibration and BR/HR remain unresolved. This single-person recording cannot establish reliable discrimination between closely spaced people.
+The per-frame candidate IQ is beamformed and phase-unwrapped, then evaluated on rolling 20-second windows (400 samples at the unverified assumed 20 Hz). The window is advanced with the candidate frames. The DSP uses 0.1–0.5 Hz for breathing and 0.8–2.5 Hz for heart rate. A single 1.6-second localization aperture is not used as an independent vital-rate estimate.
+
+This capture produced **zero quality-gated BR/HR values**: 24 output rows lack 20 seconds of history; the other 39 fail the tracked-signal coverage/continuity gate. The walking candidate does not stay associated with one stable range/angle group for a full rolling window.
+
+For a rough display, an **exploratory, unvalidated** estimate is now also generated after at least 10 s of candidate phase, using up to 20 s and bypassing continuity/prominence gates. Using the notebook-derived parameter assumptions, it produces both rates in 36 frames (12–47): BR median **10.5 bpm**, range **6.0–23.9**; HR median **65.3 bpm**, range **57.9–73.1**. These values can be caused by bulk walking motion and range/angle cell changes; the breathing estimate varies substantially. They appear in `exploratory_br_bpm` / `exploratory_hr_bpm` and orange replay labels. They are not validated measurements.
+
+Frames before 12 have less than 10 s of phase history; the final frames have no candidate after the presence gate and are left blank. FFT peaks in rejected windows remain in `diagnostic_*` for debugging only.
+
+Slow-time frequency is inferred as 20 Hz from the notebook's 25.6 s / 512 chirp autocorrelation axis and explicitly unverified for RATHAN. The notebook's literal `lambda_max/2*250` antenna-spacing value is not used; a half-wavelength assumption is used instead. Also, 512 samples at 600 ksample/s span 0.853 ms, inconsistent with the notebook's 100 μs ramp. No motion compensation or reference physiology labels are available. Treat the displayed rates as exploratory only. See README for methods and output files.
+
+Applied radar values: 512 complex ADC samples/chirp, 4 RX, 600 ksample/s, 77–79.982 GHz sweep, 100 μs ramp, derived 29.82 THz/s slope and 78.491 GHz center. The theoretical range max is 1.509 m, FFT bin spacing 5.895 mm, and bandwidth-limited resolution 5.03 cm, conditional on the inconsistent settings being correct. Full derivations and warnings are in `radar_parameter_derivations.json`.

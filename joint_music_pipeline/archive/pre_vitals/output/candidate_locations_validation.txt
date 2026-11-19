@@ -1,0 +1,1 @@
+PASS: exactly one measured candidate row and one rendered marker for each of 63 frames; low-support fallback locations are explicitly labeled; all rows include per-frame support metrics; 63-frame main and debug replays are present.

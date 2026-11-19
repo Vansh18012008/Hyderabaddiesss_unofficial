@@ -1,0 +1,31 @@
+{
+  "slow_rate_hz": 20.0,
+  "slow_rate_verified": false,
+  "window_seconds": 20.0,
+  "window_samples": 400,
+  "frames": 63,
+  "frames_with_reportable_rates": 0,
+  "statuses": {
+    "insufficient_history": 24,
+    "insufficient_tracked_signal": 39
+  },
+  "br_range": [],
+  "hr_range": [],
+  "diagnostic_br_fft_peaks": {
+    "count": 39,
+    "median": 12.451171875,
+    "min": 7.177734375,
+    "max": 24.755859375
+  },
+  "diagnostic_hr_fft_peaks": {
+    "count": 39,
+    "median": 59.912109375,
+    "min": 56.103515625,
+    "max": 67.236328125
+  },
+  "limitations": [
+    "Rates use an assumed slow-time sampling rate when metadata is absent.",
+    "Diagnostic FFT peaks are computed even in rejected windows and must not be interpreted as BR/HR. Estimates are gated for group continuity and range/angle stability; walking micro-motion is not compensated.",
+    "Any rate passing gates remains exploratory and needs synchronized physiological ground truth."
+  ]
+}

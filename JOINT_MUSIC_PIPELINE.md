@@ -1,9 +1,3 @@
-# Selected joint MUSIC pipeline
+# Joint MUSIC pipeline
 
-The complete standalone pipeline, walking recording, and joint-only output are in `joint_music_pipeline/`.
-
-Start with `joint_music_pipeline/README.md`. Open `joint_music_pipeline/output/replay.html` for the result.
-
-Run: `OPENBLAS_NUM_THREADS=2 MPLCONFIGDIR=/tmp/joint-music-mpl python3 joint_music_pipeline/run_pipeline.py`
-
-Older experiments elsewhere in this project remain historical; this package is the selected joint-only workflow.
+The portable pipeline is in `joint_music_pipeline/`; its README explains setup and parameter assumptions. The replay is `joint_music_pipeline/output/replay.html`; framewise results are in `vital_estimates.csv`. Using radar settings mapped from the notebook and our joint MUSIC plus phase-based method, the unvalidated exploratory estimates have medians of about 10.5 BR/min and 65.3 HR/min across 36 candidate frames. The inferred 20 Hz slow-time rate and ramp/sample-count mismatch are documented in `output/radar_parameter_derivations.json`; strict quality-gated rates remain blank. Previous outputs are in `joint_music_pipeline/archive/`.

@@ -1,0 +1,1 @@
+Current contrast-gated output: 63 frame rows; 48 candidates pass the 15 dB clip-calibrated presence gate; 15 frames are marked no-candidate. The final 15 frames have blank candidate coordinates. The gate is not validated as a general person detector.
