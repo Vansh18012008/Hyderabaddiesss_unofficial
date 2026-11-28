@@ -75,7 +75,41 @@ fmcw_radar_preprocessing/
 pip install -r requirements.txt
 ```
 
-Requirements: `numpy scipy matplotlib jupyter`
+Requirements: `numpy scipy matplotlib Flask` (plus `jupyter` for notebooks).
+
+---
+
+## QIDK Pipeline and Live Dashboard
+
+The QIDK runner starts the web dashboard and processes captures in one command.
+Run it on the QIDK to keep the SQLite database and generated graph images on the
+device. A PC on the same network can open the printed dashboard URL.
+
+```bash
+python3 -m pip install -r requirements.txt
+python3 src/qidk_web_server.py --folder ./Single_Subject
+```
+
+The dashboard opens locally when a browser is available, listens on all network
+interfaces at port `8080`, and continues to run even when no matching captures
+are present. Use `--file path/to/capture.bin`, `--max 5`, `--port 8081`,
+`--db /path/on/qidk/results.sqlite3`, or `--no-browser` as needed. Keep the
+process running and use the same LAN URL from both the QIDK and PC. Network
+firewall rules must allow the selected port.
+
+Results, per-stage latency measurements, and dashboard PNG plots are written to
+`data/qidk_results.sqlite3` on the machine running the server by default. The
+database also retains compressed numeric heatmap, signal, and spectrum arrays;
+each result exposes a downloadable `.npz` at `/data/<result-id>`. Restarting
+the runner preserves prior runs; `/results` returns stored results.
+
+The runner overlaps CPU file ingestion, the FFT/beamforming/clutter stage,
+target detection, and CPU vital-sign extraction using bounded queues to limit
+memory use. CUDA processing is enabled only when PyTorch with CUDA is actually
+available. Qualcomm QNN/HTP detection requires a compatible ONNX model set via
+`QIDK_NPU_MODEL=/path/to/model.onnx`; otherwise the dashboard reports the CPU
+detection fallback. A QIDK GPU backend is not claimed when the installed
+runtime does not expose a compatible compute provider.
 
 ---
 

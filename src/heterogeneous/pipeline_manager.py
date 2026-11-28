@@ -17,6 +17,7 @@ Operating Modes:
 import time
 import queue
 import threading
+import os
 from typing import List, Dict, Any, Optional, Callable
 import numpy as np
 
@@ -88,7 +89,8 @@ class HeterogeneousPipeline:
         self.npu_engine = NPURadarEngine(
             range_axis=self.range_axis,
             azimuth_grid=self.azimuth_grid,
-            min_range_m=0.3
+            min_range_m=0.3,
+            model_path=os.environ.get('QIDK_NPU_MODEL'),
         )
         self.vitals_engine = CPUPostProcessEngine(
             fs_vital=fs_vital,
@@ -140,98 +142,126 @@ class HeterogeneousPipeline:
             'num_targets':    len(targets),
             'all_targets':    targets,
             'timing':         timing,
+            'backends': {
+                'gpu': self.gpu_engine.backend,
+                'npu': self.npu_engine.backend,
+                'cpu': 'CPU (vital-sign post-processing)',
+            },
         }
 
     def process_batch_asynchronous(
         self,
         bin_paths: List[str],
         callback: Optional[Callable[[Dict[str, Any]], None]] = None
-    ) -> List[Dict[str, Any]]:
+    ) -> tuple[List[Dict[str, Any]], float]:
         """
         Executes a batch of frames concurrently across CPU, GPU, and NPU
         using double-buffered asynchronous queues.
         """
-        # Intermediate decoupling queues
-        raw_queue   = queue.Queue(maxsize=4)  # CPU Ingest -> GPU Engine
-        gpu_queue   = queue.Queue(maxsize=4)  # GPU Engine -> NPU Engine
-        npu_queue   = queue.Queue(maxsize=4)  # NPU Engine -> CPU Vitals
+        # A single queued frame per boundary overlaps stages without retaining
+        # several large radar cubes in memory on the QIDK.
+        raw_queue = queue.Queue(maxsize=1)
+        gpu_queue = queue.Queue(maxsize=1)
+        npu_queue = queue.Queue(maxsize=1)
         results     = []
         results_lock = threading.Lock()
+        callback_errors = []
 
-        # Thread 1: CPU Data Ingestion
         def _ingest_worker():
             for p in bin_paths:
-                if_data, t_io = self.io_engine.read_frame(p)
-                raw_queue.put({'path': p, 'data': if_data, 'timing': t_io})
-            raw_queue.put(None)  # Sentinel
+                item = {'path': str(p), 'timing': {}, 'frame_start': time.perf_counter()}
+                try:
+                    item['data'], item['timing'] = self.io_engine.read_frame(str(p))
+                except Exception as exc:
+                    item['error'] = f'CPU ingest failed: {exc}'
+                raw_queue.put(item)
+            raw_queue.put(None)
 
-        # Thread 2: GPU Acceleration (CBF, Range-FFT, SVD Clutter)
         def _gpu_worker():
             while True:
                 item = raw_queue.get()
                 if item is None:
                     gpu_queue.put(None)
                     break
-                cleaned_cube, ra_heatmap, t_gpu = self.gpu_engine.process_frame(item['data'])
-                item['timing'].update(t_gpu)
-                gpu_queue.put({
-                    'path': item['path'],
-                    'cleaned_cube': cleaned_cube,
-                    'ra_heatmap': ra_heatmap,
-                    'timing': item['timing']
-                })
+                if 'error' not in item:
+                    try:
+                        cleaned_cube, ra_heatmap, t_gpu = self.gpu_engine.process_frame(item['data'])
+                        item['cleaned_cube'] = cleaned_cube
+                        item['ra_heatmap'] = ra_heatmap
+                        item['timing'].update(t_gpu)
+                    except Exception as exc:
+                        item['error'] = f'GPU/FFT stage failed: {exc}'
+                    finally:
+                        item.pop('data', None)
+                gpu_queue.put(item)
 
-        # Thread 3: NPU Detection (Target Localisation & Feature Extraction)
         def _npu_worker():
             while True:
                 item = gpu_queue.get()
                 if item is None:
                     npu_queue.put(None)
                     break
-                targets, slow_iq, t_npu = self.npu_engine.process_heatmap(
-                    item['ra_heatmap'],
-                    item['cleaned_cube']
-                )
-                item['timing'].update(t_npu)
-                npu_queue.put({
-                    'path': item['path'],
-                    'targets': targets,
-                    'slow_iq': slow_iq,
-                    'ra_heatmap': item['ra_heatmap'],
-                    'timing': item['timing']
-                })
+                if 'error' not in item:
+                    try:
+                        targets, slow_iq, t_npu = self.npu_engine.process_heatmap(
+                            item['ra_heatmap'], item['cleaned_cube']
+                        )
+                        item['targets'] = targets
+                        item['slow_iq'] = slow_iq
+                        item['timing'].update(t_npu)
+                    except Exception as exc:
+                        item['error'] = f'NPU/detection stage failed: {exc}'
+                    finally:
+                        item.pop('cleaned_cube', None)
+                npu_queue.put(item)
 
-        # Thread 4: CPU Post-Processing (Circle-fit & Vital Signs)
         def _vitals_worker():
             while True:
                 item = npu_queue.get()
                 if item is None:
                     break
-                vitals, t_vitals = self.vitals_engine.extract_vitals(item['slow_iq'])
-                item['timing'].update(t_vitals)
-
-                primary = item['targets'][0] if len(item['targets']) > 0 else {'range_m': 0.0, 'angle_deg': 0.0}
-                res = {
-                    'file':           item['path'],
-                    'method':         'TRI_ENGINE_PIPELINED',
-                    'hr_fft':         vitals['hr_fft'],
-                    'br_fft':         vitals['br_fft'],
-                    'hr_ac':          vitals['hr_ac'],
-                    'br_ac':          vitals['br_ac'],
-                    'range_m':        primary['range_m'],
-                    'angle_deg':      primary['angle_deg'],
-                    'ra_heatmap':     item['ra_heatmap'],
-                    'disp_mm':        vitals['disp_mm'],
-                    'resp_signal':    vitals['resp_signal'],
-                    'heart_signal':   vitals['heart_signal'],
-                    'num_targets':    len(item['targets']),
-                    'all_targets':    item['targets'],
-                    'timing':         item['timing'],
+                res = {'file': item['path'], 'timing': item['timing']}
+                if 'error' in item:
+                    res['error'] = item['error']
+                else:
+                    try:
+                        vitals, t_vitals = self.vitals_engine.extract_vitals(item['slow_iq'])
+                        item['timing'].update(t_vitals)
+                        targets = item['targets']
+                        primary = targets[0] if targets else {'range_m': 0.0, 'angle_deg': 0.0}
+                        res.update({
+                            'method': 'TRI_ENGINE_PIPELINED',
+                            'hr_fft': vitals['hr_fft'],
+                            'br_fft': vitals['br_fft'],
+                            'hr_ac': vitals['hr_ac'],
+                            'br_ac': vitals['br_ac'],
+                            'range_m': primary['range_m'],
+                            'angle_deg': primary['angle_deg'],
+                            'ra_heatmap': item['ra_heatmap'],
+                            'disp_mm': vitals['disp_mm'],
+                            'resp_signal': vitals['resp_signal'],
+                            'heart_signal': vitals['heart_signal'],
+                            'num_targets': len(targets),
+                            'all_targets': targets,
+                        })
+                    except Exception as exc:
+                        res['error'] = f'CPU vital-sign stage failed: {exc}'
+                res['backends'] = {
+                    'gpu': self.gpu_engine.backend,
+                    'npu': self.npu_engine.backend,
+                    'cpu': 'CPU (vital-sign post-processing)',
                 }
+                item['timing']['total_e2e_ms'] = (
+                    time.perf_counter() - item['frame_start']
+                ) * 1e3
+                item['timing']['total_ms'] = item['timing']['total_e2e_ms']
                 with results_lock:
                     results.append(res)
                 if callback:
-                    callback(res)
+                    try:
+                        callback(res)
+                    except Exception as exc:
+                        callback_errors.append(exc)
 
         threads = [
             threading.Thread(target=_ingest_worker, name='CPUIOThread'),
@@ -247,4 +277,6 @@ class HeterogeneousPipeline:
             th.join()
         total_time_s = time.perf_counter() - t_pipeline_start
 
+        if callback_errors:
+            raise RuntimeError('Pipeline result callback failed') from callback_errors[0]
         return results, total_time_s

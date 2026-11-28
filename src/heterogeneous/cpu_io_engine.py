@@ -37,13 +37,24 @@ class CPUIOEngine:
         with open(bin_path, 'rb') as f:
             raw = np.fromfile(f, dtype=np.int16)
 
+        values_per_chirp = 2 * self.n_chirps * self.num_rx
+        if raw.size == 0 or raw.size % values_per_chirp:
+            raise ValueError(
+                f'{bin_path}: invalid DCA1000 size ({raw.size} int16 values); '
+                f'expected a non-empty multiple of {values_per_chirp}'
+            )
+        num_chirps = raw.size // values_per_chirp
+        if num_chirps != self.m_chirps:
+            raise ValueError(
+                f'{bin_path}: expected {self.m_chirps} chirps, found {num_chirps}'
+            )
+
         I = raw[0::4] + 1j * raw[2::4]
         Q = raw[1::4] + 1j * raw[3::4]
         LVDS = np.empty(I.size + Q.size, dtype=np.complex64)
         LVDS[0::2] = I
         LVDS[1::2] = Q
 
-        num_chirps = raw.shape[0] // (2 * self.n_chirps * self.num_rx)
         LVDS = LVDS.reshape((self.n_chirps * self.num_rx, num_chirps), order='F').T
 
         out = np.zeros((self.num_rx, num_chirps * self.n_chirps), dtype=np.complex64)

@@ -1,44 +1,33 @@
 """
 qidk_web_server.py
 ==================
-Local web dashboard for FMCW Radar QIDK Vital-Signs Pipeline.
+Dashboard UI and figure generation for the QIDK pipeline runner.
 
 Run:
-    python qidk_web_server.py                      # process all 320 files
-    python qidk_web_server.py --file D1.5m_...bin  # single file
-    python qidk_web_server.py --max 20             # first 20 files
+    python qidk_web_server.py --folder ./Single_Subject
+    python qidk_web_server.py --file ./capture.bin
+    python qidk_web_server.py --max 20
 
 What happens:
-  1. Server starts on http://localhost:5050
-  2. Browser opens automatically (no mouse needed)
-  3. Pipeline runs in background thread, CBF method
-  4. Results stream live to dashboard via Server-Sent Events
-  5. Dashboard shows HR/BR, heatmap, displacement, spectra, error table
+  1. A LAN-accessible dashboard server starts automatically.
+  2. CPU, GPU, and NPU stages overlap across captures with bounded queues.
+  3. Metrics, latency breakdowns, and generated plots are stored in SQLite.
 """
 
-import argparse, base64, io, json, os, queue, re, sys, threading, time, webbrowser
+import argparse, io, json, os, queue, re, socket, sqlite3, sys, threading, time, webbrowser
+from collections import deque
 from pathlib import Path
 
-# ── Third-party ──────────────────────────────────────────────────────────────
-try:
-    from flask import Flask, Response, render_template_string, jsonify
-except ImportError:
-    os.system('pip install flask -q')
-    from flask import Flask, Response, render_template_string, jsonify
+from flask import Flask, Response, abort, jsonify, render_template_string, send_file
 
 import numpy as np
 import matplotlib
 matplotlib.use('Agg')
 import matplotlib.pyplot as plt
-import matplotlib.gridspec as gridspec
 from scipy.signal import find_peaks
 
 # ── Local modules ─────────────────────────────────────────────────────────────
 sys.path.insert(0, os.path.abspath(os.path.dirname(__file__)))
-from dc_offset_correction  import circle_fit_correction
-from clutter_suppression   import svd_clutter_removal
-from phase_demodulation    import demodulate
-from vital_sign_extraction import extract_vital_signs
 from heterogeneous         import HeterogeneousPipeline
 
 # ── Hardware constants ────────────────────────────────────────────────────────
@@ -60,12 +49,15 @@ _RE = re.compile(
 
 # ── Global state ─────────────────────────────────────────────────────────────
 app             = Flask(__name__)
-results_list    = []                        # accumulated result dicts
-event_history   = []                        # ALL past SSE events (for replay)
+event_history   = deque(maxlen=200)
 client_queues   = []                        # one queue per connected SSE client
 client_lock     = threading.Lock()
 pipeline_done   = threading.Event()
-SINGLE_DIR      = Path('./Single_Subject')
+SINGLE_DIR      = Path(__file__).resolve().parents[1] / 'Single_Subject'
+DB_PATH         = Path(__file__).resolve().parents[1] / 'data' / 'qidk_results.sqlite3'
+state_lock      = threading.Lock()
+run_state       = {'state': 'idle', 'message': 'Starting dashboard', 'run_id': None,
+                   'done': 0, 'total': 0, 'failures': 0}
 
 
 # ── Pipeline helpers ──────────────────────────────────────────────────────────
@@ -76,34 +68,6 @@ def parse_meta(path):
     br = float(m.group('br'))
     return dict(dist_m=float(m.group('dist')), angle_deg=int(m.group('angle')),
                 hr_true=int(m.group('hr')), br_true=br, has_br=br > 0)
-
-def read_dca1000(path):
-    raw  = np.fromfile(path, dtype=np.int16)
-    I    = raw[0::4] + 1j * raw[2::4]
-    Q    = raw[1::4] + 1j * raw[3::4]
-    LVDS = np.empty(I.size + Q.size, dtype=np.complex64)
-    LVDS[0::2] = I; LVDS[1::2] = Q
-    nc   = raw.shape[0] // (2 * N_CHIRPS * NUM_RX)
-    LVDS = LVDS.reshape((N_CHIRPS * NUM_RX, nc), order='F').T
-    out  = np.zeros((NUM_RX, nc * N_CHIRPS), dtype=np.complex64)
-    for rx in range(NUM_RX):
-        for chp in range(nc):
-            out[rx, chp*N_CHIRPS:(chp+1)*N_CHIRPS] = LVDS[chp, rx*N_CHIRPS:(rx+1)*N_CHIRPS]
-    return out
-
-def apply_cbf(if_data):
-    rx_pos  = np.arange(NUM_RX) * (D_ANT / LAMBDA_C)
-    ang_rad = np.deg2rad(AZIMUTH_GRID)
-    W = np.exp(-1j * 2*np.pi * rx_pos[:, None] * np.sin(ang_rad)[None, :]) / NUM_RX
-    return np.einsum('ra,rcs->acs', W, if_data)
-
-def autocorr_rate(sig, fs):
-    x = sig - np.mean(sig)
-    r = np.correlate(x, x, mode='full'); r = r[r.size//2:]; r /= r[0]+1e-30
-    peaks, _ = find_peaks(r, distance=int(fs*0.4))
-    if not len(peaks): return None
-    T = peaks[0]/fs
-    return round((1/T)*60, 1) if T > 0 else None
 
 def fft_peak(sig, fs, fmin, fmax):
     n = len(sig); nf = 4*n
@@ -122,47 +86,17 @@ def get_server_pipeline():
         _tri_pipe_server = HeterogeneousPipeline()
     return _tri_pipe_server
 
-def run_pipeline(bin_path):
-    t0 = time.perf_counter()
-    pipe = get_server_pipeline()
-    res = pipe.process_single_frame(bin_path)
-
-    br_hz, br_freqs, br_spec = fft_peak(res['resp_signal'], FS_VITAL, 0.1, 0.5)
-    hr_hz, hr_freqs, hr_spec = fft_peak(res['heart_signal'], FS_VITAL, 0.8, 2.5)
-    elapsed = (time.perf_counter() - t0) * 1e3
-
-    return dict(
-        rng_m=round(float(res['range_m']), 3),
-        ang_d=round(float(res['angle_deg']), 2),
-        hr_fft=round(res['hr_fft'], 1),
-        br_fft=round(res['br_fft'], 1),
-        hr_ac=res['hr_ac'],
-        br_ac=res['br_ac'],
-        disp_mm=res['disp_mm'],
-        resp_signal=res['resp_signal'],
-        heart_signal=res['heart_signal'],
-        ra_heatmap=res['ra_heatmap'],
-        br_hz=br_hz,
-        br_freqs=br_freqs,
-        br_spec=br_spec,
-        hr_hz=hr_hz,
-        hr_freqs=hr_freqs,
-        hr_spec=hr_spec,
-        elapsed_ms=round(elapsed, 1),
-    )
-
-
-# ── Figure generators (return base64 PNG) ────────────────────────────────────
+# ── Figure generators (PNG bytes are persisted on the server device) ─────────
 DARK='#0d1117'; PANEL='#161b22'; FG='#c9d1d9'; BORDER='#30363d'
 ACCENT='#58a6ff'; GREEN='#3fb950'; RED='#f85149'; PURPLE='#bc8cff'
 AMBER='#d29922'; TEAL='#39d353'; WHITE='#e6edf3'
 
-def _fig_to_b64(fig):
+def _fig_to_png(fig):
     buf = io.BytesIO()
     fig.savefig(buf, format='png', bbox_inches='tight', facecolor=DARK)
     plt.close(fig)
     buf.seek(0)
-    return base64.b64encode(buf.read()).decode()
+    return buf.read()
 
 def make_heatmap_fig(r):
     fig, ax = plt.subplots(figsize=(7, 4)); fig.patch.set_facecolor(DARK); ax.set_facecolor(PANEL)
@@ -179,7 +113,7 @@ def make_heatmap_fig(r):
     ax.set_xlabel('Azimuth [°]', color=FG); ax.set_ylabel('Range [m]', color=FG)
     ax.tick_params(colors='#8b949e'); ax.grid(True, alpha=0.2)
     plt.tight_layout()
-    return _fig_to_b64(fig)
+    return _fig_to_png(fig)
 
 def make_displacement_fig(r):
     t = np.arange(M_CHIRPS)/FS_VITAL
@@ -197,7 +131,7 @@ def make_displacement_fig(r):
     axes[1].set_xlabel('Time [s]', color=FG); axes[1].set_ylabel('Resp [mm]', color=FG)
     axes[1].set_title('Respiration Component', color=GREEN, fontsize=9, fontweight='bold')
     plt.tight_layout()
-    return _fig_to_b64(fig)
+    return _fig_to_png(fig)
 
 def make_spectra_fig(r, meta):
     fig, axes = plt.subplots(1, 2, figsize=(10, 4))
@@ -229,7 +163,7 @@ def make_spectra_fig(r, meta):
     axes[1].legend(fontsize=8, facecolor=PANEL, edgecolor=BORDER); axes[1].set_xlim(36, 192)
 
     plt.tight_layout()
-    return _fig_to_b64(fig)
+    return _fig_to_png(fig)
 
 
 # ── HTML Dashboard ────────────────────────────────────────────────────────────
@@ -240,7 +174,6 @@ DASHBOARD_HTML = r"""
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width,initial-scale=1"/>
 <title>FMCW Radar QIDK Dashboard</title>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet"/>
 <style>
   *{box-sizing:border-box;margin:0;padding:0}
   :root{
@@ -308,6 +241,17 @@ DASHBOARD_HTML = r"""
   .progress-bar{height:6px;background:var(--border);border-radius:3px;overflow:hidden}
   .progress-fill{height:100%;background:linear-gradient(90deg,var(--accent),var(--purple));
                  border-radius:3px;transition:width .4s ease;width:0%}
+  .latency-section{background:var(--panel);border:1px solid var(--border);
+                   border-radius:12px;padding:18px 22px}
+  .latency-section h2{font-size:.85rem;font-weight:600;color:var(--fg);
+                      text-transform:uppercase;letter-spacing:.8px;margin-bottom:12px}
+  .backend-label{font-size:.76rem;color:#8b949e;margin-bottom:14px}
+  .latency-row{display:grid;grid-template-columns:minmax(150px,220px) 1fr 76px;
+               align-items:center;gap:12px;margin:9px 0;font-size:.78rem}
+  .latency-name{color:var(--fg)}
+  .latency-track{height:9px;background:var(--border);border-radius:6px;overflow:hidden}
+  .latency-fill{height:100%;border-radius:6px;background:linear-gradient(90deg,var(--accent),var(--purple))}
+  .latency-value{text-align:right;font-family:'JetBrains Mono',monospace;color:var(--white)}
   /* QIDK terminal */
   .qidk-section{background:var(--panel);border:1px solid var(--border);
                 border-radius:12px;padding:20px 22px}
@@ -413,6 +357,12 @@ DASHBOARD_HTML = r"""
     <div class="progress-bar"><div class="progress-fill" id="prog-fill"></div></div>
   </div>
 
+  <div class="latency-section">
+    <h2>Pipeline Latency Breakdown</h2>
+    <div class="backend-label" id="backend-label">Waiting for backend information...</div>
+    <div id="latency-chart"><div class="placeholder">Stage timings appear after the first frame.</div></div>
+  </div>
+
   <!-- QIDK terminal -->
   <div class="qidk-section">
     <h2>📟 QIDK Terminal Output</h2>
@@ -474,6 +424,33 @@ function escHtml(s){ return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;')
 const term = document.getElementById('qidk-term');
 function appendTerm(txt){ term.innerHTML += txt; term.scrollTop=term.scrollHeight; }
 
+function renderLatency(timing, backends){
+  const stages = [
+    ['CPU · Read / unpack', timing.cpu_read_ms || 0],
+    ['GPU · DC correction', timing.gpu_dc1a_ms || 0],
+    ['GPU · Range FFT', timing.gpu_rfft_ms || 0],
+    ['GPU · Beamforming', timing.gpu_cbf_ms || 0],
+    ['GPU · Clutter suppression', timing.gpu_svd_ms || 0],
+    ['GPU · Heatmap', timing.gpu_heatmap_ms || 0],
+    ['GPU · Total', timing.gpu_total_ms || 0],
+    ['NPU · Target detection', timing.npu_detect_ms || 0],
+    ['CPU · Circle fit', timing.cpu_circle_fit_ms || 0],
+    ['CPU · Phase / displacement', timing.cpu_demod_ms || 0],
+    ['CPU · Filters / FFT', timing.cpu_filter_fft_ms || 0],
+    ['CPU · Autocorrelation', timing.cpu_autocorr_ms || 0],
+    ['CPU · Vital-sign total', timing.cpu_vitals_total_ms || 0],
+    ['End-to-end latency', timing.total_e2e_ms || 0]
+  ];
+  const max = Math.max(...stages.map(x=>x[1]), 0.01);
+  document.getElementById('latency-chart').innerHTML = stages.map(([name, ms]) =>
+    `<div class="latency-row"><span class="latency-name">${name}</span>`+
+    `<div class="latency-track"><div class="latency-fill" style="width:${Math.max(1,ms/max*100)}%"></div></div>`+
+    `<span class="latency-value">${ms.toFixed(2)} ms</span></div>`
+  ).join('');
+  document.getElementById('backend-label').textContent =
+    `GPU: ${backends.gpu}  ·  NPU: ${backends.npu}  ·  ${backends.cpu}`;
+}
+
 const evtSrc = new EventSource('/stream');
 
 evtSrc.addEventListener('status', e=>{
@@ -500,6 +477,10 @@ evtSrc.addEventListener('progress', e=>{
 
 evtSrc.addEventListener('result', e=>{
   const d = JSON.parse(e.data);
+  if(d.error){
+    appendTerm(`<span style="color:#f85149">❌ ${escHtml(d.filename)}: ${escHtml(d.error)}</span>\n`);
+    return;
+  }
   const r = d.result, m = d.meta;
 
   // Vitals
@@ -509,7 +490,8 @@ evtSrc.addEventListener('result', e=>{
   document.getElementById('br-ac').textContent = r.br_ac ? r.br_ac.toFixed(1)+' br/min' : 'N/A';
   document.getElementById('loc-val').textContent = r.rng_m.toFixed(2)+'m';
   document.getElementById('loc-sub').textContent = `@ ${r.ang_d.toFixed(1)}°`;
-  document.getElementById('timing-val').innerHTML = `${(r.elapsed_ms/1000).toFixed(1)}<small>s</small>`;
+  document.getElementById('timing-val').innerHTML = `${(r.elapsed_ms/1000).toFixed(2)}<small>s</small>`;
+  renderLatency(r.timing || {}, r.backends || {});
 
   if(m && m.hr_true){
     const he = Math.abs(r.hr_fft - m.hr_true);
@@ -521,12 +503,12 @@ evtSrc.addEventListener('result', e=>{
   }
 
   // Figures
-  if(d.heatmap_b64)
-    document.getElementById('heatmap-wrap').innerHTML=`<img src="data:image/png;base64,${d.heatmap_b64}" alt="heatmap"/>`;
-  if(d.disp_b64)
-    document.getElementById('disp-wrap').innerHTML=`<img src="data:image/png;base64,${d.disp_b64}" alt="displacement"/>`;
-  if(d.spectra_b64)
-    document.getElementById('spectra-wrap').innerHTML=`<img src="data:image/png;base64,${d.spectra_b64}" alt="spectra"/>`;
+  if(d.plots && d.plots.heatmap)
+    document.getElementById('heatmap-wrap').innerHTML=`<img src="${d.plots.heatmap}" alt="heatmap"/>`;
+  if(d.plots && d.plots.displacement)
+    document.getElementById('disp-wrap').innerHTML=`<img src="${d.plots.displacement}" alt="displacement"/>`;
+  if(d.plots && d.plots.spectra)
+    document.getElementById('spectra-wrap').innerHTML=`<img src="${d.plots.spectra}" alt="spectra"/>`;
 
   // Terminal
   const he = m&&m.hr_true ? Math.abs(r.hr_fft-m.hr_true) : null;
@@ -541,7 +523,7 @@ evtSrc.addEventListener('result', e=>{
     (m&&m.hr_true ? `  true=${m.hr_true}  err=${he.toFixed(1)} bpm`:'')+'</span>\n'+
     `<span style="color:${bc}">   RESP : FFT=${r.br_fft.toFixed(1)} br/min`+
     (m&&m.has_br  ? `  true=${m.br_true}  err=${be.toFixed(1)} br/min`:'')+'</span>\n'+
-    `<span style="color:#8b949e">   Time : ${(r.elapsed_ms/1000).toFixed(1)}s</span>\n`
+    `<span style="color:#8b949e">   Time : ${r.elapsed_ms.toFixed(2)}ms</span>\n`
   );
 
   // Table row
@@ -572,9 +554,32 @@ evtSrc.addEventListener('done', e=>{
   document.getElementById('prog-fill').style.width = '100%';
   document.getElementById('prog-pct').textContent  = '100%';
   document.getElementById('prog-label').textContent = `✅ Complete — ${d.n_processed} files`;
+  const mae = d.hr_mae===null ? 'N/A' : `${d.hr_mae.toFixed(2)} bpm`;
   appendTerm(`\n<span style="color:#3fb950">✅ PIPELINE COMPLETE — ${d.n_processed} files processed</span>\n`+
-             `<span style="color:#3fb950">   HR MAE = ${d.hr_mae.toFixed(2)} bpm</span>\n`);
+             `<span style="color:#3fb950">   HR MAE = ${mae}</span>\n`);
 });
+
+fetch('/api/state').then(response=>response.json()).then(state=>{
+  total = state.total || 0; done = state.done || 0;
+  document.getElementById('status-text').textContent = state.message;
+  document.getElementById('status-pill').className = 'status-pill ' + state.state;
+  (state.results || []).forEach(item=>{
+    if(item.error) return;
+    const r=item.result, m=item.meta || {};
+    if(!r || r.hr_fft === undefined) return;
+    document.getElementById('hr-val').innerHTML=`${r.hr_fft.toFixed(1)}<small>bpm</small>`;
+    document.getElementById('br-val').innerHTML=`${r.br_fft.toFixed(1)}<small>br/min</small>`;
+    document.getElementById('hr-ac').textContent=r.hr_ac ? r.hr_ac.toFixed(1)+' bpm' : 'N/A';
+    document.getElementById('br-ac').textContent=r.br_ac ? r.br_ac.toFixed(1)+' br/min' : 'N/A';
+    document.getElementById('loc-val').textContent=r.rng_m.toFixed(2)+'m';
+    document.getElementById('loc-sub').textContent=`@ ${r.ang_d.toFixed(1)}°`;
+    document.getElementById('timing-val').innerHTML=`${(r.elapsed_ms/1000).toFixed(2)}<small>s</small>`;
+    renderLatency(r.timing || {}, r.backends || {});
+    for(const [key,wrap] of [['heatmap','heatmap-wrap'],['displacement','disp-wrap'],['spectra','spectra-wrap']])
+      if(item.plots && item.plots[key]) document.getElementById(wrap).innerHTML=`<img src="${item.plots[key]}" alt="${key}"/>`;
+  });
+  document.getElementById('progress-sub').textContent=`${done} / ${total} processed`;
+}).catch(error=>appendTerm(`<span style="color:#f85149">Dashboard state unavailable: ${escHtml(error)}</span>\n`));
 
 evtSrc.onerror = ()=>{
   document.getElementById('status-text').textContent = 'Connection error';
@@ -952,5 +957,5 @@ Examples:
 
 
 if __name__ == '__main__':
-    main()
-
+    from qidk_dashboard_runtime import main as dashboard_main
+    dashboard_main()

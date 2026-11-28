@@ -22,6 +22,7 @@ Design:
 
 import time
 import os
+import warnings
 import numpy as np
 from typing import List, Dict, Any, Tuple, Optional
 
@@ -46,6 +47,8 @@ class NPURadarEngine:
         self.training_cells = training_cells
         self.pfa = pfa
         self.model_path = model_path
+        self.backend = 'CPU (vectorized peak detection; QNN model not configured)'
+        self.backend_error = None
 
         # Determine min valid range bin to ignore antenna spillover / near-field
         dr = range_axis[1] - range_axis[0] if len(range_axis) > 1 else 0.02
@@ -58,13 +61,17 @@ class NPURadarEngine:
         """
         Attempts to bind to Qualcomm QNN HTP (Hexagon Tensor Processor).
         """
-        if not model_path or not os.path.exists(model_path):
+        if not model_path:
+            return None
+        if not os.path.isfile(model_path):
+            self.backend = 'CPU (vectorized peak detection; QNN model not found)'
+            self.backend_error = f'Configured QNN model does not exist: {model_path}'
+            warnings.warn(self.backend_error, RuntimeWarning, stacklevel=2)
             return None
 
         try:
             import onnxruntime as ort
             providers = ort.get_available_providers()
-            # Check for Qualcomm QNN Execution Provider
             if 'QNNExecutionProvider' in providers:
                 options = {
                     'backend_path': 'QnnHtp.dll' if os.name == 'nt' else 'libQnnHtp.so',
@@ -75,9 +82,17 @@ class NPURadarEngine:
                     model_path,
                     providers=[('QNNExecutionProvider', options), 'CPUExecutionProvider']
                 )
+                self.backend = 'Qualcomm QNN (HTP/NPU)'
                 return session
-        except Exception:
-            pass
+            self.backend = 'CPU (vectorized peak detection; QNN provider unavailable)'
+        except (ImportError, OSError, RuntimeError, ValueError) as exc:
+            self.backend_error = str(exc)
+            self.backend = 'CPU (vectorized peak detection; QNN initialization failed)'
+            warnings.warn(
+                f'Unable to initialize the configured QNN model {model_path}: {exc}',
+                RuntimeWarning,
+                stacklevel=2,
+            )
         return None
 
     def process_heatmap(

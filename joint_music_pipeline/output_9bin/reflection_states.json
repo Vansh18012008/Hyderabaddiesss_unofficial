@@ -1,0 +1,4364 @@
+[
+  {
+    "candidates": [
+      {
+        "range_bin": 57,
+        "angle_deg": -43.0,
+        "score_db": 0.0,
+        "range_excess_db": 22.286098944585177,
+        "strong": true
+      },
+      {
+        "range_bin": 46,
+        "angle_deg": -20.0,
+        "score_db": -1.3972103492632082,
+        "range_excess_db": 25.165195551138865,
+        "strong": true
+      },
+      {
+        "range_bin": 69,
+        "angle_deg": 5.0,
+        "score_db": -2.4992114146758593,
+        "range_excess_db": 19.33644974994631,
+        "strong": true
+      },
+      {
+        "range_bin": 68,
+        "angle_deg": 54.0,
+        "score_db": -19.582521796112363,
+        "range_excess_db": 18.161203672027725,
+        "strong": false
+      },
+      {
+        "range_bin": 57,
+        "angle_deg": 27.0,
+        "score_db": -20.626568359355062,
+        "range_excess_db": 22.286098944585177,
+        "strong": false
+      }
+    ],
+    "visible": [
+      {
+        "id": 1,
+        "range_bin": 57.0,
+        "angle_deg": -43.0,
+        "confirmed": false,
+        "support": "strong"
+      },
+      {
+        "id": 2,
+        "range_bin": 46.0,
+        "angle_deg": -20.0,
+        "confirmed": false,
+        "support": "strong"
+      },
+      {
+        "id": 3,
+        "range_bin": 69.0,
+        "angle_deg": 5.0,
+        "confirmed": false,
+        "support": "strong"
+      }
+    ],
+    "lost": [],
+    "map_contrast_db": 24.413545982788634
+  },
+  {
+    "candidates": [
+      {
+        "range_bin": 56,
+        "angle_deg": 26.0,
+        "score_db": 0.0,
+        "range_excess_db": 26.571077052566885,
+        "strong": true
+      },
+      {
+        "range_bin": 46,
+        "angle_deg": -19.0,
+        "score_db": -6.357639658970044,
+        "range_excess_db": 24.937813086055478,
+        "strong": true
+      },
+      {
+        "range_bin": 57,
+        "angle_deg": -42.0,
+        "score_db": -7.065604584278123,
+        "range_excess_db": 23.675751671474067,
+        "strong": true
+      },
+      {
+        "range_bin": 58,
+        "angle_deg": 9.0,
+        "score_db": -8.072767850675511,
+        "range_excess_db": 22.095810282290607,
+        "strong": true
+      },
+      {
+        "range_bin": 66,
+        "angle_deg": 12.0,
+        "score_db": -12.37088617713798,
+        "range_excess_db": 15.561223167332322,
+        "strong": true
+      }
+    ],
+    "visible": [
+      {
+        "id": 1,
+        "range_bin": 57.0,
+        "angle_deg": -42.0,
+        "confirmed": false,
+        "support": "strong"
+      },
+      {
+        "id": 2,
+        "range_bin": 46.0,
+        "angle_deg": -19.0,
+        "confirmed": false,
+        "support": "strong"
+      },
+      {
+        "id": 3,
+        "range_bin": 66.0,
+        "angle_deg": 12.0,
+        "confirmed": false,
+        "support": "strong"
+      },
+      {
+        "id": 4,
+        "range_bin": 56.0,
+        "angle_deg": 26.0,
+        "confirmed": false,
+        "support": "strong"
+      },
+      {
+        "id": 5,
+        "range_bin": 58.0,
+        "angle_deg": 9.0,
+        "confirmed": false,
+        "support": "strong"
+      }
+    ],
+    "lost": [],
+    "map_contrast_db": 28.270726106341215
+  },
+  {
+    "candidates": [
+      {
+        "range_bin": 46,
+        "angle_deg": -19.0,
+        "score_db": 0.0,
+        "range_excess_db": 24.547387668564937,
+        "strong": true
+      },
+      {
+        "range_bin": 56,
+        "angle_deg": 19.0,
+        "score_db": -0.3647620905714223,
+        "range_excess_db": 24.795737956715868,
+        "strong": true
+      },
+      {
+        "range_bin": 51,
+        "angle_deg": 8.0,
+        "score_db": -2.204200020427394,
+        "range_excess_db": 17.551699557902623,
+        "strong": true
+      },
+      {
+        "range_bin": 64,
+        "angle_deg": 30.0,
+        "score_db": -10.278274368723944,
+        "range_excess_db": 13.513379030319328,
+        "strong": true
+      },
+      {
+        "range_bin": 21,
+        "angle_deg": -4.0,
+        "score_db": -21.003915956597673,
+        "range_excess_db": 18.690131253806115,
+        "strong": false
+      },
+      {
+        "range_bin": 77,
+        "angle_deg": 27.0,
+        "score_db": -21.371866050998612,
+        "range_excess_db": 7.138924052127521,
+        "strong": false
+      },
+      {
+        "range_bin": 84,
+        "angle_deg": 23.0,
+        "score_db": -21.466080548123113,
+        "range_excess_db": 5.0066119068430766,
+        "strong": false
+      },
+      {
+        "range_bin": 100,
+        "angle_deg": 23.0,
+        "score_db": -21.503170973002455,
+        "range_excess_db": 6.804582832668231,
+        "strong": false
+      },
+      {
+        "range_bin": 135,
+        "angle_deg": 6.0,
+        "score_db": -21.518262065987813,
+        "range_excess_db": 5.841351036479864,
+        "strong": false
+      },
+      {
+        "range_bin": 141,
+        "angle_deg": 20.0,
+        "score_db": -21.522476965190652,
+        "range_excess_db": 5.006080458696253,
+        "strong": false
+      },
+      {
+        "range_bin": 115,
+        "angle_deg": -35.0,
+        "score_db": -21.524829697805636,
+        "range_excess_db": 6.4786082821135125,
+        "strong": false
+      }
+    ],
+    "visible": [
+      {
+        "id": 2,
+        "range_bin": 46.0,
+        "angle_deg": -19.0,
+        "confirmed": true,
+        "support": "strong"
+      },
+      {
+        "id": 3,
+        "range_bin": 56.0,
+        "angle_deg": 19.0,
+        "confirmed": true,
+        "support": "strong"
+      },
+      {
+        "id": 4,
+        "range_bin": 64.0,
+        "angle_deg": 30.0,
+        "confirmed": false,
+        "support": "strong"
+      },
+      {
+        "id": 5,
+        "range_bin": 51.0,
+        "angle_deg": 8.0,
+        "confirmed": false,
+        "support": "strong"
+      }
+    ],
+    "lost": [],
+    "map_contrast_db": 21.526790938878023
+  },
+  {
+    "candidates": [
+      {
+        "range_bin": 44,
+        "angle_deg": 7.0,
+        "score_db": 0.0,
+        "range_excess_db": 27.062281982360872,
+        "strong": true
+      },
+      {
+        "range_bin": 56,
+        "angle_deg": 24.0,
+        "score_db": -1.513797685041682,
+        "range_excess_db": 24.593159095803685,
+        "strong": true
+      },
+      {
+        "range_bin": 46,
+        "angle_deg": -21.0,
+        "score_db": -1.859971211068521,
+        "range_excess_db": 26.970085338227435,
+        "strong": true
+      },
+      {
+        "range_bin": 51,
+        "angle_deg": 8.0,
+        "score_db": -4.0197245617268225,
+        "range_excess_db": 17.473476859914044,
+        "strong": true
+      },
+      {
+        "range_bin": 62,
+        "angle_deg": 37.0,
+        "score_db": -10.532737441238428,
+        "range_excess_db": 17.221769794842004,
+        "strong": true
+      },
+      {
+        "range_bin": 57,
+        "angle_deg": -55.0,
+        "score_db": -12.314559437216708,
+        "range_excess_db": 18.8028357824341,
+        "strong": true
+      }
+    ],
+    "visible": [
+      {
+        "id": 1,
+        "range_bin": 57.0,
+        "angle_deg": -55.0,
+        "confirmed": false,
+        "support": "strong"
+      },
+      {
+        "id": 2,
+        "range_bin": 46.0,
+        "angle_deg": -21.0,
+        "confirmed": true,
+        "support": "strong"
+      },
+      {
+        "id": 3,
+        "range_bin": 56.0,
+        "angle_deg": 24.0,
+        "confirmed": true,
+        "support": "strong"
+      },
+      {
+        "id": 4,
+        "range_bin": 62.0,
+        "angle_deg": 37.0,
+        "confirmed": true,
+        "support": "strong"
+      },
+      {
+        "id": 5,
+        "range_bin": 44.0,
+        "angle_deg": 7.0,
+        "confirmed": true,
+        "support": "strong"
+      },
+      {
+        "id": 6,
+        "range_bin": 51.0,
+        "angle_deg": 8.0,
+        "confirmed": false,
+        "support": "strong"
+      }
+    ],
+    "lost": [],
+    "map_contrast_db": 24.262092943273352
+  },
+  {
+    "candidates": [
+      {
+        "range_bin": 56,
+        "angle_deg": 24.0,
+        "score_db": 0.0,
+        "range_excess_db": 27.85564337797979,
+        "strong": true
+      },
+      {
+        "range_bin": 43,
+        "angle_deg": 7.0,
+        "score_db": -3.6291479299224125,
+        "range_excess_db": 26.70518571598103,
+        "strong": true
+      },
+      {
+        "range_bin": 46,
+        "angle_deg": -22.0,
+        "score_db": -8.807116172045044,
+        "range_excess_db": 27.795682023438573,
+        "strong": true
+      },
+      {
+        "range_bin": 58,
+        "angle_deg": 56.0,
+        "score_db": -14.570362197804736,
+        "range_excess_db": 20.07265879878682,
+        "strong": true
+      },
+      {
+        "range_bin": 57,
+        "angle_deg": 40.0,
+        "score_db": -15.256346329983932,
+        "range_excess_db": 23.64743540687968,
+        "strong": false
+      },
+      {
+        "range_bin": 56,
+        "angle_deg": -17.0,
+        "score_db": -17.510867520450592,
+        "range_excess_db": 27.85564337797979,
+        "strong": false
+      }
+    ],
+    "visible": [
+      {
+        "id": 2,
+        "range_bin": 46.0,
+        "angle_deg": -22.0,
+        "confirmed": true,
+        "support": "strong"
+      },
+      {
+        "id": 3,
+        "range_bin": 56.0,
+        "angle_deg": 24.0,
+        "confirmed": true,
+        "support": "strong"
+      },
+      {
+        "id": 4,
+        "range_bin": 57.0,
+        "angle_deg": 40.0,
+        "confirmed": true,
+        "support": "weak"
+      },
+      {
+        "id": 5,
+        "range_bin": 43.0,
+        "angle_deg": 7.0,
+        "confirmed": true,
+        "support": "strong"
+      },
+      {
+        "id": 7,
+        "range_bin": 58.0,
+        "angle_deg": 56.0,
+        "confirmed": false,
+        "support": "strong"
+      }
+    ],
+    "lost": [],
+    "map_contrast_db": 34.48077862665435
+  },
+  {
+    "candidates": [
+      {
+        "range_bin": 56,
+        "angle_deg": 26.0,
+        "score_db": 0.0,
+        "range_excess_db": 26.377407405033374,
+        "strong": true
+      },
+      {
+        "range_bin": 37,
+        "angle_deg": 8.0,
+        "score_db": -8.737901282832418,
+        "range_excess_db": 24.299446979784072,
+        "strong": true
+      },
+      {
+        "range_bin": 46,
+        "angle_deg": -22.0,
+        "score_db": -10.343771293900861,
+        "range_excess_db": 26.12071452339081,
+        "strong": true
+      }
+    ],
+    "visible": [
+      {
+        "id": 2,
+        "range_bin": 46.0,
+        "angle_deg": -22.0,
+        "confirmed": true,
+        "support": "strong"
+      },
+      {
+        "id": 3,
+        "range_bin": 56.0,
+        "angle_deg": 26.0,
+        "confirmed": true,
+        "support": "strong"
+      },
+      {
+        "id": 5,
+        "range_bin": 37.0,
+        "angle_deg": 8.0,
+        "confirmed": true,
+        "support": "strong"
+      }
+    ],
+    "lost": [
+      4
+    ],
+    "map_contrast_db": 35.86329560386059
+  },
+  {
+    "candidates": [
+      {
+        "range_bin": 35,
+        "angle_deg": 8.0,
+        "score_db": 0.0,
+        "range_excess_db": 30.789354403541026,
+        "strong": true
+      },
+      {
+        "range_bin": 46,
+        "angle_deg": -21.0,
+        "score_db": -3.5697863623507815,
+        "range_excess_db": 26.265316019942162,
+        "strong": true
+      },
+      {
+        "range_bin": 56,
+        "angle_deg": 17.0,
+        "score_db": -15.744677429531686,
+        "range_excess_db": 23.996155475362457,
+        "strong": false
+      },
+      {
+        "range_bin": 101,
+        "angle_deg": 14.0,
+        "score_db": -16.036444963778827,
+        "range_excess_db": 18.901387607358018,
+        "strong": false
+      }
+    ],
+    "visible": [
+      {
+        "id": 2,
+        "range_bin": 46.0,
+        "angle_deg": -21.0,
+        "confirmed": true,
+        "support": "strong"
+      },
+      {
+        "id": 3,
+        "range_bin": 56.0,
+        "angle_deg": 17.0,
+        "confirmed": true,
+        "support": "weak"
+      },
+      {
+        "id": 5,
+        "range_bin": 35.0,
+        "angle_deg": 8.0,
+        "confirmed": true,
+        "support": "strong"
+      }
+    ],
+    "lost": [
+      4
+    ],
+    "map_contrast_db": 33.79751966413358
+  },
+  {
+    "candidates": [
+      {
+        "range_bin": 34,
+        "angle_deg": 8.0,
+        "score_db": 0.0,
+        "range_excess_db": 33.22461518123913,
+        "strong": true
+      },
+      {
+        "range_bin": 46,
+        "angle_deg": -21.0,
+        "score_db": -7.734032695080682,
+        "range_excess_db": 26.51513302934032,
+        "strong": true
+      },
+      {
+        "range_bin": 57,
+        "angle_deg": 16.0,
+        "score_db": -17.572134560819173,
+        "range_excess_db": 26.522770062679584,
+        "strong": false
+      }
+    ],
+    "visible": [
+      {
+        "id": 2,
+        "range_bin": 46.0,
+        "angle_deg": -21.0,
+        "confirmed": true,
+        "support": "strong"
+      },
+      {
+        "id": 3,
+        "range_bin": 57.0,
+        "angle_deg": 16.0,
+        "confirmed": true,
+        "support": "weak"
+      },
+      {
+        "id": 5,
+        "range_bin": 34.0,
+        "angle_deg": 8.0,
+        "confirmed": true,
+        "support": "strong"
+      }
+    ],
+    "lost": [
+      4
+    ],
+    "map_contrast_db": 36.0360212859586
+  },
+  {
+    "candidates": [
+      {
+        "range_bin": 34,
+        "angle_deg": 6.0,
+        "score_db": 0.0,
+        "range_excess_db": 30.948173778070213,
+        "strong": true
+      },
+      {
+        "range_bin": 46,
+        "angle_deg": -21.0,
+        "score_db": -1.2453912037833528,
+        "range_excess_db": 24.936824890292172,
+        "strong": true
+      },
+      {
+        "range_bin": 56,
+        "angle_deg": 18.0,
+        "score_db": -12.911972866357166,
+        "range_excess_db": 23.103303173790536,
+        "strong": true
+      },
+      {
+        "range_bin": 53,
+        "angle_deg": 54.0,
+        "score_db": -18.196681430027493,
+        "range_excess_db": 15.795555234263205,
+        "strong": false
+      },
+      {
+        "range_bin": 131,
+        "angle_deg": 0.0,
+        "score_db": -18.663471051278137,
+        "range_excess_db": 8.257303006728293,
+        "strong": false
+      }
+    ],
+    "visible": [
+      {
+        "id": 2,
+        "range_bin": 46.0,
+        "angle_deg": -21.0,
+        "confirmed": true,
+        "support": "strong"
+      },
+      {
+        "id": 3,
+        "range_bin": 56.0,
+        "angle_deg": 18.0,
+        "confirmed": true,
+        "support": "strong"
+      },
+      {
+        "id": 5,
+        "range_bin": 34.0,
+        "angle_deg": 6.0,
+        "confirmed": true,
+        "support": "strong"
+      }
+    ],
+    "lost": [],
+    "map_contrast_db": 30.515783241302522
+  },
+  {
+    "candidates": [
+      {
+        "range_bin": 33,
+        "angle_deg": -4.0,
+        "score_db": 0.0,
+        "range_excess_db": 28.829867512719986,
+        "strong": true
+      },
+      {
+        "range_bin": 46,
+        "angle_deg": -22.0,
+        "score_db": -1.0051130829594654,
+        "range_excess_db": 23.808674749735545,
+        "strong": true
+      },
+      {
+        "range_bin": 56,
+        "angle_deg": 26.0,
+        "score_db": -8.087775370383865,
+        "range_excess_db": 21.9333272277174,
+        "strong": true
+      },
+      {
+        "range_bin": 132,
+        "angle_deg": -2.0,
+        "score_db": -11.485638622410402,
+        "range_excess_db": 16.89030748268509,
+        "strong": true
+      },
+      {
+        "range_bin": 54,
+        "angle_deg": -56.0,
+        "score_db": -16.24290711814005,
+        "range_excess_db": 14.198020072794051,
+        "strong": false
+      }
+    ],
+    "visible": [
+      {
+        "id": 2,
+        "range_bin": 46.0,
+        "angle_deg": -22.0,
+        "confirmed": true,
+        "support": "strong"
+      },
+      {
+        "id": 3,
+        "range_bin": 56.0,
+        "angle_deg": 26.0,
+        "confirmed": true,
+        "support": "strong"
+      },
+      {
+        "id": 5,
+        "range_bin": 33.0,
+        "angle_deg": -4.0,
+        "confirmed": true,
+        "support": "strong"
+      },
+      {
+        "id": 8,
+        "range_bin": 132.0,
+        "angle_deg": -2.0,
+        "confirmed": false,
+        "support": "strong"
+      }
+    ],
+    "lost": [],
+    "map_contrast_db": 26.77394568173565
+  },
+  {
+    "candidates": [
+      {
+        "range_bin": 34,
+        "angle_deg": -4.0,
+        "score_db": 0.0,
+        "range_excess_db": 30.544772643918108,
+        "strong": true
+      },
+      {
+        "range_bin": 56,
+        "angle_deg": 27.0,
+        "score_db": -4.61000501454727,
+        "range_excess_db": 23.049438490544375,
+        "strong": true
+      },
+      {
+        "range_bin": 46,
+        "angle_deg": -22.0,
+        "score_db": -8.877292028577207,
+        "range_excess_db": 22.75271877592988,
+        "strong": true
+      },
+      {
+        "range_bin": 34,
+        "angle_deg": 34.0,
+        "score_db": -14.859861948487186,
+        "range_excess_db": 30.544772643918108,
+        "strong": true
+      }
+    ],
+    "visible": [
+      {
+        "id": 2,
+        "range_bin": 46.0,
+        "angle_deg": -22.0,
+        "confirmed": true,
+        "support": "strong"
+      },
+      {
+        "id": 3,
+        "range_bin": 56.0,
+        "angle_deg": 27.0,
+        "confirmed": true,
+        "support": "strong"
+      },
+      {
+        "id": 5,
+        "range_bin": 34.0,
+        "angle_deg": -4.0,
+        "confirmed": true,
+        "support": "strong"
+      },
+      {
+        "id": 9,
+        "range_bin": 34.0,
+        "angle_deg": 34.0,
+        "confirmed": false,
+        "support": "strong"
+      }
+    ],
+    "lost": [],
+    "map_contrast_db": 31.971389316302783
+  },
+  {
+    "candidates": [
+      {
+        "range_bin": 34,
+        "angle_deg": -4.0,
+        "score_db": 0.0,
+        "range_excess_db": 28.02082928482575,
+        "strong": true
+      },
+      {
+        "range_bin": 40,
+        "angle_deg": -6.0,
+        "score_db": -1.9898788434305041,
+        "range_excess_db": 18.946945685964835,
+        "strong": true
+      },
+      {
+        "range_bin": 46,
+        "angle_deg": -20.0,
+        "score_db": -5.118636524900405,
+        "range_excess_db": 21.96035282912476,
+        "strong": true
+      },
+      {
+        "range_bin": 56,
+        "angle_deg": 32.0,
+        "score_db": -9.798783527928878,
+        "range_excess_db": 20.844723533359286,
+        "strong": true
+      },
+      {
+        "range_bin": 133,
+        "angle_deg": -3.0,
+        "score_db": -14.665017570815742,
+        "range_excess_db": 14.22746731688872,
+        "strong": true
+      }
+    ],
+    "visible": [
+      {
+        "id": 2,
+        "range_bin": 46.0,
+        "angle_deg": -20.0,
+        "confirmed": true,
+        "support": "strong"
+      },
+      {
+        "id": 3,
+        "range_bin": 56.0,
+        "angle_deg": 32.0,
+        "confirmed": true,
+        "support": "strong"
+      },
+      {
+        "id": 5,
+        "range_bin": 34.0,
+        "angle_deg": -4.0,
+        "confirmed": true,
+        "support": "strong"
+      },
+      {
+        "id": 8,
+        "range_bin": 133.0,
+        "angle_deg": -3.0,
+        "confirmed": false,
+        "support": "strong"
+      },
+      {
+        "id": 10,
+        "range_bin": 40.0,
+        "angle_deg": -6.0,
+        "confirmed": false,
+        "support": "strong"
+      }
+    ],
+    "lost": [],
+    "map_contrast_db": 29.817325938055546
+  },
+  {
+    "candidates": [
+      {
+        "range_bin": 46,
+        "angle_deg": -20.0,
+        "score_db": 0.0,
+        "range_excess_db": 24.575067793699887,
+        "strong": true
+      },
+      {
+        "range_bin": 43,
+        "angle_deg": -6.0,
+        "score_db": -1.262449106792346,
+        "range_excess_db": 22.91614599888547,
+        "strong": true
+      },
+      {
+        "range_bin": 58,
+        "angle_deg": -49.0,
+        "score_db": -6.8551562648660305,
+        "range_excess_db": 15.390916922833583,
+        "strong": true
+      },
+      {
+        "range_bin": 61,
+        "angle_deg": 52.0,
+        "score_db": -9.883625656861781,
+        "range_excess_db": 18.13369064349058,
+        "strong": true
+      },
+      {
+        "range_bin": 56,
+        "angle_deg": 27.0,
+        "score_db": -13.032667002131962,
+        "range_excess_db": 20.23365632220711,
+        "strong": true
+      }
+    ],
+    "visible": [
+      {
+        "id": 2,
+        "range_bin": 46.0,
+        "angle_deg": -20.0,
+        "confirmed": true,
+        "support": "strong"
+      },
+      {
+        "id": 3,
+        "range_bin": 56.0,
+        "angle_deg": 27.0,
+        "confirmed": true,
+        "support": "strong"
+      },
+      {
+        "id": 10,
+        "range_bin": 43.0,
+        "angle_deg": -6.0,
+        "confirmed": false,
+        "support": "strong"
+      },
+      {
+        "id": 11,
+        "range_bin": 58.0,
+        "angle_deg": -49.0,
+        "confirmed": false,
+        "support": "strong"
+      },
+      {
+        "id": 12,
+        "range_bin": 61.0,
+        "angle_deg": 52.0,
+        "confirmed": false,
+        "support": "strong"
+      }
+    ],
+    "lost": [
+      5
+    ],
+    "map_contrast_db": 27.63130138776191
+  },
+  {
+    "candidates": [
+      {
+        "range_bin": 46,
+        "angle_deg": -21.0,
+        "score_db": 0.0,
+        "range_excess_db": 26.93176162748368,
+        "strong": true
+      },
+      {
+        "range_bin": 43,
+        "angle_deg": -5.0,
+        "score_db": -0.17776100577631362,
+        "range_excess_db": 26.035461537923624,
+        "strong": true
+      },
+      {
+        "range_bin": 61,
+        "angle_deg": 52.0,
+        "score_db": -9.496322361495412,
+        "range_excess_db": 22.35189011871003,
+        "strong": true
+      },
+      {
+        "range_bin": 57,
+        "angle_deg": -41.0,
+        "score_db": -11.089696348221148,
+        "range_excess_db": 15.830559336168548,
+        "strong": true
+      },
+      {
+        "range_bin": 56,
+        "angle_deg": 23.0,
+        "score_db": -11.606105565397593,
+        "range_excess_db": 21.468596271075583,
+        "strong": true
+      }
+    ],
+    "visible": [
+      {
+        "id": 2,
+        "range_bin": 46.0,
+        "angle_deg": -21.0,
+        "confirmed": true,
+        "support": "strong"
+      },
+      {
+        "id": 3,
+        "range_bin": 56.0,
+        "angle_deg": 23.0,
+        "confirmed": true,
+        "support": "strong"
+      },
+      {
+        "id": 10,
+        "range_bin": 43.0,
+        "angle_deg": -5.0,
+        "confirmed": true,
+        "support": "strong"
+      },
+      {
+        "id": 11,
+        "range_bin": 57.0,
+        "angle_deg": -41.0,
+        "confirmed": false,
+        "support": "strong"
+      },
+      {
+        "id": 12,
+        "range_bin": 61.0,
+        "angle_deg": 52.0,
+        "confirmed": false,
+        "support": "strong"
+      }
+    ],
+    "lost": [
+      5
+    ],
+    "map_contrast_db": 28.951311906114086
+  },
+  {
+    "candidates": [
+      {
+        "range_bin": 46,
+        "angle_deg": -21.0,
+        "score_db": 0.0,
+        "range_excess_db": 26.642554025958106,
+        "strong": true
+      },
+      {
+        "range_bin": 43,
+        "angle_deg": -6.0,
+        "score_db": -1.8751602174301818,
+        "range_excess_db": 27.646347448112977,
+        "strong": true
+      },
+      {
+        "range_bin": 61,
+        "angle_deg": 52.0,
+        "score_db": -8.467888049192618,
+        "range_excess_db": 23.769313585997054,
+        "strong": true
+      },
+      {
+        "range_bin": 57,
+        "angle_deg": -39.0,
+        "score_db": -10.340049588452924,
+        "range_excess_db": 16.512695892803848,
+        "strong": true
+      },
+      {
+        "range_bin": 56,
+        "angle_deg": 23.0,
+        "score_db": -10.563304152682875,
+        "range_excess_db": 22.39292099958888,
+        "strong": true
+      }
+    ],
+    "visible": [
+      {
+        "id": 2,
+        "range_bin": 46.0,
+        "angle_deg": -21.0,
+        "confirmed": true,
+        "support": "strong"
+      },
+      {
+        "id": 3,
+        "range_bin": 56.0,
+        "angle_deg": 23.0,
+        "confirmed": true,
+        "support": "strong"
+      },
+      {
+        "id": 10,
+        "range_bin": 43.0,
+        "angle_deg": -6.0,
+        "confirmed": true,
+        "support": "strong"
+      },
+      {
+        "id": 11,
+        "range_bin": 57.0,
+        "angle_deg": -39.0,
+        "confirmed": true,
+        "support": "strong"
+      },
+      {
+        "id": 12,
+        "range_bin": 61.0,
+        "angle_deg": 52.0,
+        "confirmed": true,
+        "support": "strong"
+      }
+    ],
+    "lost": [
+      5
+    ],
+    "map_contrast_db": 27.694425765016973
+  },
+  {
+    "candidates": [
+      {
+        "range_bin": 43,
+        "angle_deg": -5.0,
+        "score_db": 0.0,
+        "range_excess_db": 27.952535865825638,
+        "strong": true
+      },
+      {
+        "range_bin": 46,
+        "angle_deg": -21.0,
+        "score_db": -0.6937292600535285,
+        "range_excess_db": 25.039926273658182,
+        "strong": true
+      },
+      {
+        "range_bin": 62,
+        "angle_deg": 52.0,
+        "score_db": -7.885382633037188,
+        "range_excess_db": 22.340927836349593,
+        "strong": true
+      },
+      {
+        "range_bin": 56,
+        "angle_deg": 24.0,
+        "score_db": -8.491604338938375,
+        "range_excess_db": 21.16806732837297,
+        "strong": true
+      },
+      {
+        "range_bin": 57,
+        "angle_deg": -43.0,
+        "score_db": -9.702496033970293,
+        "range_excess_db": 17.786591449359648,
+        "strong": true
+      }
+    ],
+    "visible": [
+      {
+        "id": 2,
+        "range_bin": 46.0,
+        "angle_deg": -21.0,
+        "confirmed": true,
+        "support": "strong"
+      },
+      {
+        "id": 3,
+        "range_bin": 56.0,
+        "angle_deg": 24.0,
+        "confirmed": true,
+        "support": "strong"
+      },
+      {
+        "id": 10,
+        "range_bin": 43.0,
+        "angle_deg": -5.0,
+        "confirmed": true,
+        "support": "strong"
+      },
+      {
+        "id": 11,
+        "range_bin": 57.0,
+        "angle_deg": -43.0,
+        "confirmed": true,
+        "support": "strong"
+      },
+      {
+        "id": 12,
+        "range_bin": 62.0,
+        "angle_deg": 52.0,
+        "confirmed": true,
+        "support": "strong"
+      }
+    ],
+    "lost": [],
+    "map_contrast_db": 26.99160114812681
+  },
+  {
+    "candidates": [
+      {
+        "range_bin": 43,
+        "angle_deg": -4.0,
+        "score_db": 0.0,
+        "range_excess_db": 25.310211529264265,
+        "strong": true
+      },
+      {
+        "range_bin": 45,
+        "angle_deg": -18.0,
+        "score_db": -7.8631640420035795,
+        "range_excess_db": 25.287761072251683,
+        "strong": true
+      },
+      {
+        "range_bin": 57,
+        "angle_deg": -43.0,
+        "score_db": -9.278856206626735,
+        "range_excess_db": 18.932398396545125,
+        "strong": true
+      },
+      {
+        "range_bin": 61,
+        "angle_deg": 54.0,
+        "score_db": -9.36889650221023,
+        "range_excess_db": 18.799944391378148,
+        "strong": true
+      },
+      {
+        "range_bin": 56,
+        "angle_deg": 26.0,
+        "score_db": -17.380932393785088,
+        "range_excess_db": 19.502385039847965,
+        "strong": false
+      }
+    ],
+    "visible": [
+      {
+        "id": 2,
+        "range_bin": 45.0,
+        "angle_deg": -18.0,
+        "confirmed": true,
+        "support": "strong"
+      },
+      {
+        "id": 3,
+        "range_bin": 56.0,
+        "angle_deg": 26.0,
+        "confirmed": true,
+        "support": "weak"
+      },
+      {
+        "id": 10,
+        "range_bin": 43.0,
+        "angle_deg": -4.0,
+        "confirmed": true,
+        "support": "strong"
+      },
+      {
+        "id": 11,
+        "range_bin": 57.0,
+        "angle_deg": -43.0,
+        "confirmed": true,
+        "support": "strong"
+      },
+      {
+        "id": 12,
+        "range_bin": 61.0,
+        "angle_deg": 54.0,
+        "confirmed": true,
+        "support": "strong"
+      }
+    ],
+    "lost": [],
+    "map_contrast_db": 30.430184964259144
+  },
+  {
+    "candidates": [
+      {
+        "range_bin": 34,
+        "angle_deg": -5.0,
+        "score_db": 0.0,
+        "range_excess_db": 22.90615960074514,
+        "strong": true
+      },
+      {
+        "range_bin": 46,
+        "angle_deg": -21.0,
+        "score_db": -2.042531475320456,
+        "range_excess_db": 25.8834460798533,
+        "strong": true
+      },
+      {
+        "range_bin": 56,
+        "angle_deg": 25.0,
+        "score_db": -4.028405504404287,
+        "range_excess_db": 24.096689138453584,
+        "strong": true
+      },
+      {
+        "range_bin": 57,
+        "angle_deg": -53.0,
+        "score_db": -8.160883847293018,
+        "range_excess_db": 21.15495351459343,
+        "strong": true
+      }
+    ],
+    "visible": [
+      {
+        "id": 2,
+        "range_bin": 46.0,
+        "angle_deg": -21.0,
+        "confirmed": true,
+        "support": "strong"
+      },
+      {
+        "id": 3,
+        "range_bin": 56.0,
+        "angle_deg": 25.0,
+        "confirmed": true,
+        "support": "strong"
+      },
+      {
+        "id": 10,
+        "range_bin": 34.0,
+        "angle_deg": -5.0,
+        "confirmed": true,
+        "support": "strong"
+      },
+      {
+        "id": 11,
+        "range_bin": 57.0,
+        "angle_deg": -53.0,
+        "confirmed": true,
+        "support": "strong"
+      }
+    ],
+    "lost": [
+      12
+    ],
+    "map_contrast_db": 26.24259355069232
+  },
+  {
+    "candidates": [
+      {
+        "range_bin": 56,
+        "angle_deg": 24.0,
+        "score_db": 0.0,
+        "range_excess_db": 28.40966255108279,
+        "strong": true
+      },
+      {
+        "range_bin": 31,
+        "angle_deg": -7.0,
+        "score_db": -4.454262263972096,
+        "range_excess_db": 24.534268499272287,
+        "strong": true
+      },
+      {
+        "range_bin": 45,
+        "angle_deg": -20.0,
+        "score_db": -7.6211469849472895,
+        "range_excess_db": 27.666049503283475,
+        "strong": true
+      },
+      {
+        "range_bin": 37,
+        "angle_deg": -6.0,
+        "score_db": -8.278818164815526,
+        "range_excess_db": 23.18683205045147,
+        "strong": true
+      },
+      {
+        "range_bin": 56,
+        "angle_deg": -55.0,
+        "score_db": -12.978306701277864,
+        "range_excess_db": 28.40966255108279,
+        "strong": true
+      }
+    ],
+    "visible": [
+      {
+        "id": 2,
+        "range_bin": 45.0,
+        "angle_deg": -20.0,
+        "confirmed": true,
+        "support": "strong"
+      },
+      {
+        "id": 3,
+        "range_bin": 56.0,
+        "angle_deg": 24.0,
+        "confirmed": true,
+        "support": "strong"
+      },
+      {
+        "id": 10,
+        "range_bin": 31.0,
+        "angle_deg": -7.0,
+        "confirmed": true,
+        "support": "strong"
+      },
+      {
+        "id": 11,
+        "range_bin": 56.0,
+        "angle_deg": -55.0,
+        "confirmed": true,
+        "support": "strong"
+      },
+      {
+        "id": 13,
+        "range_bin": 37.0,
+        "angle_deg": -6.0,
+        "confirmed": false,
+        "support": "strong"
+      }
+    ],
+    "lost": [
+      12
+    ],
+    "map_contrast_db": 33.733938135300164
+  },
+  {
+    "candidates": [
+      {
+        "range_bin": 19,
+        "angle_deg": -3.0,
+        "score_db": 0.0,
+        "range_excess_db": 29.217569582606046,
+        "strong": true
+      },
+      {
+        "range_bin": 30,
+        "angle_deg": -7.0,
+        "score_db": -1.1221182980692537,
+        "range_excess_db": 21.493484386575304,
+        "strong": true
+      },
+      {
+        "range_bin": 45,
+        "angle_deg": -21.0,
+        "score_db": -4.828808675612704,
+        "range_excess_db": 25.911679931815982,
+        "strong": true
+      },
+      {
+        "range_bin": 56,
+        "angle_deg": 21.0,
+        "score_db": -10.671091871776145,
+        "range_excess_db": 22.038577319227812,
+        "strong": true
+      }
+    ],
+    "visible": [
+      {
+        "id": 2,
+        "range_bin": 45.0,
+        "angle_deg": -21.0,
+        "confirmed": true,
+        "support": "strong"
+      },
+      {
+        "id": 3,
+        "range_bin": 56.0,
+        "angle_deg": 21.0,
+        "confirmed": true,
+        "support": "strong"
+      },
+      {
+        "id": 10,
+        "range_bin": 19.0,
+        "angle_deg": -3.0,
+        "confirmed": true,
+        "support": "strong"
+      },
+      {
+        "id": 13,
+        "range_bin": 30.0,
+        "angle_deg": -7.0,
+        "confirmed": false,
+        "support": "strong"
+      }
+    ],
+    "lost": [
+      11,
+      12
+    ],
+    "map_contrast_db": 28.901199857390196
+  },
+  {
+    "candidates": [
+      {
+        "range_bin": 18,
+        "angle_deg": -5.0,
+        "score_db": 0.0,
+        "range_excess_db": 33.82899434604585,
+        "strong": true
+      },
+      {
+        "range_bin": 19,
+        "angle_deg": 9.0,
+        "score_db": -2.002050825630483,
+        "range_excess_db": 33.94261625966276,
+        "strong": true
+      },
+      {
+        "range_bin": 56,
+        "angle_deg": 22.0,
+        "score_db": -8.096533074001735,
+        "range_excess_db": 30.202629868549643,
+        "strong": true
+      },
+      {
+        "range_bin": 19,
+        "angle_deg": -40.0,
+        "score_db": -9.783787468519563,
+        "range_excess_db": 33.94261625966276,
+        "strong": true
+      },
+      {
+        "range_bin": 46,
+        "angle_deg": -21.0,
+        "score_db": -11.572381240041945,
+        "range_excess_db": 22.322012351557937,
+        "strong": true
+      }
+    ],
+    "visible": [
+      {
+        "id": 2,
+        "range_bin": 46.0,
+        "angle_deg": -21.0,
+        "confirmed": true,
+        "support": "strong"
+      },
+      {
+        "id": 3,
+        "range_bin": 56.0,
+        "angle_deg": 22.0,
+        "confirmed": true,
+        "support": "strong"
+      },
+      {
+        "id": 10,
+        "range_bin": 19.0,
+        "angle_deg": 9.0,
+        "confirmed": true,
+        "support": "strong"
+      },
+      {
+        "id": 13,
+        "range_bin": 18.0,
+        "angle_deg": -5.0,
+        "confirmed": true,
+        "support": "strong"
+      },
+      {
+        "id": 14,
+        "range_bin": 19.0,
+        "angle_deg": -40.0,
+        "confirmed": false,
+        "support": "strong"
+      }
+    ],
+    "lost": [
+      11
+    ],
+    "map_contrast_db": 33.307702110695644
+  },
+  {
+    "candidates": [
+      {
+        "range_bin": 18,
+        "angle_deg": -8.0,
+        "score_db": 0.0,
+        "range_excess_db": 35.207973698014314,
+        "strong": true
+      },
+      {
+        "range_bin": 46,
+        "angle_deg": -23.0,
+        "score_db": -14.527611417818797,
+        "range_excess_db": 21.0285554223083,
+        "strong": true
+      },
+      {
+        "range_bin": 56,
+        "angle_deg": 21.0,
+        "score_db": -15.878430588124449,
+        "range_excess_db": 23.841906833798973,
+        "strong": false
+      }
+    ],
+    "visible": [
+      {
+        "id": 2,
+        "range_bin": 46.0,
+        "angle_deg": -23.0,
+        "confirmed": true,
+        "support": "strong"
+      },
+      {
+        "id": 3,
+        "range_bin": 56.0,
+        "angle_deg": 21.0,
+        "confirmed": true,
+        "support": "weak"
+      },
+      {
+        "id": 13,
+        "range_bin": 18.0,
+        "angle_deg": -8.0,
+        "confirmed": true,
+        "support": "strong"
+      }
+    ],
+    "lost": [
+      10,
+      11
+    ],
+    "map_contrast_db": 37.64881503662404
+  },
+  {
+    "candidates": [
+      {
+        "range_bin": 14,
+        "angle_deg": -10.0,
+        "score_db": 0.0,
+        "range_excess_db": 31.844029727780566,
+        "strong": true
+      },
+      {
+        "range_bin": 56,
+        "angle_deg": 21.0,
+        "score_db": -6.564406603244541,
+        "range_excess_db": 27.36255937215607,
+        "strong": true
+      },
+      {
+        "range_bin": 46,
+        "angle_deg": -23.0,
+        "score_db": -12.526487796874356,
+        "range_excess_db": 21.902740511640374,
+        "strong": true
+      }
+    ],
+    "visible": [
+      {
+        "id": 2,
+        "range_bin": 46.0,
+        "angle_deg": -23.0,
+        "confirmed": true,
+        "support": "strong"
+      },
+      {
+        "id": 3,
+        "range_bin": 56.0,
+        "angle_deg": 21.0,
+        "confirmed": true,
+        "support": "strong"
+      },
+      {
+        "id": 13,
+        "range_bin": 14.0,
+        "angle_deg": -10.0,
+        "confirmed": true,
+        "support": "strong"
+      }
+    ],
+    "lost": [
+      10
+    ],
+    "map_contrast_db": 31.94161284237804
+  },
+  {
+    "candidates": [
+      {
+        "range_bin": 14,
+        "angle_deg": -11.0,
+        "score_db": 0.0,
+        "range_excess_db": 34.23714399838626,
+        "strong": true
+      },
+      {
+        "range_bin": 56,
+        "angle_deg": 19.0,
+        "score_db": -18.090233059426897,
+        "range_excess_db": 24.006079199260583,
+        "strong": false
+      },
+      {
+        "range_bin": 46,
+        "angle_deg": -23.0,
+        "score_db": -20.48289762727846,
+        "range_excess_db": 22.593421900315107,
+        "strong": false
+      }
+    ],
+    "visible": [
+      {
+        "id": 2,
+        "range_bin": 46.0,
+        "angle_deg": -23.0,
+        "confirmed": true,
+        "support": "weak"
+      },
+      {
+        "id": 3,
+        "range_bin": 56.0,
+        "angle_deg": 19.0,
+        "confirmed": true,
+        "support": "weak"
+      },
+      {
+        "id": 13,
+        "range_bin": 14.0,
+        "angle_deg": -11.0,
+        "confirmed": true,
+        "support": "strong"
+      }
+    ],
+    "lost": [
+      10
+    ],
+    "map_contrast_db": 38.55947517366984
+  },
+  {
+    "candidates": [
+      {
+        "range_bin": 15,
+        "angle_deg": -12.0,
+        "score_db": 0.0,
+        "range_excess_db": 37.82083307098169,
+        "strong": true
+      },
+      {
+        "range_bin": 16,
+        "angle_deg": -36.0,
+        "score_db": -5.670592309042879,
+        "range_excess_db": 35.13708009386811,
+        "strong": true
+      },
+      {
+        "range_bin": 56,
+        "angle_deg": 21.0,
+        "score_db": -12.783832811514728,
+        "range_excess_db": 22.715396671778436,
+        "strong": true
+      },
+      {
+        "range_bin": 47,
+        "angle_deg": -23.0,
+        "score_db": -17.731945226988792,
+        "range_excess_db": 20.526565671263242,
+        "strong": false
+      }
+    ],
+    "visible": [
+      {
+        "id": 2,
+        "range_bin": 47.0,
+        "angle_deg": -23.0,
+        "confirmed": true,
+        "support": "weak"
+      },
+      {
+        "id": 3,
+        "range_bin": 56.0,
+        "angle_deg": 21.0,
+        "confirmed": true,
+        "support": "strong"
+      },
+      {
+        "id": 13,
+        "range_bin": 15.0,
+        "angle_deg": -12.0,
+        "confirmed": true,
+        "support": "strong"
+      },
+      {
+        "id": 15,
+        "range_bin": 16.0,
+        "angle_deg": -36.0,
+        "confirmed": false,
+        "support": "strong"
+      }
+    ],
+    "lost": [],
+    "map_contrast_db": 34.18990423554441
+  },
+  {
+    "candidates": [
+      {
+        "range_bin": 15,
+        "angle_deg": -11.0,
+        "score_db": 0.0,
+        "range_excess_db": 36.99603743692146,
+        "strong": true
+      },
+      {
+        "range_bin": 16,
+        "angle_deg": 8.0,
+        "score_db": -4.363923070301482,
+        "range_excess_db": 34.6414287211905,
+        "strong": true
+      },
+      {
+        "range_bin": 16,
+        "angle_deg": -24.0,
+        "score_db": -12.480126927830675,
+        "range_excess_db": 34.6414287211905,
+        "strong": true
+      },
+      {
+        "range_bin": 56,
+        "angle_deg": 20.0,
+        "score_db": -19.221693471769722,
+        "range_excess_db": 22.2680082367633,
+        "strong": false
+      }
+    ],
+    "visible": [
+      {
+        "id": 3,
+        "range_bin": 56.0,
+        "angle_deg": 20.0,
+        "confirmed": true,
+        "support": "weak"
+      },
+      {
+        "id": 13,
+        "range_bin": 15.0,
+        "angle_deg": -11.0,
+        "confirmed": true,
+        "support": "strong"
+      },
+      {
+        "id": 15,
+        "range_bin": 16.0,
+        "angle_deg": -24.0,
+        "confirmed": false,
+        "support": "strong"
+      },
+      {
+        "id": 16,
+        "range_bin": 16.0,
+        "angle_deg": 8.0,
+        "confirmed": false,
+        "support": "strong"
+      }
+    ],
+    "lost": [
+      2
+    ],
+    "map_contrast_db": 37.54846253941308
+  },
+  {
+    "candidates": [
+      {
+        "range_bin": 20,
+        "angle_deg": -9.0,
+        "score_db": 0.0,
+        "range_excess_db": 28.333046621625293,
+        "strong": true
+      },
+      {
+        "range_bin": 46,
+        "angle_deg": -22.0,
+        "score_db": -11.503010783841072,
+        "range_excess_db": 20.025455652757337,
+        "strong": true
+      },
+      {
+        "range_bin": 56,
+        "angle_deg": 19.0,
+        "score_db": -14.66304862877718,
+        "range_excess_db": 21.414911181946927,
+        "strong": true
+      }
+    ],
+    "visible": [
+      {
+        "id": 2,
+        "range_bin": 46.0,
+        "angle_deg": -22.0,
+        "confirmed": true,
+        "support": "strong"
+      },
+      {
+        "id": 3,
+        "range_bin": 56.0,
+        "angle_deg": 19.0,
+        "confirmed": true,
+        "support": "strong"
+      },
+      {
+        "id": 13,
+        "range_bin": 20.0,
+        "angle_deg": -9.0,
+        "confirmed": true,
+        "support": "strong"
+      }
+    ],
+    "lost": [],
+    "map_contrast_db": 29.800480463859238
+  },
+  {
+    "candidates": [
+      {
+        "range_bin": 20,
+        "angle_deg": -9.0,
+        "score_db": 0.0,
+        "range_excess_db": 27.630960568372487,
+        "strong": true
+      },
+      {
+        "range_bin": 45,
+        "angle_deg": -21.0,
+        "score_db": -8.984071016409004,
+        "range_excess_db": 24.605672334832747,
+        "strong": true
+      },
+      {
+        "range_bin": 56,
+        "angle_deg": 19.0,
+        "score_db": -15.457684093529199,
+        "range_excess_db": 21.308646562123783,
+        "strong": false
+      }
+    ],
+    "visible": [
+      {
+        "id": 2,
+        "range_bin": 45.0,
+        "angle_deg": -21.0,
+        "confirmed": true,
+        "support": "strong"
+      },
+      {
+        "id": 3,
+        "range_bin": 56.0,
+        "angle_deg": 19.0,
+        "confirmed": true,
+        "support": "weak"
+      },
+      {
+        "id": 13,
+        "range_bin": 20.0,
+        "angle_deg": -9.0,
+        "confirmed": true,
+        "support": "strong"
+      }
+    ],
+    "lost": [],
+    "map_contrast_db": 31.396482235983832
+  },
+  {
+    "candidates": [
+      {
+        "range_bin": 32,
+        "angle_deg": -8.0,
+        "score_db": 0.0,
+        "range_excess_db": 22.258547192188125,
+        "strong": true
+      },
+      {
+        "range_bin": 38,
+        "angle_deg": -7.0,
+        "score_db": -0.6217890710640985,
+        "range_excess_db": 21.75047558553043,
+        "strong": true
+      },
+      {
+        "range_bin": 56,
+        "angle_deg": 22.0,
+        "score_db": -3.630552027400884,
+        "range_excess_db": 21.463430966921656,
+        "strong": true
+      },
+      {
+        "range_bin": 45,
+        "angle_deg": -20.0,
+        "score_db": -5.639584725803768,
+        "range_excess_db": 24.707722303451412,
+        "strong": true
+      },
+      {
+        "range_bin": 57,
+        "angle_deg": -43.0,
+        "score_db": -8.867908396630032,
+        "range_excess_db": 19.77585448184309,
+        "strong": true
+      }
+    ],
+    "visible": [
+      {
+        "id": 2,
+        "range_bin": 45.0,
+        "angle_deg": -20.0,
+        "confirmed": true,
+        "support": "strong"
+      },
+      {
+        "id": 3,
+        "range_bin": 56.0,
+        "angle_deg": 22.0,
+        "confirmed": true,
+        "support": "strong"
+      },
+      {
+        "id": 13,
+        "range_bin": 32.0,
+        "angle_deg": -8.0,
+        "confirmed": true,
+        "support": "strong"
+      },
+      {
+        "id": 17,
+        "range_bin": 38.0,
+        "angle_deg": -7.0,
+        "confirmed": false,
+        "support": "strong"
+      },
+      {
+        "id": 18,
+        "range_bin": 57.0,
+        "angle_deg": -43.0,
+        "confirmed": false,
+        "support": "strong"
+      }
+    ],
+    "lost": [],
+    "map_contrast_db": 27.68322143409949
+  },
+  {
+    "candidates": [
+      {
+        "range_bin": 46,
+        "angle_deg": -17.0,
+        "score_db": 0.0,
+        "range_excess_db": 25.26505104898274,
+        "strong": true
+      },
+      {
+        "range_bin": 34,
+        "angle_deg": -7.0,
+        "score_db": -2.5392138291813904,
+        "range_excess_db": 23.494726706286684,
+        "strong": true
+      },
+      {
+        "range_bin": 40,
+        "angle_deg": -7.0,
+        "score_db": -4.142995171625657,
+        "range_excess_db": 22.757381600644607,
+        "strong": true
+      },
+      {
+        "range_bin": 56,
+        "angle_deg": 23.0,
+        "score_db": -8.904207268788127,
+        "range_excess_db": 22.32146000305724,
+        "strong": true
+      },
+      {
+        "range_bin": 57,
+        "angle_deg": -45.0,
+        "score_db": -9.795282630679079,
+        "range_excess_db": 19.99314291660923,
+        "strong": true
+      }
+    ],
+    "visible": [
+      {
+        "id": 2,
+        "range_bin": 46.0,
+        "angle_deg": -17.0,
+        "confirmed": true,
+        "support": "strong"
+      },
+      {
+        "id": 3,
+        "range_bin": 56.0,
+        "angle_deg": 23.0,
+        "confirmed": true,
+        "support": "strong"
+      },
+      {
+        "id": 13,
+        "range_bin": 40.0,
+        "angle_deg": -7.0,
+        "confirmed": true,
+        "support": "strong"
+      },
+      {
+        "id": 17,
+        "range_bin": 34.0,
+        "angle_deg": -7.0,
+        "confirmed": false,
+        "support": "strong"
+      },
+      {
+        "id": 18,
+        "range_bin": 57.0,
+        "angle_deg": -45.0,
+        "confirmed": false,
+        "support": "strong"
+      }
+    ],
+    "lost": [],
+    "map_contrast_db": 30.6455102803996
+  },
+  {
+    "candidates": [
+      {
+        "range_bin": 46,
+        "angle_deg": -19.0,
+        "score_db": 0.0,
+        "range_excess_db": 25.81746057398869,
+        "strong": true
+      },
+      {
+        "range_bin": 48,
+        "angle_deg": -8.0,
+        "score_db": -0.1883983647294511,
+        "range_excess_db": 24.426569693617743,
+        "strong": true
+      },
+      {
+        "range_bin": 42,
+        "angle_deg": -7.0,
+        "score_db": -0.7615018507653698,
+        "range_excess_db": 23.785902742116555,
+        "strong": true
+      },
+      {
+        "range_bin": 56,
+        "angle_deg": 22.0,
+        "score_db": -2.1724459502879383,
+        "range_excess_db": 23.969689935536344,
+        "strong": true
+      },
+      {
+        "range_bin": 58,
+        "angle_deg": -42.0,
+        "score_db": -13.526540210837275,
+        "range_excess_db": 16.960157588654475,
+        "strong": true
+      },
+      {
+        "range_bin": 66,
+        "angle_deg": 51.0,
+        "score_db": -19.044931685298415,
+        "range_excess_db": 12.236683877787712,
+        "strong": false
+      }
+    ],
+    "visible": [
+      {
+        "id": 2,
+        "range_bin": 46.0,
+        "angle_deg": -19.0,
+        "confirmed": true,
+        "support": "strong"
+      },
+      {
+        "id": 3,
+        "range_bin": 56.0,
+        "angle_deg": 22.0,
+        "confirmed": true,
+        "support": "strong"
+      },
+      {
+        "id": 13,
+        "range_bin": 48.0,
+        "angle_deg": -8.0,
+        "confirmed": true,
+        "support": "strong"
+      },
+      {
+        "id": 17,
+        "range_bin": 42.0,
+        "angle_deg": -7.0,
+        "confirmed": true,
+        "support": "strong"
+      },
+      {
+        "id": 18,
+        "range_bin": 58.0,
+        "angle_deg": -42.0,
+        "confirmed": true,
+        "support": "strong"
+      }
+    ],
+    "lost": [],
+    "map_contrast_db": 27.62307322366896
+  },
+  {
+    "candidates": [
+      {
+        "range_bin": 46,
+        "angle_deg": -19.0,
+        "score_db": 0.0,
+        "range_excess_db": 23.311106511721327,
+        "strong": true
+      },
+      {
+        "range_bin": 49,
+        "angle_deg": -8.0,
+        "score_db": -2.084838531213201,
+        "range_excess_db": 25.412549062060485,
+        "strong": true
+      },
+      {
+        "range_bin": 69,
+        "angle_deg": 50.0,
+        "score_db": -10.9179453795192,
+        "range_excess_db": 19.508194361328655,
+        "strong": true
+      },
+      {
+        "range_bin": 57,
+        "angle_deg": -38.0,
+        "score_db": -13.719840793182506,
+        "range_excess_db": 18.242579308108823,
+        "strong": true
+      },
+      {
+        "range_bin": 130,
+        "angle_deg": -4.0,
+        "score_db": -15.72608138791017,
+        "range_excess_db": 12.939956887502035,
+        "strong": false
+      },
+      {
+        "range_bin": 56,
+        "angle_deg": 17.0,
+        "score_db": -16.750197827964083,
+        "range_excess_db": 19.583672216208406,
+        "strong": false
+      }
+    ],
+    "visible": [
+      {
+        "id": 2,
+        "range_bin": 46.0,
+        "angle_deg": -19.0,
+        "confirmed": true,
+        "support": "strong"
+      },
+      {
+        "id": 3,
+        "range_bin": 56.0,
+        "angle_deg": 17.0,
+        "confirmed": true,
+        "support": "weak"
+      },
+      {
+        "id": 17,
+        "range_bin": 49.0,
+        "angle_deg": -8.0,
+        "confirmed": true,
+        "support": "strong"
+      },
+      {
+        "id": 18,
+        "range_bin": 57.0,
+        "angle_deg": -38.0,
+        "confirmed": true,
+        "support": "strong"
+      },
+      {
+        "id": 19,
+        "range_bin": 69.0,
+        "angle_deg": 50.0,
+        "confirmed": false,
+        "support": "strong"
+      }
+    ],
+    "lost": [
+      13
+    ],
+    "map_contrast_db": 28.925637506518125
+  },
+  {
+    "candidates": [
+      {
+        "range_bin": 50,
+        "angle_deg": -11.0,
+        "score_db": 0.0,
+        "range_excess_db": 22.38113572851006,
+        "strong": true
+      },
+      {
+        "range_bin": 56,
+        "angle_deg": 20.0,
+        "score_db": -1.0820564686351661,
+        "range_excess_db": 21.922951406906463,
+        "strong": true
+      },
+      {
+        "range_bin": 57,
+        "angle_deg": -39.0,
+        "score_db": -2.1940320185175786,
+        "range_excess_db": 20.148142406927917,
+        "strong": true
+      },
+      {
+        "range_bin": 70,
+        "angle_deg": 48.0,
+        "score_db": -5.803122465551697,
+        "range_excess_db": 15.61651919587986,
+        "strong": true
+      },
+      {
+        "range_bin": 129,
+        "angle_deg": -5.0,
+        "score_db": -7.745452957583524,
+        "range_excess_db": 15.037859463881723,
+        "strong": true
+      }
+    ],
+    "visible": [
+      {
+        "id": 3,
+        "range_bin": 56.0,
+        "angle_deg": 20.0,
+        "confirmed": true,
+        "support": "strong"
+      },
+      {
+        "id": 17,
+        "range_bin": 50.0,
+        "angle_deg": -11.0,
+        "confirmed": true,
+        "support": "strong"
+      },
+      {
+        "id": 18,
+        "range_bin": 57.0,
+        "angle_deg": -39.0,
+        "confirmed": true,
+        "support": "strong"
+      },
+      {
+        "id": 19,
+        "range_bin": 70.0,
+        "angle_deg": 48.0,
+        "confirmed": false,
+        "support": "strong"
+      },
+      {
+        "id": 20,
+        "range_bin": 129.0,
+        "angle_deg": -5.0,
+        "confirmed": false,
+        "support": "strong"
+      }
+    ],
+    "lost": [
+      2,
+      13
+    ],
+    "map_contrast_db": 25.213566759543994
+  },
+  {
+    "candidates": [
+      {
+        "range_bin": 57,
+        "angle_deg": -39.0,
+        "score_db": 0.0,
+        "range_excess_db": 19.61599872399251,
+        "strong": true
+      },
+      {
+        "range_bin": 45,
+        "angle_deg": -21.0,
+        "score_db": -0.69408331252502,
+        "range_excess_db": 28.92403314203265,
+        "strong": true
+      },
+      {
+        "range_bin": 51,
+        "angle_deg": -17.0,
+        "score_db": -6.081405765282197,
+        "range_excess_db": 15.31877769426616,
+        "strong": true
+      },
+      {
+        "range_bin": 56,
+        "angle_deg": 17.0,
+        "score_db": -9.884987338579283,
+        "range_excess_db": 20.23378602988398,
+        "strong": true
+      },
+      {
+        "range_bin": 71,
+        "angle_deg": 49.0,
+        "score_db": -10.356855051500073,
+        "range_excess_db": 11.354568796646141,
+        "strong": true
+      }
+    ],
+    "visible": [
+      {
+        "id": 2,
+        "range_bin": 45.0,
+        "angle_deg": -21.0,
+        "confirmed": true,
+        "support": "strong"
+      },
+      {
+        "id": 3,
+        "range_bin": 56.0,
+        "angle_deg": 17.0,
+        "confirmed": true,
+        "support": "strong"
+      },
+      {
+        "id": 17,
+        "range_bin": 51.0,
+        "angle_deg": -17.0,
+        "confirmed": true,
+        "support": "strong"
+      },
+      {
+        "id": 18,
+        "range_bin": 57.0,
+        "angle_deg": -39.0,
+        "confirmed": true,
+        "support": "strong"
+      },
+      {
+        "id": 19,
+        "range_bin": 71.0,
+        "angle_deg": 49.0,
+        "confirmed": true,
+        "support": "strong"
+      }
+    ],
+    "lost": [
+      13
+    ],
+    "map_contrast_db": 26.24505772455034
+  },
+  {
+    "candidates": [
+      {
+        "range_bin": 56,
+        "angle_deg": 22.0,
+        "score_db": 0.0,
+        "range_excess_db": 28.329805034502172,
+        "strong": true
+      },
+      {
+        "range_bin": 57,
+        "angle_deg": -39.0,
+        "score_db": -8.616568214114459,
+        "range_excess_db": 24.75141338037919,
+        "strong": true
+      },
+      {
+        "range_bin": 46,
+        "angle_deg": -21.0,
+        "score_db": -8.912504169198138,
+        "range_excess_db": 26.664750912298246,
+        "strong": true
+      }
+    ],
+    "visible": [
+      {
+        "id": 2,
+        "range_bin": 46.0,
+        "angle_deg": -21.0,
+        "confirmed": true,
+        "support": "strong"
+      },
+      {
+        "id": 3,
+        "range_bin": 56.0,
+        "angle_deg": 22.0,
+        "confirmed": true,
+        "support": "strong"
+      },
+      {
+        "id": 18,
+        "range_bin": 57.0,
+        "angle_deg": -39.0,
+        "confirmed": true,
+        "support": "strong"
+      }
+    ],
+    "lost": [
+      17,
+      19
+    ],
+    "map_contrast_db": 36.311021223222625
+  },
+  {
+    "candidates": [
+      {
+        "range_bin": 56,
+        "angle_deg": 22.0,
+        "score_db": 0.0,
+        "range_excess_db": 30.858096153506224,
+        "strong": true
+      },
+      {
+        "range_bin": 46,
+        "angle_deg": -22.0,
+        "score_db": -5.403393712170741,
+        "range_excess_db": 29.477151636032232,
+        "strong": true
+      },
+      {
+        "range_bin": 57,
+        "angle_deg": -35.0,
+        "score_db": -11.174848591061572,
+        "range_excess_db": 26.69717342250071,
+        "strong": true
+      }
+    ],
+    "visible": [
+      {
+        "id": 2,
+        "range_bin": 46.0,
+        "angle_deg": -22.0,
+        "confirmed": true,
+        "support": "strong"
+      },
+      {
+        "id": 3,
+        "range_bin": 56.0,
+        "angle_deg": 22.0,
+        "confirmed": true,
+        "support": "strong"
+      },
+      {
+        "id": 18,
+        "range_bin": 57.0,
+        "angle_deg": -35.0,
+        "confirmed": true,
+        "support": "strong"
+      }
+    ],
+    "lost": [
+      17,
+      19
+    ],
+    "map_contrast_db": 32.40206233562086
+  },
+  {
+    "candidates": [
+      {
+        "range_bin": 56,
+        "angle_deg": 22.0,
+        "score_db": 0.0,
+        "range_excess_db": 31.710228932420634,
+        "strong": true
+      },
+      {
+        "range_bin": 57,
+        "angle_deg": -40.0,
+        "score_db": -7.8971798647712355,
+        "range_excess_db": 27.78144540212881,
+        "strong": true
+      },
+      {
+        "range_bin": 46,
+        "angle_deg": -21.0,
+        "score_db": -9.32050558063721,
+        "range_excess_db": 30.317907123487146,
+        "strong": true
+      }
+    ],
+    "visible": [
+      {
+        "id": 2,
+        "range_bin": 46.0,
+        "angle_deg": -21.0,
+        "confirmed": true,
+        "support": "strong"
+      },
+      {
+        "id": 3,
+        "range_bin": 56.0,
+        "angle_deg": 22.0,
+        "confirmed": true,
+        "support": "strong"
+      },
+      {
+        "id": 18,
+        "range_bin": 57.0,
+        "angle_deg": -40.0,
+        "confirmed": true,
+        "support": "strong"
+      }
+    ],
+    "lost": [
+      17,
+      19
+    ],
+    "map_contrast_db": 35.866760505112886
+  },
+  {
+    "candidates": [
+      {
+        "range_bin": 46,
+        "angle_deg": -21.0,
+        "score_db": 0.0,
+        "range_excess_db": 29.311116129759874,
+        "strong": true
+      },
+      {
+        "range_bin": 56,
+        "angle_deg": 21.0,
+        "score_db": -5.513607541725804,
+        "range_excess_db": 21.344191856786814,
+        "strong": true
+      },
+      {
+        "range_bin": 57,
+        "angle_deg": -39.0,
+        "score_db": -7.375756299922999,
+        "range_excess_db": 21.8409784770353,
+        "strong": true
+      },
+      {
+        "range_bin": 69,
+        "angle_deg": 52.0,
+        "score_db": -16.265925226871175,
+        "range_excess_db": 15.316951333308559,
+        "strong": false
+      }
+    ],
+    "visible": [
+      {
+        "id": 2,
+        "range_bin": 46.0,
+        "angle_deg": -21.0,
+        "confirmed": true,
+        "support": "strong"
+      },
+      {
+        "id": 3,
+        "range_bin": 56.0,
+        "angle_deg": 21.0,
+        "confirmed": true,
+        "support": "strong"
+      },
+      {
+        "id": 18,
+        "range_bin": 57.0,
+        "angle_deg": -39.0,
+        "confirmed": true,
+        "support": "strong"
+      }
+    ],
+    "lost": [],
+    "map_contrast_db": 29.283801736711393
+  },
+  {
+    "candidates": [
+      {
+        "range_bin": 46,
+        "angle_deg": -21.0,
+        "score_db": 0.0,
+        "range_excess_db": 28.27696706188768,
+        "strong": true
+      },
+      {
+        "range_bin": 56,
+        "angle_deg": 25.0,
+        "score_db": -0.5116560242511665,
+        "range_excess_db": 24.999187349659714,
+        "strong": true
+      },
+      {
+        "range_bin": 57,
+        "angle_deg": -39.0,
+        "score_db": -8.44276227962902,
+        "range_excess_db": 22.13626456727328,
+        "strong": true
+      }
+    ],
+    "visible": [
+      {
+        "id": 2,
+        "range_bin": 46.0,
+        "angle_deg": -21.0,
+        "confirmed": true,
+        "support": "strong"
+      },
+      {
+        "id": 3,
+        "range_bin": 56.0,
+        "angle_deg": 25.0,
+        "confirmed": true,
+        "support": "strong"
+      },
+      {
+        "id": 18,
+        "range_bin": 57.0,
+        "angle_deg": -39.0,
+        "confirmed": true,
+        "support": "strong"
+      }
+    ],
+    "lost": [],
+    "map_contrast_db": 29.691625395579987
+  },
+  {
+    "candidates": [
+      {
+        "range_bin": 46,
+        "angle_deg": -21.0,
+        "score_db": 0.0,
+        "range_excess_db": 28.25333691399458,
+        "strong": true
+      },
+      {
+        "range_bin": 57,
+        "angle_deg": -40.0,
+        "score_db": -7.504897667766073,
+        "range_excess_db": 21.007359421945047,
+        "strong": true
+      },
+      {
+        "range_bin": 69,
+        "angle_deg": 50.0,
+        "score_db": -12.063108943684608,
+        "range_excess_db": 17.646428844130263,
+        "strong": true
+      },
+      {
+        "range_bin": 56,
+        "angle_deg": 24.0,
+        "score_db": -12.442560997112668,
+        "range_excess_db": 20.92369590368076,
+        "strong": true
+      }
+    ],
+    "visible": [
+      {
+        "id": 2,
+        "range_bin": 46.0,
+        "angle_deg": -21.0,
+        "confirmed": true,
+        "support": "strong"
+      },
+      {
+        "id": 3,
+        "range_bin": 56.0,
+        "angle_deg": 24.0,
+        "confirmed": true,
+        "support": "strong"
+      },
+      {
+        "id": 18,
+        "range_bin": 57.0,
+        "angle_deg": -40.0,
+        "confirmed": true,
+        "support": "strong"
+      },
+      {
+        "id": 21,
+        "range_bin": 69.0,
+        "angle_deg": 50.0,
+        "confirmed": false,
+        "support": "strong"
+      }
+    ],
+    "lost": [],
+    "map_contrast_db": 30.83463766215667
+  },
+  {
+    "candidates": [
+      {
+        "range_bin": 45,
+        "angle_deg": -20.0,
+        "score_db": 0.0,
+        "range_excess_db": 28.971631739083975,
+        "strong": true
+      },
+      {
+        "range_bin": 57,
+        "angle_deg": -39.0,
+        "score_db": -0.21959110028927303,
+        "range_excess_db": 21.067551135394993,
+        "strong": true
+      },
+      {
+        "range_bin": 69,
+        "angle_deg": 49.0,
+        "score_db": -9.053919644167415,
+        "range_excess_db": 18.141917118296163,
+        "strong": true
+      },
+      {
+        "range_bin": 56,
+        "angle_deg": 26.0,
+        "score_db": -9.989604958804719,
+        "range_excess_db": 21.42255865690929,
+        "strong": true
+      }
+    ],
+    "visible": [
+      {
+        "id": 2,
+        "range_bin": 45.0,
+        "angle_deg": -20.0,
+        "confirmed": true,
+        "support": "strong"
+      },
+      {
+        "id": 3,
+        "range_bin": 56.0,
+        "angle_deg": 26.0,
+        "confirmed": true,
+        "support": "strong"
+      },
+      {
+        "id": 18,
+        "range_bin": 57.0,
+        "angle_deg": -39.0,
+        "confirmed": true,
+        "support": "strong"
+      },
+      {
+        "id": 21,
+        "range_bin": 69.0,
+        "angle_deg": 49.0,
+        "confirmed": false,
+        "support": "strong"
+      }
+    ],
+    "lost": [],
+    "map_contrast_db": 28.388683027034375
+  },
+  {
+    "candidates": [
+      {
+        "range_bin": 45,
+        "angle_deg": -20.0,
+        "score_db": 0.0,
+        "range_excess_db": 29.44169376944417,
+        "strong": true
+      },
+      {
+        "range_bin": 57,
+        "angle_deg": -41.0,
+        "score_db": -9.559240245108203,
+        "range_excess_db": 19.29253788776107,
+        "strong": true
+      },
+      {
+        "range_bin": 68,
+        "angle_deg": 50.0,
+        "score_db": -10.650153905941629,
+        "range_excess_db": 17.74021081252627,
+        "strong": true
+      }
+    ],
+    "visible": [
+      {
+        "id": 2,
+        "range_bin": 45.0,
+        "angle_deg": -20.0,
+        "confirmed": true,
+        "support": "strong"
+      },
+      {
+        "id": 18,
+        "range_bin": 57.0,
+        "angle_deg": -41.0,
+        "confirmed": true,
+        "support": "strong"
+      },
+      {
+        "id": 21,
+        "range_bin": 68.0,
+        "angle_deg": 50.0,
+        "confirmed": true,
+        "support": "strong"
+      }
+    ],
+    "lost": [
+      3
+    ],
+    "map_contrast_db": 29.515856231728662
+  },
+  {
+    "candidates": [
+      {
+        "range_bin": 45,
+        "angle_deg": -22.0,
+        "score_db": 0.0,
+        "range_excess_db": 27.001398824579347,
+        "strong": true
+      },
+      {
+        "range_bin": 78,
+        "angle_deg": -28.0,
+        "score_db": -8.407858112231999,
+        "range_excess_db": 15.333152231638081,
+        "strong": true
+      },
+      {
+        "range_bin": 57,
+        "angle_deg": -38.0,
+        "score_db": -9.50795149156515,
+        "range_excess_db": 15.688668726664226,
+        "strong": true
+      },
+      {
+        "range_bin": 68,
+        "angle_deg": 54.0,
+        "score_db": -11.591355015799646,
+        "range_excess_db": 15.7438930160015,
+        "strong": true
+      }
+    ],
+    "visible": [
+      {
+        "id": 2,
+        "range_bin": 45.0,
+        "angle_deg": -22.0,
+        "confirmed": true,
+        "support": "strong"
+      },
+      {
+        "id": 18,
+        "range_bin": 57.0,
+        "angle_deg": -38.0,
+        "confirmed": true,
+        "support": "strong"
+      },
+      {
+        "id": 21,
+        "range_bin": 68.0,
+        "angle_deg": 54.0,
+        "confirmed": true,
+        "support": "strong"
+      },
+      {
+        "id": 22,
+        "range_bin": 78.0,
+        "angle_deg": -28.0,
+        "confirmed": false,
+        "support": "strong"
+      }
+    ],
+    "lost": [
+      3
+    ],
+    "map_contrast_db": 26.727628051357165
+  },
+  {
+    "candidates": [
+      {
+        "range_bin": 59,
+        "angle_deg": -20.0,
+        "score_db": 0.0,
+        "range_excess_db": 20.62537596513897,
+        "strong": true
+      },
+      {
+        "range_bin": 44,
+        "angle_deg": -25.0,
+        "score_db": -2.4372148935103186,
+        "range_excess_db": 24.00049516424194,
+        "strong": true
+      },
+      {
+        "range_bin": 68,
+        "angle_deg": -34.0,
+        "score_db": -9.658340486555444,
+        "range_excess_db": 14.038072828591268,
+        "strong": true
+      },
+      {
+        "range_bin": 77,
+        "angle_deg": -28.0,
+        "score_db": -10.460426538869266,
+        "range_excess_db": 16.968208900128943,
+        "strong": true
+      }
+    ],
+    "visible": [
+      {
+        "id": 2,
+        "range_bin": 44.0,
+        "angle_deg": -25.0,
+        "confirmed": true,
+        "support": "strong"
+      },
+      {
+        "id": 18,
+        "range_bin": 68.0,
+        "angle_deg": -34.0,
+        "confirmed": true,
+        "support": "strong"
+      },
+      {
+        "id": 22,
+        "range_bin": 77.0,
+        "angle_deg": -28.0,
+        "confirmed": false,
+        "support": "strong"
+      },
+      {
+        "id": 23,
+        "range_bin": 59.0,
+        "angle_deg": -20.0,
+        "confirmed": false,
+        "support": "strong"
+      }
+    ],
+    "lost": [
+      3,
+      21
+    ],
+    "map_contrast_db": 27.005240173848684
+  },
+  {
+    "candidates": [
+      {
+        "range_bin": 59,
+        "angle_deg": -19.0,
+        "score_db": 0.0,
+        "range_excess_db": 22.751138088336255,
+        "strong": true
+      },
+      {
+        "range_bin": 56,
+        "angle_deg": 28.0,
+        "score_db": -2.8431311099802787,
+        "range_excess_db": 21.216695981855217,
+        "strong": true
+      },
+      {
+        "range_bin": 44,
+        "angle_deg": -25.0,
+        "score_db": -3.1394327243317703,
+        "range_excess_db": 25.882185360176074,
+        "strong": true
+      },
+      {
+        "range_bin": 77,
+        "angle_deg": -35.0,
+        "score_db": -3.1926688977297504,
+        "range_excess_db": 15.57861566493549,
+        "strong": true
+      },
+      {
+        "range_bin": 44,
+        "angle_deg": 33.0,
+        "score_db": -21.924927426213866,
+        "range_excess_db": 25.882185360176074,
+        "strong": false
+      }
+    ],
+    "visible": [
+      {
+        "id": 2,
+        "range_bin": 44.0,
+        "angle_deg": -25.0,
+        "confirmed": true,
+        "support": "strong"
+      },
+      {
+        "id": 18,
+        "range_bin": 77.0,
+        "angle_deg": -35.0,
+        "confirmed": true,
+        "support": "strong"
+      },
+      {
+        "id": 23,
+        "range_bin": 59.0,
+        "angle_deg": -19.0,
+        "confirmed": false,
+        "support": "strong"
+      },
+      {
+        "id": 24,
+        "range_bin": 56.0,
+        "angle_deg": 28.0,
+        "confirmed": false,
+        "support": "strong"
+      }
+    ],
+    "lost": [
+      21
+    ],
+    "map_contrast_db": 22.766253164286656
+  },
+  {
+    "candidates": [
+      {
+        "range_bin": 45,
+        "angle_deg": -24.0,
+        "score_db": 0.0,
+        "range_excess_db": 24.64577868033234,
+        "strong": true
+      },
+      {
+        "range_bin": 77,
+        "angle_deg": -31.0,
+        "score_db": -2.5080571130782743,
+        "range_excess_db": 14.780879877552344,
+        "strong": true
+      },
+      {
+        "range_bin": 59,
+        "angle_deg": -24.0,
+        "score_db": -3.5814366931539277,
+        "range_excess_db": 18.99333661572153,
+        "strong": true
+      },
+      {
+        "range_bin": 57,
+        "angle_deg": 35.0,
+        "score_db": -13.47965044904615,
+        "range_excess_db": 16.259318293628212,
+        "strong": true
+      },
+      {
+        "range_bin": 69,
+        "angle_deg": 54.0,
+        "score_db": -20.66696535779105,
+        "range_excess_db": 12.835042767520648,
+        "strong": false
+      },
+      {
+        "range_bin": 44,
+        "angle_deg": 34.0,
+        "score_db": -21.30266163888773,
+        "range_excess_db": 26.076881502226698,
+        "strong": false
+      },
+      {
+        "range_bin": 77,
+        "angle_deg": 28.0,
+        "score_db": -21.62123932147001,
+        "range_excess_db": 14.780879877552344,
+        "strong": false
+      },
+      {
+        "range_bin": 22,
+        "angle_deg": -5.0,
+        "score_db": -21.741401421334487,
+        "range_excess_db": 15.610930174513214,
+        "strong": false
+      }
+    ],
+    "visible": [
+      {
+        "id": 2,
+        "range_bin": 45.0,
+        "angle_deg": -24.0,
+        "confirmed": true,
+        "support": "strong"
+      },
+      {
+        "id": 21,
+        "range_bin": 69.0,
+        "angle_deg": 54.0,
+        "confirmed": true,
+        "support": "weak"
+      },
+      {
+        "id": 22,
+        "range_bin": 77.0,
+        "angle_deg": -31.0,
+        "confirmed": false,
+        "support": "strong"
+      },
+      {
+        "id": 23,
+        "range_bin": 59.0,
+        "angle_deg": -24.0,
+        "confirmed": true,
+        "support": "strong"
+      },
+      {
+        "id": 24,
+        "range_bin": 57.0,
+        "angle_deg": 35.0,
+        "confirmed": false,
+        "support": "strong"
+      }
+    ],
+    "lost": [
+      18
+    ],
+    "map_contrast_db": 22.256001916770522
+  },
+  {
+    "candidates": [
+      {
+        "range_bin": 45,
+        "angle_deg": -22.0,
+        "score_db": 0.0,
+        "range_excess_db": 26.16333480251241,
+        "strong": true
+      },
+      {
+        "range_bin": 57,
+        "angle_deg": -38.0,
+        "score_db": -5.492770539247614,
+        "range_excess_db": 17.553107222205696,
+        "strong": true
+      },
+      {
+        "range_bin": 68,
+        "angle_deg": 53.0,
+        "score_db": -8.688902164360734,
+        "range_excess_db": 15.61290288536997,
+        "strong": true
+      },
+      {
+        "range_bin": 57,
+        "angle_deg": 36.0,
+        "score_db": -17.8958594657325,
+        "range_excess_db": 17.553107222205696,
+        "strong": false
+      }
+    ],
+    "visible": [
+      {
+        "id": 2,
+        "range_bin": 45.0,
+        "angle_deg": -22.0,
+        "confirmed": true,
+        "support": "strong"
+      },
+      {
+        "id": 21,
+        "range_bin": 68.0,
+        "angle_deg": 53.0,
+        "confirmed": true,
+        "support": "strong"
+      },
+      {
+        "id": 23,
+        "range_bin": 57.0,
+        "angle_deg": -38.0,
+        "confirmed": true,
+        "support": "strong"
+      }
+    ],
+    "lost": [
+      18
+    ],
+    "map_contrast_db": 29.451220385354087
+  },
+  {
+    "candidates": [
+      {
+        "range_bin": 45,
+        "angle_deg": -21.0,
+        "score_db": 0.0,
+        "range_excess_db": 25.919770622014795,
+        "strong": true
+      },
+      {
+        "range_bin": 57,
+        "angle_deg": -37.0,
+        "score_db": -6.798839886267574,
+        "range_excess_db": 16.519746937677738,
+        "strong": true
+      },
+      {
+        "range_bin": 68,
+        "angle_deg": 51.0,
+        "score_db": -9.952619163581636,
+        "range_excess_db": 15.557227351403114,
+        "strong": true
+      },
+      {
+        "range_bin": 57,
+        "angle_deg": 32.0,
+        "score_db": -14.980367377745257,
+        "range_excess_db": 16.519746937677738,
+        "strong": true
+      }
+    ],
+    "visible": [
+      {
+        "id": 2,
+        "range_bin": 45.0,
+        "angle_deg": -21.0,
+        "confirmed": true,
+        "support": "strong"
+      },
+      {
+        "id": 21,
+        "range_bin": 68.0,
+        "angle_deg": 51.0,
+        "confirmed": true,
+        "support": "strong"
+      },
+      {
+        "id": 23,
+        "range_bin": 57.0,
+        "angle_deg": -37.0,
+        "confirmed": true,
+        "support": "strong"
+      },
+      {
+        "id": 24,
+        "range_bin": 57.0,
+        "angle_deg": 32.0,
+        "confirmed": false,
+        "support": "strong"
+      }
+    ],
+    "lost": [
+      18
+    ],
+    "map_contrast_db": 28.100734962990934
+  },
+  {
+    "candidates": [
+      {
+        "range_bin": 44,
+        "angle_deg": -22.0,
+        "score_db": 0.0,
+        "range_excess_db": 28.356915305569686,
+        "strong": true
+      },
+      {
+        "range_bin": 57,
+        "angle_deg": -38.0,
+        "score_db": -5.843488293083556,
+        "range_excess_db": 16.302649282476978,
+        "strong": true
+      },
+      {
+        "range_bin": 69,
+        "angle_deg": 49.0,
+        "score_db": -11.867081851107894,
+        "range_excess_db": 14.670647374541133,
+        "strong": true
+      }
+    ],
+    "visible": [
+      {
+        "id": 2,
+        "range_bin": 44.0,
+        "angle_deg": -22.0,
+        "confirmed": true,
+        "support": "strong"
+      },
+      {
+        "id": 21,
+        "range_bin": 69.0,
+        "angle_deg": 49.0,
+        "confirmed": true,
+        "support": "strong"
+      },
+      {
+        "id": 23,
+        "range_bin": 57.0,
+        "angle_deg": -38.0,
+        "confirmed": true,
+        "support": "strong"
+      }
+    ],
+    "lost": [],
+    "map_contrast_db": 28.903600718153715
+  },
+  {
+    "candidates": [
+      {
+        "range_bin": 45,
+        "angle_deg": -21.0,
+        "score_db": 0.0,
+        "range_excess_db": 28.238889782642907,
+        "strong": true
+      },
+      {
+        "range_bin": 57,
+        "angle_deg": -41.0,
+        "score_db": -9.940618094754216,
+        "range_excess_db": 14.728634550392805,
+        "strong": true
+      },
+      {
+        "range_bin": 69,
+        "angle_deg": 49.0,
+        "score_db": -14.591629753171617,
+        "range_excess_db": 12.347434785695569,
+        "strong": true
+      },
+      {
+        "range_bin": 45,
+        "angle_deg": 43.0,
+        "score_db": -21.79296706611977,
+        "range_excess_db": 28.238889782642907,
+        "strong": false
+      }
+    ],
+    "visible": [
+      {
+        "id": 2,
+        "range_bin": 45.0,
+        "angle_deg": -21.0,
+        "confirmed": true,
+        "support": "strong"
+      },
+      {
+        "id": 21,
+        "range_bin": 69.0,
+        "angle_deg": 49.0,
+        "confirmed": true,
+        "support": "strong"
+      },
+      {
+        "id": 23,
+        "range_bin": 57.0,
+        "angle_deg": -41.0,
+        "confirmed": true,
+        "support": "strong"
+      }
+    ],
+    "lost": [],
+    "map_contrast_db": 31.141704174584014
+  },
+  {
+    "candidates": [
+      {
+        "range_bin": 45,
+        "angle_deg": -20.0,
+        "score_db": 0.0,
+        "range_excess_db": 25.800596280574396,
+        "strong": true
+      },
+      {
+        "range_bin": 58,
+        "angle_deg": -41.0,
+        "score_db": -7.56692782135957,
+        "range_excess_db": 15.171256519575365,
+        "strong": true
+      },
+      {
+        "range_bin": 68,
+        "angle_deg": 50.0,
+        "score_db": -12.136692144499172,
+        "range_excess_db": 16.133091275458852,
+        "strong": true
+      }
+    ],
+    "visible": [
+      {
+        "id": 2,
+        "range_bin": 45.0,
+        "angle_deg": -20.0,
+        "confirmed": true,
+        "support": "strong"
+      },
+      {
+        "id": 21,
+        "range_bin": 68.0,
+        "angle_deg": 50.0,
+        "confirmed": true,
+        "support": "strong"
+      },
+      {
+        "id": 23,
+        "range_bin": 58.0,
+        "angle_deg": -41.0,
+        "confirmed": true,
+        "support": "strong"
+      }
+    ],
+    "lost": [],
+    "map_contrast_db": 29.252822828712134
+  },
+  {
+    "candidates": [
+      {
+        "range_bin": 47,
+        "angle_deg": -21.0,
+        "score_db": 0.0,
+        "range_excess_db": 26.22449772085669,
+        "strong": true
+      },
+      {
+        "range_bin": 68,
+        "angle_deg": 50.0,
+        "score_db": -9.245204583093294,
+        "range_excess_db": 18.07090022356347,
+        "strong": true
+      },
+      {
+        "range_bin": 23,
+        "angle_deg": 59.0,
+        "score_db": -9.468347835868999,
+        "range_excess_db": 20.340674831328016,
+        "strong": true
+      },
+      {
+        "range_bin": 58,
+        "angle_deg": -41.0,
+        "score_db": -13.619469744874815,
+        "range_excess_db": 17.710457286611003,
+        "strong": true
+      }
+    ],
+    "visible": [
+      {
+        "id": 2,
+        "range_bin": 47.0,
+        "angle_deg": -21.0,
+        "confirmed": true,
+        "support": "strong"
+      },
+      {
+        "id": 21,
+        "range_bin": 68.0,
+        "angle_deg": 50.0,
+        "confirmed": true,
+        "support": "strong"
+      },
+      {
+        "id": 23,
+        "range_bin": 58.0,
+        "angle_deg": -41.0,
+        "confirmed": true,
+        "support": "strong"
+      },
+      {
+        "id": 25,
+        "range_bin": 23.0,
+        "angle_deg": 59.0,
+        "confirmed": false,
+        "support": "strong"
+      }
+    ],
+    "lost": [],
+    "map_contrast_db": 31.140771847824603
+  },
+  {
+    "candidates": [
+      {
+        "range_bin": 23,
+        "angle_deg": 58.0,
+        "score_db": 0.0,
+        "range_excess_db": 23.08911244419604,
+        "strong": true
+      },
+      {
+        "range_bin": 47,
+        "angle_deg": -21.0,
+        "score_db": -0.5250042386535241,
+        "range_excess_db": 26.368717457293364,
+        "strong": true
+      },
+      {
+        "range_bin": 68,
+        "angle_deg": 50.0,
+        "score_db": -9.912083632838684,
+        "range_excess_db": 16.030123220878316,
+        "strong": true
+      },
+      {
+        "range_bin": 58,
+        "angle_deg": -42.0,
+        "score_db": -11.86131507342929,
+        "range_excess_db": 17.976364785797905,
+        "strong": true
+      },
+      {
+        "range_bin": 56,
+        "angle_deg": 27.0,
+        "score_db": -13.97471820149171,
+        "range_excess_db": 17.401440822302682,
+        "strong": true
+      }
+    ],
+    "visible": [
+      {
+        "id": 2,
+        "range_bin": 47.0,
+        "angle_deg": -21.0,
+        "confirmed": true,
+        "support": "strong"
+      },
+      {
+        "id": 21,
+        "range_bin": 68.0,
+        "angle_deg": 50.0,
+        "confirmed": true,
+        "support": "strong"
+      },
+      {
+        "id": 23,
+        "range_bin": 58.0,
+        "angle_deg": -42.0,
+        "confirmed": true,
+        "support": "strong"
+      },
+      {
+        "id": 25,
+        "range_bin": 23.0,
+        "angle_deg": 58.0,
+        "confirmed": false,
+        "support": "strong"
+      },
+      {
+        "id": 26,
+        "range_bin": 56.0,
+        "angle_deg": 27.0,
+        "confirmed": false,
+        "support": "strong"
+      }
+    ],
+    "lost": [],
+    "map_contrast_db": 31.21092322547114
+  },
+  {
+    "candidates": [
+      {
+        "range_bin": 23,
+        "angle_deg": 59.0,
+        "score_db": 0.0,
+        "range_excess_db": 23.729459515426328,
+        "strong": true
+      },
+      {
+        "range_bin": 56,
+        "angle_deg": 24.0,
+        "score_db": -4.615133746130656,
+        "range_excess_db": 21.713135839438493,
+        "strong": true
+      },
+      {
+        "range_bin": 46,
+        "angle_deg": -20.0,
+        "score_db": -5.026177276205919,
+        "range_excess_db": 27.353489921961838,
+        "strong": true
+      },
+      {
+        "range_bin": 58,
+        "angle_deg": -41.0,
+        "score_db": -14.3616616775364,
+        "range_excess_db": 18.07843198422978,
+        "strong": true
+      },
+      {
+        "range_bin": 68,
+        "angle_deg": 50.0,
+        "score_db": -21.936202687962314,
+        "range_excess_db": 13.278131649899152,
+        "strong": false
+      }
+    ],
+    "visible": [
+      {
+        "id": 2,
+        "range_bin": 46.0,
+        "angle_deg": -20.0,
+        "confirmed": true,
+        "support": "strong"
+      },
+      {
+        "id": 21,
+        "range_bin": 68.0,
+        "angle_deg": 50.0,
+        "confirmed": true,
+        "support": "weak"
+      },
+      {
+        "id": 23,
+        "range_bin": 58.0,
+        "angle_deg": -41.0,
+        "confirmed": true,
+        "support": "strong"
+      },
+      {
+        "id": 25,
+        "range_bin": 23.0,
+        "angle_deg": 59.0,
+        "confirmed": true,
+        "support": "strong"
+      },
+      {
+        "id": 26,
+        "range_bin": 56.0,
+        "angle_deg": 24.0,
+        "confirmed": false,
+        "support": "strong"
+      }
+    ],
+    "lost": [],
+    "map_contrast_db": 33.70853159357539
+  },
+  {
+    "candidates": [
+      {
+        "range_bin": 46,
+        "angle_deg": -19.0,
+        "score_db": 0.0,
+        "range_excess_db": 26.51213841622218,
+        "strong": true
+      },
+      {
+        "range_bin": 56,
+        "angle_deg": 23.0,
+        "score_db": -0.39670192851845487,
+        "range_excess_db": 23.016109776313506,
+        "strong": true
+      },
+      {
+        "range_bin": 58,
+        "angle_deg": -42.0,
+        "score_db": -10.488621043054371,
+        "range_excess_db": 17.872913474741374,
+        "strong": true
+      },
+      {
+        "range_bin": 67,
+        "angle_deg": -9.0,
+        "score_db": -12.07095499451663,
+        "range_excess_db": 17.180102982956747,
+        "strong": true
+      }
+    ],
+    "visible": [
+      {
+        "id": 2,
+        "range_bin": 46.0,
+        "angle_deg": -19.0,
+        "confirmed": true,
+        "support": "strong"
+      },
+      {
+        "id": 23,
+        "range_bin": 58.0,
+        "angle_deg": -42.0,
+        "confirmed": true,
+        "support": "strong"
+      },
+      {
+        "id": 26,
+        "range_bin": 56.0,
+        "angle_deg": 23.0,
+        "confirmed": true,
+        "support": "strong"
+      },
+      {
+        "id": 27,
+        "range_bin": 67.0,
+        "angle_deg": -9.0,
+        "confirmed": false,
+        "support": "strong"
+      }
+    ],
+    "lost": [
+      21,
+      25
+    ],
+    "map_contrast_db": 28.827155659346168
+  },
+  {
+    "candidates": [
+      {
+        "range_bin": 46,
+        "angle_deg": -20.0,
+        "score_db": 0.0,
+        "range_excess_db": 26.082535388467896,
+        "strong": true
+      },
+      {
+        "range_bin": 67,
+        "angle_deg": -8.0,
+        "score_db": -2.788487108587476,
+        "range_excess_db": 21.870391337995265,
+        "strong": true
+      },
+      {
+        "range_bin": 23,
+        "angle_deg": 59.0,
+        "score_db": -9.780337584468425,
+        "range_excess_db": 21.36496697492101,
+        "strong": true
+      },
+      {
+        "range_bin": 58,
+        "angle_deg": -42.0,
+        "score_db": -10.135140502721507,
+        "range_excess_db": 17.186144738421824,
+        "strong": true
+      }
+    ],
+    "visible": [
+      {
+        "id": 2,
+        "range_bin": 46.0,
+        "angle_deg": -20.0,
+        "confirmed": true,
+        "support": "strong"
+      },
+      {
+        "id": 23,
+        "range_bin": 58.0,
+        "angle_deg": -42.0,
+        "confirmed": true,
+        "support": "strong"
+      },
+      {
+        "id": 25,
+        "range_bin": 23.0,
+        "angle_deg": 59.0,
+        "confirmed": true,
+        "support": "strong"
+      },
+      {
+        "id": 27,
+        "range_bin": 67.0,
+        "angle_deg": -8.0,
+        "confirmed": false,
+        "support": "strong"
+      }
+    ],
+    "lost": [
+      21,
+      26
+    ],
+    "map_contrast_db": 29.864852775095237
+  },
+  {
+    "candidates": [
+      {
+        "range_bin": 56,
+        "angle_deg": 23.0,
+        "score_db": 0.0,
+        "range_excess_db": 23.225480549254875,
+        "strong": true
+      },
+      {
+        "range_bin": 23,
+        "angle_deg": 58.0,
+        "score_db": -1.9680443098464733,
+        "range_excess_db": 22.877647563442288,
+        "strong": true
+      },
+      {
+        "range_bin": 46,
+        "angle_deg": -21.0,
+        "score_db": -3.132787040236089,
+        "range_excess_db": 26.603883891456384,
+        "strong": true
+      },
+      {
+        "range_bin": 66,
+        "angle_deg": -8.0,
+        "score_db": -7.3359161403292426,
+        "range_excess_db": 20.240357322024614,
+        "strong": true
+      },
+      {
+        "range_bin": 57,
+        "angle_deg": -38.0,
+        "score_db": -9.748003506239643,
+        "range_excess_db": 20.071758199645465,
+        "strong": true
+      },
+      {
+        "range_bin": 79,
+        "angle_deg": -53.0,
+        "score_db": -15.27409873702819,
+        "range_excess_db": 16.698381306949095,
+        "strong": false
+      }
+    ],
+    "visible": [
+      {
+        "id": 2,
+        "range_bin": 46.0,
+        "angle_deg": -21.0,
+        "confirmed": true,
+        "support": "strong"
+      },
+      {
+        "id": 23,
+        "range_bin": 57.0,
+        "angle_deg": -38.0,
+        "confirmed": true,
+        "support": "strong"
+      },
+      {
+        "id": 25,
+        "range_bin": 23.0,
+        "angle_deg": 58.0,
+        "confirmed": true,
+        "support": "strong"
+      },
+      {
+        "id": 26,
+        "range_bin": 56.0,
+        "angle_deg": 23.0,
+        "confirmed": true,
+        "support": "strong"
+      },
+      {
+        "id": 27,
+        "range_bin": 66.0,
+        "angle_deg": -8.0,
+        "confirmed": true,
+        "support": "strong"
+      }
+    ],
+    "lost": [
+      21
+    ],
+    "map_contrast_db": 26.46823013347495
+  },
+  {
+    "candidates": [
+      {
+        "range_bin": 46,
+        "angle_deg": -22.0,
+        "score_db": 0.0,
+        "range_excess_db": 26.65340743675298,
+        "strong": true
+      },
+      {
+        "range_bin": 23,
+        "angle_deg": 58.0,
+        "score_db": -1.0005894436557785,
+        "range_excess_db": 21.53225739421608,
+        "strong": true
+      },
+      {
+        "range_bin": 65,
+        "angle_deg": -8.0,
+        "score_db": -3.5776899416142722,
+        "range_excess_db": 17.421814246501732,
+        "strong": true
+      },
+      {
+        "range_bin": 57,
+        "angle_deg": -36.0,
+        "score_db": -7.090031862247738,
+        "range_excess_db": 16.935387384174497,
+        "strong": true
+      },
+      {
+        "range_bin": 58,
+        "angle_deg": -1.0,
+        "score_db": -9.043758150187173,
+        "range_excess_db": 17.516780830925022,
+        "strong": true
+      },
+      {
+        "range_bin": 71,
+        "angle_deg": 53.0,
+        "score_db": -13.419605759103417,
+        "range_excess_db": 12.3926641802857,
+        "strong": true
+      }
+    ],
+    "visible": [
+      {
+        "id": 2,
+        "range_bin": 46.0,
+        "angle_deg": -22.0,
+        "confirmed": true,
+        "support": "strong"
+      },
+      {
+        "id": 23,
+        "range_bin": 57.0,
+        "angle_deg": -36.0,
+        "confirmed": true,
+        "support": "strong"
+      },
+      {
+        "id": 25,
+        "range_bin": 23.0,
+        "angle_deg": 58.0,
+        "confirmed": true,
+        "support": "strong"
+      },
+      {
+        "id": 27,
+        "range_bin": 65.0,
+        "angle_deg": -8.0,
+        "confirmed": true,
+        "support": "strong"
+      },
+      {
+        "id": 28,
+        "range_bin": 58.0,
+        "angle_deg": -1.0,
+        "confirmed": false,
+        "support": "strong"
+      },
+      {
+        "id": 29,
+        "range_bin": 71.0,
+        "angle_deg": 53.0,
+        "confirmed": false,
+        "support": "strong"
+      }
+    ],
+    "lost": [
+      26
+    ],
+    "map_contrast_db": 24.630323274649612
+  },
+  {
+    "candidates": [
+      {
+        "range_bin": 46,
+        "angle_deg": -20.0,
+        "score_db": 0.0,
+        "range_excess_db": 27.25051655308232,
+        "strong": true
+      },
+      {
+        "range_bin": 56,
+        "angle_deg": 18.0,
+        "score_db": -4.450132708808012,
+        "range_excess_db": 23.82131363020875,
+        "strong": true
+      },
+      {
+        "range_bin": 50,
+        "angle_deg": -9.0,
+        "score_db": -12.275655915340435,
+        "range_excess_db": 15.915291750889608,
+        "strong": true
+      },
+      {
+        "range_bin": 22,
+        "angle_deg": 59.0,
+        "score_db": -12.34673681056351,
+        "range_excess_db": 16.40128750181161,
+        "strong": true
+      },
+      {
+        "range_bin": 70,
+        "angle_deg": 52.0,
+        "score_db": -14.218501360517575,
+        "range_excess_db": 16.036296752787635,
+        "strong": true
+      },
+      {
+        "range_bin": 58,
+        "angle_deg": -16.0,
+        "score_db": -15.98441726337202,
+        "range_excess_db": 16.364364866361313,
+        "strong": false
+      }
+    ],
+    "visible": [
+      {
+        "id": 2,
+        "range_bin": 46.0,
+        "angle_deg": -20.0,
+        "confirmed": true,
+        "support": "strong"
+      },
+      {
+        "id": 25,
+        "range_bin": 22.0,
+        "angle_deg": 59.0,
+        "confirmed": true,
+        "support": "strong"
+      },
+      {
+        "id": 26,
+        "range_bin": 56.0,
+        "angle_deg": 18.0,
+        "confirmed": true,
+        "support": "strong"
+      },
+      {
+        "id": 27,
+        "range_bin": 58.0,
+        "angle_deg": -16.0,
+        "confirmed": true,
+        "support": "weak"
+      },
+      {
+        "id": 28,
+        "range_bin": 50.0,
+        "angle_deg": -9.0,
+        "confirmed": false,
+        "support": "strong"
+      },
+      {
+        "id": 29,
+        "range_bin": 70.0,
+        "angle_deg": 52.0,
+        "confirmed": false,
+        "support": "strong"
+      }
+    ],
+    "lost": [
+      23
+    ],
+    "map_contrast_db": 30.978080926578787
+  },
+  {
+    "candidates": [
+      {
+        "range_bin": 44,
+        "angle_deg": -6.0,
+        "score_db": 0.0,
+        "range_excess_db": 27.353218366256115,
+        "strong": true
+      },
+      {
+        "range_bin": 46,
+        "angle_deg": -18.0,
+        "score_db": -5.814352773178126,
+        "range_excess_db": 27.72638308096137,
+        "strong": true
+      },
+      {
+        "range_bin": 56,
+        "angle_deg": 21.0,
+        "score_db": -8.850215742039765,
+        "range_excess_db": 24.688237733761696,
+        "strong": true
+      },
+      {
+        "range_bin": 132,
+        "angle_deg": -6.0,
+        "score_db": -12.921626363080787,
+        "range_excess_db": 21.32304965982769,
+        "strong": true
+      }
+    ],
+    "visible": [
+      {
+        "id": 2,
+        "range_bin": 46.0,
+        "angle_deg": -18.0,
+        "confirmed": true,
+        "support": "strong"
+      },
+      {
+        "id": 26,
+        "range_bin": 56.0,
+        "angle_deg": 21.0,
+        "confirmed": true,
+        "support": "strong"
+      },
+      {
+        "id": 28,
+        "range_bin": 44.0,
+        "angle_deg": -6.0,
+        "confirmed": true,
+        "support": "strong"
+      },
+      {
+        "id": 30,
+        "range_bin": 132.0,
+        "angle_deg": -6.0,
+        "confirmed": false,
+        "support": "strong"
+      }
+    ],
+    "lost": [
+      23,
+      25,
+      27
+    ],
+    "map_contrast_db": 32.35774079111668
+  },
+  {
+    "candidates": [
+      {
+        "range_bin": 46,
+        "angle_deg": -17.0,
+        "score_db": 0.0,
+        "range_excess_db": 27.31204921374568,
+        "strong": true
+      },
+      {
+        "range_bin": 56,
+        "angle_deg": 22.0,
+        "score_db": -1.6576911796373237,
+        "range_excess_db": 27.653122683296672,
+        "strong": true
+      },
+      {
+        "range_bin": 132,
+        "angle_deg": -6.0,
+        "score_db": -5.202822690021125,
+        "range_excess_db": 21.085613518652593,
+        "strong": true
+      },
+      {
+        "range_bin": 62,
+        "angle_deg": 56.0,
+        "score_db": -16.42399096199586,
+        "range_excess_db": 19.212730032445975,
+        "strong": false
+      }
+    ],
+    "visible": [
+      {
+        "id": 2,
+        "range_bin": 46.0,
+        "angle_deg": -17.0,
+        "confirmed": true,
+        "support": "strong"
+      },
+      {
+        "id": 26,
+        "range_bin": 56.0,
+        "angle_deg": 22.0,
+        "confirmed": true,
+        "support": "strong"
+      },
+      {
+        "id": 30,
+        "range_bin": 132.0,
+        "angle_deg": -6.0,
+        "confirmed": false,
+        "support": "strong"
+      }
+    ],
+    "lost": [
+      23,
+      25,
+      27,
+      28
+    ],
+    "map_contrast_db": 26.59481757723472
+  },
+  {
+    "candidates": [
+      {
+        "range_bin": 46,
+        "angle_deg": -19.0,
+        "score_db": 0.0,
+        "range_excess_db": 25.10512340752181,
+        "strong": true
+      },
+      {
+        "range_bin": 43,
+        "angle_deg": -8.0,
+        "score_db": -4.143608665820725,
+        "range_excess_db": 27.55199705768333,
+        "strong": true
+      },
+      {
+        "range_bin": 56,
+        "angle_deg": 22.0,
+        "score_db": -9.724518757910797,
+        "range_excess_db": 24.27864068241808,
+        "strong": true
+      },
+      {
+        "range_bin": 61,
+        "angle_deg": 58.0,
+        "score_db": -16.669833499762994,
+        "range_excess_db": 17.530445107291335,
+        "strong": false
+      },
+      {
+        "range_bin": 132,
+        "angle_deg": -6.0,
+        "score_db": -18.631837809753108,
+        "range_excess_db": 17.594699971566733,
+        "strong": false
+      }
+    ],
+    "visible": [
+      {
+        "id": 2,
+        "range_bin": 46.0,
+        "angle_deg": -19.0,
+        "confirmed": true,
+        "support": "strong"
+      },
+      {
+        "id": 26,
+        "range_bin": 56.0,
+        "angle_deg": 22.0,
+        "confirmed": true,
+        "support": "strong"
+      },
+      {
+        "id": 28,
+        "range_bin": 43.0,
+        "angle_deg": -8.0,
+        "confirmed": true,
+        "support": "strong"
+      }
+    ],
+    "lost": [
+      25,
+      27
+    ],
+    "map_contrast_db": 29.889887432443746
+  },
+  {
+    "candidates": [
+      {
+        "range_bin": 40,
+        "angle_deg": -6.0,
+        "score_db": 0.0,
+        "range_excess_db": 24.323620532906503,
+        "strong": true
+      },
+      {
+        "range_bin": 56,
+        "angle_deg": 22.0,
+        "score_db": -2.0019207812484647,
+        "range_excess_db": 25.832703463455218,
+        "strong": true
+      },
+      {
+        "range_bin": 45,
+        "angle_deg": -18.0,
+        "score_db": -2.388357521766719,
+        "range_excess_db": 22.887073677942695,
+        "strong": true
+      },
+      {
+        "range_bin": 132,
+        "angle_deg": -6.0,
+        "score_db": -6.6068402063879175,
+        "range_excess_db": 16.838415653109095,
+        "strong": true
+      }
+    ],
+    "visible": [
+      {
+        "id": 2,
+        "range_bin": 45.0,
+        "angle_deg": -18.0,
+        "confirmed": true,
+        "support": "strong"
+      },
+      {
+        "id": 26,
+        "range_bin": 56.0,
+        "angle_deg": 22.0,
+        "confirmed": true,
+        "support": "strong"
+      },
+      {
+        "id": 28,
+        "range_bin": 40.0,
+        "angle_deg": -6.0,
+        "confirmed": true,
+        "support": "strong"
+      },
+      {
+        "id": 30,
+        "range_bin": 132.0,
+        "angle_deg": -6.0,
+        "confirmed": false,
+        "support": "strong"
+      }
+    ],
+    "lost": [],
+    "map_contrast_db": 25.927688193896735
+  }
+]

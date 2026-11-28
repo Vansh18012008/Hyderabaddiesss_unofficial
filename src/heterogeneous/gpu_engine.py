@@ -20,6 +20,7 @@ Key Optimisations:
 """
 
 import time
+import warnings
 import numpy as np
 from typing import Tuple, Dict, Any, Optional
 
@@ -62,7 +63,8 @@ class GPURadarEngine:
         u0 = u0 / (np.linalg.norm(u0) + 1e-30)
         self.U_init = np.tile(u0[None, :, None], (self.num_angles, 1, 1))
 
-        # Check for hardware acceleration
+        self._torch = None
+        self.backend_error = None
         self.backend = self._detect_backend(use_hardware_accel)
 
     def _precompute_cbf_weights(self) -> np.ndarray:
@@ -73,14 +75,22 @@ class GPURadarEngine:
 
     def _detect_backend(self, use_hardware_accel: bool) -> str:
         if not use_hardware_accel:
-            return 'cpu_simd'
+            return 'NumPy CPU (BLAS)'
         try:
             import torch
             if torch.cuda.is_available():
-                return 'cuda'
+                self._torch = torch
+                return 'CUDA (PyTorch)'
         except ImportError:
             pass
-        return 'vectorized_blas'
+        except (OSError, RuntimeError) as exc:
+            self.backend_error = str(exc)
+            warnings.warn(
+                f'CUDA initialization failed; using NumPy CPU processing: {exc}',
+                RuntimeWarning,
+                stacklevel=2,
+            )
+        return 'NumPy CPU (BLAS)'
 
     def process_frame(
         self,
@@ -101,6 +111,11 @@ class GPURadarEngine:
         """
         timing = {}
         t_total_start = time.perf_counter()
+
+        if self._torch is not None:
+            return self._process_frame_cuda(
+                if_data, clutter_rank, n_power_iter, t_total_start
+            )
 
         # -------------------------------------------------------------
         # Step 1: Stage-1a DC Offset Correction on 4 RX channels
@@ -160,3 +175,65 @@ class GPURadarEngine:
 
         timing['gpu_total_ms'] = (time.perf_counter() - t_total_start) * 1e3
         return cleaned_cube, ra_heatmap, timing
+
+    def _process_frame_cuda(
+        self,
+        if_data: np.ndarray,
+        clutter_rank: int,
+        n_power_iter: int,
+        t_total_start: float,
+    ) -> Tuple[np.ndarray, np.ndarray, Dict[str, float]]:
+        torch = self._torch
+        device = torch.device('cuda')
+        timing: Dict[str, float] = {}
+
+        def finish_stage(name: str, started: float) -> None:
+            torch.cuda.synchronize(device)
+            timing[name] = (time.perf_counter() - started) * 1e3
+
+        started = time.perf_counter()
+        data = torch.as_tensor(if_data, dtype=torch.complex64, device=device)
+        finish_stage('gpu_transfer_in_ms', started)
+
+        started = time.perf_counter()
+        data = data - torch.mean(data, dim=1, keepdim=True)
+        finish_stage('gpu_dc1a_ms', started)
+
+        started = time.perf_counter()
+        window = torch.as_tensor(self.win_range, device=device)
+        rfft_rx = torch.fft.fft(
+            data * window[None, None, :],
+            n=self.n_fft_range,
+            dim=-1,
+        )[:, :, :self.num_range_bins]
+        finish_stage('gpu_rfft_ms', started)
+
+        started = time.perf_counter()
+        weights = torch.as_tensor(self.cbf_weights, device=device)
+        beamed_cube = torch.einsum('ra,rcs->acs', weights, rfft_rx)
+        finish_stage('gpu_cbf_ms', started)
+
+        started = time.perf_counter()
+        u = torch.as_tensor(self.U_init, device=device)
+        for _ in range(n_power_iter):
+            v = torch.matmul(beamed_cube.transpose(1, 2).conj(), u)
+            v = v / (torch.linalg.vector_norm(v, dim=1, keepdim=True) + 1e-30)
+            u = torch.matmul(beamed_cube, v)
+            u = u / (torch.linalg.vector_norm(u, dim=1, keepdim=True) + 1e-30)
+
+        if clutter_rank != 1:
+            raise ValueError('CUDA clutter suppression currently supports rank=1 only')
+        u_h_s = torch.matmul(u.transpose(1, 2).conj(), beamed_cube)
+        cleaned_cube = beamed_cube - u * u_h_s
+        finish_stage('gpu_svd_ms', started)
+
+        started = time.perf_counter()
+        ra_heatmap = torch.mean(torch.abs(cleaned_cube), dim=1)
+        finish_stage('gpu_heatmap_ms', started)
+
+        started = time.perf_counter()
+        cleaned_cpu = cleaned_cube.cpu().numpy()
+        heatmap_cpu = ra_heatmap.cpu().numpy()
+        timing['gpu_transfer_out_ms'] = (time.perf_counter() - started) * 1e3
+        timing['gpu_total_ms'] = (time.perf_counter() - t_total_start) * 1e3
+        return cleaned_cpu, heatmap_cpu, timing

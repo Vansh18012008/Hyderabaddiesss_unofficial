@@ -61,21 +61,36 @@ class PeakGrouper:
         return out
 
 class GroupedTracker:
-    def __init__(self,expected_people=1):self.grouper=PeakGrouper();self.tracker=ConfidenceTracker(allow_turns=True);self.primary=None;self.expected_people=expected_people
+    def __init__(self,expected_people=2):self.grouper=PeakGrouper();self.tracker=ConfidenceTracker(allow_turns=True);self.primary=None;self.expected_people=expected_people
     def step(self,dets,z,power,angles,k):
         groups=self.grouper.group(dets,z,power,angles,k,self.tracker.active)
         usable=[g for g in groups if not g['ambiguous']];visible,lost=self.tracker.step(usable,k)
         for t in visible:
             g=min(usable,key=lambda q:abs(q['range_bin']-t['range_bin'])+abs(q['angle_deg']-t['angle_deg']));t['member_count']=g['member_count']
         active={t['id']:t for t in self.tracker.active};confirmed=[t for t in visible if t['confirmed']]
-        if self.primary is not None and self.primary not in active:self.primary=None
-        if self.primary is None:
-            eligible=[]
+        if self.expected_people==1:
+            if self.primary is not None and self.primary not in active:self.primary=None
+            if self.primary is None:
+                eligible=[]
+                for t in confirmed:
+                    h=np.array([r[:3] for r in active[t['id']]['history']]);span=float(np.ptp(h[:,1]))
+                    if span>=GROUP_SETTINGS['primary_min_range_span']:eligible.append((len(h),min(span,50),t['id']))
+                if eligible:self.primary=max(eligible)[2]
+            selected=[t for t in confirmed if t['id']==self.primary]
+        else:
             for t in confirmed:
-                h=np.array([r[:3] for r in active[t['id']]['history']]);span=float(np.ptp(h[:,1]))
-                if span>=GROUP_SETTINGS['primary_min_range_span']:eligible.append((len(h),min(span,50),t['id']))
-            if eligible:self.primary=max(eligible)[2]
-        selected=[t for t in confirmed if t['id']==self.primary] if self.expected_people==1 else confirmed
+                h=np.array([r[:3] for r in active[t['id']]['history']])
+                span=float(np.ptp(h[:,1])) if len(h) else 0.0
+                t['span']=span
+                t['motion_type']='MOVING' if span>=6.0 else 'STATIC'
+            moving_cands=[t for t in confirmed if t['motion_type']=='MOVING']
+            static_cands=[t for t in confirmed if t['motion_type']=='STATIC']
+            if moving_cands and static_cands:
+                best_static=max(static_cands,key=lambda t:len(active[t['id']]['history']))
+                best_moving=max(moving_cands,key=lambda t:(t['span'],len(active[t['id']]['history'])))
+                selected=[best_static,best_moving]
+            else:
+                selected=sorted(confirmed,key=lambda t:len(active[t['id']]['history']),reverse=True)[:self.expected_people]
         status='observed' if selected else ('ambiguous_or_lost' if self.primary is not None else 'not_yet_acquired')
         return dict(groups=groups,visible_groups=visible,lost_group_tracks=lost,person_candidates=selected,primary_id=self.primary,status=status,ambiguous_groups=[g for g in groups if g['ambiguous']],pair_decisions=self.grouper.audit)
     def all(self):return self.tracker.all()

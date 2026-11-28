@@ -37,6 +37,27 @@ python3 run_pipeline.py --render-only
 - `output/radar_parameter_derivations.json`: notebook parameter mapping, calculated range values, and the assumptions/inconsistency flags.
 - `validation.json`: reproduction and data-integrity checks.
 
+## Mathematical Multi-Target Localization Engine
+
+The multi-target detection and tracking pipeline operates purely on wave physics, physical geometry, and kinematics without requiring external dataset training or neural networks:
+
+### 1. Cartesian Physical Metric Clustering (Resolving Extended Body Reflections)
+A human body is an extended reflector: the torso, arms, and legs produce multiple scattering peaks across adjacent range and angle bins. Rather than treating limb reflections as separate targets or suppressing them using rigid polar bin/degree thresholds:
+- Prospective reflection points above the adaptive noise floor are converted from polar space `(range_bin, angle_deg)` into **metric Cartesian coordinates $(x, y)$ in meters**:
+  $$x = r \cdot \sin(\theta), \quad y = r \cdot \cos(\theta)$$
+- Points within physical human body diameter ($\le 0.45\text{ m}$) are merged into a single cluster using connected-components clustering.
+- For each cluster, the **RCS power-weighted centroid** is computed:
+  $$x_{\text{centroid}} = \frac{\sum P_i x_i}{\sum P_i}, \quad y_{\text{centroid}} = \frac{\sum P_i y_i}{\sum P_i}$$
+  Because the human torso has a much larger radar cross-section than swinging limbs, the centroid naturally locks onto the body torso center.
+
+### 2. Kinematic Kalman Filtering & Mahalanobis Validation Gating
+To eliminate identity swapping, track confusion, and unphysical jumps:
+- Each track maintains a **2D Constant Velocity (CV) Kalman state** $\mathbf{x} = [r, \theta, v_r, v_{\theta}]^T$ with dynamic covariance $\mathbf{P}$.
+- Prospective measurements are evaluated against the track's **Mahalanobis validation gate**:
+  $$d_M^2 = (\mathbf{z} - \mathbf{H}\hat{\mathbf{x}})^T \mathbf{S}^{-1} (\mathbf{z} - \mathbf{H}\hat{\mathbf{x}}) \le \gamma$$
+  Measurements exceeding the physical kinematic gate (such as sudden 10°–15° jumps from multipath or wall reflections) are strictly rejected as non-kinematic outliers.
+- Hungarian assignment (`linear_sum_assignment`) matches confirmed tracks to validated detections before initializing new tracks.
+
 ## Pipeline
 
 **BIN → complex cube → overlapping windows → within-chirp DC removal → slow-time mean subtraction → joint spatial/fast-time smoothing → forward–backward covariance averaging → joint range–angle MUSIC → candidate confidence → tracking → maps/replay.**
