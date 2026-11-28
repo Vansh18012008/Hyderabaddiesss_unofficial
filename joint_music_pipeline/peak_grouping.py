@@ -61,13 +61,21 @@ class PeakGrouper:
         return out
 
 class GroupedTracker:
-    def __init__(self,expected_people=2):self.grouper=PeakGrouper();self.tracker=ConfidenceTracker(allow_turns=True);self.primary=None;self.expected_people=expected_people
+    def __init__(self,expected_people=None):self.grouper=PeakGrouper();self.tracker=ConfidenceTracker(allow_turns=True);self.primary=None;self.expected_people=expected_people
     def step(self,dets,z,power,angles,k):
         groups=self.grouper.group(dets,z,power,angles,k,self.tracker.active)
         usable=[g for g in groups if not g['ambiguous']];visible,lost=self.tracker.step(usable,k)
         for t in visible:
             g=min(usable,key=lambda q:abs(q['range_bin']-t['range_bin'])+abs(q['angle_deg']-t['angle_deg']));t['member_count']=g['member_count']
         active={t['id']:t for t in self.tracker.active};confirmed=[t for t in visible if t['confirmed']]
+
+        for t in confirmed:
+            h=np.array([r[:3] for r in active[t['id']]['history']])
+            span=float(np.ptp(h[:,1])) if len(h) else 0.0
+            t['span']=span
+            t['motion_type']='MOVING' if span>=6.0 else 'STATIC'
+            t['history_len']=len(h)
+
         if self.expected_people==1:
             if self.primary is not None and self.primary not in active:self.primary=None
             if self.primary is None:
@@ -77,12 +85,7 @@ class GroupedTracker:
                     if span>=GROUP_SETTINGS['primary_min_range_span']:eligible.append((len(h),min(span,50),t['id']))
                 if eligible:self.primary=max(eligible)[2]
             selected=[t for t in confirmed if t['id']==self.primary]
-        else:
-            for t in confirmed:
-                h=np.array([r[:3] for r in active[t['id']]['history']])
-                span=float(np.ptp(h[:,1])) if len(h) else 0.0
-                t['span']=span
-                t['motion_type']='MOVING' if span>=6.0 else 'STATIC'
+        elif self.expected_people is not None:
             moving_cands=[t for t in confirmed if t['motion_type']=='MOVING']
             static_cands=[t for t in confirmed if t['motion_type']=='STATIC']
             if moving_cands and static_cands:
@@ -91,6 +94,31 @@ class GroupedTracker:
                 selected=[best_static,best_moving]
             else:
                 selected=sorted(confirmed,key=lambda t:len(active[t['id']]['history']),reverse=True)[:self.expected_people]
+        else:
+            # Autonomous count mode: no count prior provided
+            # Select all confirmed physical tracks with persistent evidence
+            candidates=[t for t in confirmed if len(active[t['id']]['history'])>=3]
+            candidates.sort(key=lambda t:(len(active[t['id']]['history']), t['span']), reverse=True)
+            selected=[]
+            for cand in candidates:
+                dup = False
+                for sel in selected:
+                    dr = abs(cand['range_bin'] - sel['range_bin'])
+                    da = abs(cand['angle_deg'] - sel['angle_deg'])
+                    # Spatial deduplication: closer than ~0.35m is limbs/torso of same body
+                    if dr < 6.0 and da < 12.0:
+                        dup = True
+                        break
+                    # Sidelobe / multipath ghost reflection:
+                    # If both are static, and cand has longer range and symmetric angle (|ang1 + ang2| < 7),
+                    # it is a wall multipath reflection of the primary static person
+                    if cand['motion_type'] == 'STATIC' and sel['motion_type'] == 'STATIC':
+                        if cand['range_bin'] > sel['range_bin'] and abs(cand['angle_deg'] + sel['angle_deg']) < 7.0:
+                            dup = True
+                            break
+                if not dup:
+                    selected.append(cand)
+
         status='observed' if selected else ('ambiguous_or_lost' if self.primary is not None else 'not_yet_acquired')
         return dict(groups=groups,visible_groups=visible,lost_group_tracks=lost,person_candidates=selected,primary_id=self.primary,status=status,ambiguous_groups=[g for g in groups if g['ambiguous']],pair_decisions=self.grouper.audit)
     def all(self):return self.tracker.all()

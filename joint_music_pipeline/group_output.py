@@ -48,7 +48,7 @@ def _candidates_for_frame(q, z, power, angles, min_presence_contrast_db=15.0):
             results.append(m)
     elif groups:
         sorted_g = sorted(groups, key=lambda g: g['score_db'] + 2 * np.log1p(g.get('member_count', 1)), reverse=True)
-        for g in sorted_g[:2]:
+        for g in sorted_g:
             m = _peak_metrics(z, power, g['range_bin'], g['angle_deg'], angles)
             m.update(source='unconfirmed_group', group_id=None, member_count=int(g.get('member_count', 1)),
                      status='unconfirmed_group', ambiguous=bool(g.get('ambiguous', False)), candidate_available=True,
@@ -80,7 +80,7 @@ def _candidate_for_frame(q, z, power, angles, min_presence_contrast_db=15.0):
     cnds = _candidates_for_frame(q, z, power, angles, min_presence_contrast_db)
     return cnds[0] if cnds else dict(candidate_available=False)
 
-def apply_grouping(out,maps,states,summary,expected_people=2,min_presence_contrast_db=15.0):
+def apply_grouping(out,maps,states,summary,expected_people=None,min_presence_contrast_db=15.0):
     rawstates=[dict(s) for s in states];g=GroupedTracker(expected_people);new=[]
     for k,s in enumerate(rawstates):
         result=g.step(s['candidates'],maps['joint'][k],maps['range_power'][k],maps['angles'],k)

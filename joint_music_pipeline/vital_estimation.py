@@ -31,7 +31,18 @@ def analyze_vitals(cube, maps, states, cfg, outdir):
     starts = np.asarray(maps['starts'])
     centers = starts + (window - 1) / 2
     
-    # Isolate the stationary subject (Person 1: range bin ~44, angle ~-16 deg)
+    # Auto-discover the stationary subject anchor from detected STATIC candidates across all frames
+    all_static = []
+    for s in states:
+        for c in s.get('candidate_locations', []):
+            if c.get('motion_type') == 'STATIC' and c.get('range_bin') is not None:
+                all_static.append((float(c['range_bin']), float(c['angle_deg'])))
+    if all_static:
+        anchor_bin = float(np.median([p[0] for p in all_static]))
+        anchor_ang = float(np.median([p[1] for p in all_static]))
+    else:
+        anchor_bin, anchor_ang = 44.0, -16.0
+
     loc = []
     for s in states:
         cnds = s.get('candidate_locations', [])
@@ -39,17 +50,17 @@ def analyze_vitals(cube, maps, states, cfg, outdir):
             cnds = [s['candidate_location']]
         static_cnds = [c for c in cnds if c.get('motion_type') == 'STATIC']
         if static_cnds:
-            best = min(static_cnds, key=lambda c: abs(c['range_bin'] - 44.0) + 0.5 * abs(c['angle_deg'] - (-16.0)))
+            best = min(static_cnds, key=lambda c: abs(c['range_bin'] - anchor_bin) + 0.5 * abs(c['angle_deg'] - anchor_ang))
             loc.append(best)
         elif cnds:
-            best = min(cnds, key=lambda c: abs(c['range_bin'] - 44.0) + 0.5 * abs(c['angle_deg'] - (-16.0)))
+            best = min(cnds, key=lambda c: abs(c['range_bin'] - anchor_bin) + 0.5 * abs(c['angle_deg'] - anchor_ang))
             loc.append(best)
         else:
-            loc.append(dict(range_bin=44.0, angle_deg=-16.0, candidate_available=True, confidence='high', group_id=1, source='associated_group'))
+            loc.append(dict(range_bin=anchor_bin, angle_deg=anchor_ang, candidate_available=True, confidence='high', group_id=1, source='associated_group'))
 
     available = np.array([bool(q.get('candidate_available', True)) for q in loc])
-    bins = np.array([q['range_bin'] if q.get('range_bin') is not None else 44.0 for q in loc], float)
-    angs = np.array([q['angle_deg'] if q.get('angle_deg') is not None else -16.0 for q in loc], float)
+    bins = np.array([q['range_bin'] if q.get('range_bin') is not None else anchor_bin for q in loc], float)
+    angs = np.array([q['angle_deg'] if q.get('angle_deg') is not None else anchor_ang for q in loc], float)
     conf = np.array([q.get('confidence', 'high') for q in loc])
     gid = np.array([q.get('group_id', 1) if q.get('group_id') is not None else 1 for q in loc])
     src = np.array([q.get('source', 'associated_group') for q in loc])

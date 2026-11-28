@@ -17,7 +17,7 @@ ROOT=Path(__file__).resolve().parent
 def render(out,maps,states,summary,debug=False):
     if debug:
         states=[dict(q,visible=q["visible_groups"],lost=q["lost_group_tracks"]) for q in states]
-    expected_p=summary.get("grouping",{}).get("expected_people",2)
+    expected_p=summary.get("grouping",{}).get("expected_people",None)
     single=(expected_p==1)
     frame_folder="debug_frames" if debug else "frames"
     gif_name="debug_groups.gif" if debug else "joint_music.gif"
@@ -127,5 +127,5 @@ def main():
     np.savez_compressed(out/'maps.npz',**arrays);(out/'summary.json').write_text(json.dumps(summary,indent=2));(out/'frame_states.json').write_text(json.dumps(states,indent=2));(out/'settings.json').write_text(json.dumps(dict(radar=c,detector_tracker=SETTINGS),indent=2))
     with (out/'reflection_tracks.csv').open('w') as f:
         w=csv.DictWriter(f,fieldnames=['frame','start_observation','id','range_bin','angle_deg','confirmed','support']);w.writeheader();w.writerows(rows)
-    states,summary=apply_grouping(out,arrays,states,summary,c.get('expected_people',2),c.get('candidate_presence_min_contrast_db',15.0));vitals,vsum=analyze_vitals(x,arrays,states,c,out);summary['vitals']=vsum;(out/'summary.json').write_text(json.dumps(summary,indent=2));render(out,arrays,states,summary);render(out,arrays,states,summary,debug=True);print('Complete:',out,flush=True)
+    states,summary=apply_grouping(out,arrays,states,summary,c.get('expected_people',None),c.get('candidate_presence_min_contrast_db',15.0));vitals,vsum=analyze_vitals(x,arrays,states,c,out);summary['vitals']=vsum;(out/'summary.json').write_text(json.dumps(summary,indent=2));render(out,arrays,states,summary);render(out,arrays,states,summary,debug=True);print('Complete:',out,flush=True)
 if __name__=='__main__':main()
