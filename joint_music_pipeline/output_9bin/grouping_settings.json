@@ -8,5 +8,5 @@
   "motion_angle_delta": 4.0,
   "history_min": 3,
   "primary_min_range_span": 8.0,
-  "expected_people": 1
+  "expected_people": 2
 }
